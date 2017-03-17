@@ -1,13 +1,22 @@
 $footer-height: 250px
 
+body
+  background-color: #444
+
 // wrapper
 .l-wrapper
   min-height: 100%
   position: relative
+  max-width: 414px
+  margin: 0 auto
+  background: #47bebf /* Old browsers */
+  background: -moz-linear-gradient(top,  #47bebf 0%, #4781bf 100%) /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #47bebf 0%,#4781bf 100%) /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #47bebf 0%,#4781bf 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47bebf', endColorstr='#4781bf',GradientType=0 ) /* IE6-9 */
 
 // main
 .l-main
-  padding-bottom: $footer-height + 30px
 
 // container
 .l-container
@@ -21,69 +30,9 @@ $footer-height: 250px
 // header
 .l-header
   width: 100%
-  height: 120px
-
-  .header-left
-    float: left
-    .logo
-      display: block
-      img
-        height: 70px
-        display: block
-
-  .header-right
-    float: right
-
-  .header-nav
-    display: table
-    width: 100%
-    height: 120px
-    li
-      display: table-cell
-      vertical-align: middle
-      padding: 0 25px
-      &:first-child
-        padding-left: 0
-      &:last-child
-        padding-right: 0
-      a
-        color: rgba(#fff, 0.7)
-        font-weight: 200
-        &:hover
-          color: rgba(#fff, 1)
-
-// footer
-.l-footer
-  padding-bottom: 40px
-  .footer-nav
-    text-align: center
-    border-top: 1px solid #333
-    padding-top: 20px
-    li
-      display: inline-block
-      padding: 0 5px
-      color: #888
-      a
-        color: #555
-  #page-top
-    position: fixed
-    bottom: 20px
-    right: 20px
-    z-index: 9998
-    display: none
-    a
-      background-color: $color-base
-      text-decoration: none
-      color: rgba(255, 255, 255, 0.9)
-      width: 35px
-      height: 35px
-      text-align: center
-      display: table
-      border-radius: 5px
-      font-size: 24px
-      opacity: 0.9
-      &:hover
-        text-decoration: none
-        opacity: 1
-      .fa
-        display: table-cell
+  height: 50px
+  background-color: #25374A
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 9999
