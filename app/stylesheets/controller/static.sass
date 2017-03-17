@@ -1,0 +1,464 @@
+.static
+  &-index
+
+    .l-header
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 9999
+
+    #top
+      width: 100%
+      height: 100%
+      min-width: 1100px
+      position: relative
+      background-image: url("../img/top.png")
+      background-size: cover
+      background-position: center
+      background-repeat: no-repeat
+      display: table
+      padding: 140px 0 110px 0
+      .top
+        display: table-cell
+        vertical-align: middle
+        .top-content
+          display: table
+          width: 100%
+          .info
+            display: table-cell
+            vertical-align: bottom
+            .about
+              font-size: 22px
+              font-weight: 200
+              color: #fff
+              margin-bottom: 25px
+            .name
+              img
+                display: block
+                height: 340px
+          .application
+            display: table-cell
+            vertical-align: bottom
+            .m-btn
+              padding: 25px 12px
+              width: 400px
+              font-size: 20px
+
+    #about
+      padding: 90px 0
+      background-color: #f8f8f8
+      p
+        font-size: 16px
+        line-height: 26px
+        margin-bottom: 25px
+        &:last-child
+          margin-bottom: 0
+
+    #supervision
+      padding: 90px 0
+      .supervision-content
+        padding: 0 60px 35px 380px
+        margin-bottom: 70px
+        background-image: url("../img/sato.png")
+        background-size: cover
+        background-position: left
+        background-repeat: no-repeat
+        .info
+          padding: 70px 60px
+          background-color: rgba(#fff, 0.9)
+          box-shadow: 2px 2px 0 rgba(#000, 0.4)
+          .name
+            font-size: 30px
+            font-weight: 500
+          .position
+            font-size: 18px
+            margin-top: 15px
+          .vio
+            line-height: 23px
+            margin-top: 25px
+      p
+        font-size: 16px
+        line-height: 26px
+        margin-bottom: 25px
+        &:last-child
+          margin-bottom: 0
+
+    #support
+      background-color: #f8f8f8
+      padding: 90px 0
+      .support-content
+        margin-bottom: 55px
+        &.last
+          margin-bottom: 0
+        .support-description
+          float: left
+          width: 620px
+          .title
+            font-size: 28px
+            font-weight: 500
+            padding-top: 20px
+            background-size: 40px
+            background-position: left top
+            background-repeat: no-repeat
+            &.first
+              background-image: url(../img/support-first.png)
+            &.second
+              background-image: url(../img/support-second.png)
+            &.third
+              background-image: url(../img/support-third.png)
+          .text
+            font-size: 16px
+            margin-top: 35px
+            line-height: 26px
+          &.left
+            padding-right: 30px
+          &.right
+            padding-left: 30px
+        .support-image
+          width: 480px
+          float: left
+          img
+            display: block
+            width: 100%
+
+    #curriculum
+      padding: 90px 0
+      .curriculum-content
+        position: relative
+        margin-top: -5px
+        &:before
+          content: ""
+          width: 6px
+          height: 100%
+          background-color: #e8e8e8
+          background: #e8e8e8 /* Old browsers */
+          background: -moz-linear-gradient(top, #e8e8e8 0%,#555555 100%) /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, #e8e8e8 0%,#555555 100%) /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, #e8e8e8 0%,#555555 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#555555',GradientType=0 ) /* IE6-9 */
+          left: 50%
+          margin-left: -3px
+          top: 0
+          position: absolute
+      .curriculum
+        position: relative
+        padding: 5px 0
+        .curriculum-popover
+          border: 2px solid #555
+          border-radius: 6px
+          width: 400px
+          margin: 0 auto
+          padding: 20px 25px
+          position: relative
+          &:before, &:after
+            content: ""
+            position: absolute
+          .date
+            font-size: 18px
+            font-weight: 500
+            border-bottom: 1px solid #555
+            padding-bottom: 10px
+            .border
+              margin: 0 10px
+              font-weight: 200
+            .time
+              font-size: 14px
+              font-weight: 400
+          .title
+            font-size: 16px
+            font-weight: 500
+            margin-top: 10px
+          &.curriculum-popover-top
+            &:before
+              border-top: 20px solid #555
+              border-left: 12px solid transparent
+              border-right: 12px solid transparent
+              left: 50%
+              margin-left: -12px
+              bottom: -20px
+            &:after
+              border-top: 20px solid #fff
+              border-left: 12px solid transparent
+              border-right: 12px solid transparent
+              left: 50%
+              margin-left: -12px
+              bottom: -16px
+          &.curriculum-popover-right
+            left: 50%
+            margin: 0 0 0 45px
+            &:before
+              border-right: 20px solid #555
+              border-top: 12px solid transparent
+              border-bottom: 12px solid transparent
+              left: 0
+              margin-left: -20px
+              top: 50%
+              margin-top: -10px
+            &:after
+              border-right: 20px solid #fff
+              border-top: 12px solid transparent
+              border-bottom: 12px solid transparent
+              left: 0
+              margin-left: -16px
+              top: 50%
+              margin-top: -10px
+          &.curriculum-popover-left
+            left: 0
+            margin: 0 0 0 108px
+            &:before
+              border-left: 20px solid #555
+              border-top: 12px solid transparent
+              border-bottom: 12px solid transparent
+              right: 0
+              margin-right: -20px
+              top: 50%
+              margin-top: -10px
+            &:after
+              border-left: 20px solid #fff
+              border-top: 12px solid transparent
+              border-bottom: 12px solid transparent
+              right: 0
+              margin-right: -16px
+              top: 50%
+              margin-top: -10px
+          &.curriculum-popover-blue
+            background-color: $color-base
+            border: none
+            border-radius: 24px
+            &.curriculum-popover-right
+              &:before
+                border-right-color: $color-base
+            &.curriculum-popover-left
+              &:before
+                border-left-color: $color-base
+            &:after
+              content: none
+            .date
+              color: #fff
+              border-bottom-color: #fff
+            .title
+              color: #fff
+        .curriculum-circle
+          width: 38px
+          height: 38px
+          border: 6px solid $color-base
+          background-color: #fff
+          border-radius: 50%
+          position: absolute
+          top: 50%
+          margin-top: -19px
+          left: 50%
+          margin-left: -19px
+          text-align: center
+          &.first
+            position: inherit
+            top: auto
+            left: auto
+            margin: 20px auto 0
+          &.flag
+            border: none
+            i
+              font-size: 30px
+              color: $color-base
+              line-height: 38px
+        &:last-child
+          padding-bottom: 45px
+          .curriculum-circle
+            margin-top: -39px
+      .curriculum-after
+        font-size: 0
+        padding-top: 40px
+        padding-bottom: 70px
+        margin-bottom: 70px
+        border-bottom: 1px solid
+        .pattern
+          display: inline-block
+          width: 33.33%
+          text-align: center
+          padding: 0 30px
+          position: relative
+          a
+            font-size: 16px
+            display: block
+            background-color: #555
+            color: #fff
+            padding: 35px 12px
+            border-radius: 60px
+            background-size: auto 50px
+            background-repeat: no-repeat
+            background-position: center
+            &:hover
+              background-color: #777
+          &:before
+            content: ""
+            position: absolute
+            width: 6px
+            height: 40px
+            background-color: #555
+            top: -40px
+            left: 50%
+            margin-left: -3px
+          &.pattern1
+            a
+              background-image: url("../img/curriculum1.png")
+            &:after
+              content: ""
+              position: absolute
+              width: 50%
+              height: 6px
+              background-color: #555
+              left: 50%
+              top: -40px
+          &.pattern2
+            a
+              background-image: url("../img/curriculum2.png")
+            &:after
+              content: ""
+              position: absolute
+              width: 100%
+              height: 6px
+              background-color: #555
+              top: -40px
+              left: 0
+          &.pattern3
+            a
+              background-image: url("../img/curriculum3.png")
+            &:after
+              content: ""
+              position: absolute
+              width: 50%
+              height: 6px
+              background-color: #555
+              left: 0
+              top: -40px
+      .pattern-detail
+        padding: 0 70px
+        .introduction
+          width: 300px
+          .image
+            margin-bottom: 5px
+            img
+              display: block
+              width: 300px
+          .name
+            font-size: 16px
+            font-weight: 500
+          .position
+            margin-top: 2px
+        .comment
+          width: 660px
+          padding-top: 20px
+          &.float-right
+            padding-left: 30px
+          &.float-left
+            padding-right: 30px
+          .title
+            font-size: 22px
+            font-weight: 500
+            margin-bottom: 15px
+          .text
+            font-size: 16px
+            line-height: 24px
+        & + h3
+          margin-top: 70px
+
+
+    #target
+      background-color: #f8f8f8
+      padding: 90px 0
+      .text
+        font-size: 16px
+        text-align: center
+        margin-bottom: 50px
+      .target-contents
+        font-size: 0
+        .target-content
+          width: 25%
+          display: inline-block
+          vertical-align: top
+          padding: 0 20px
+          .target-image
+            img
+              display: block
+              width: 100%
+          .target-description
+            margin-top: 15px
+            font-size: 16px
+
+    #pricing
+      padding: 90px 0
+      .pricing-box
+        width: 550px
+        border: 1px solid $color-base
+        border-radius: 12px
+        margin: 0 auto
+        .pricing
+          border-radius: 12px 12px 0 0
+          padding: 45px 0
+          text-align: center
+          font-size: 40px
+          color: #fff
+          background-color: $color-base
+          .tax
+            font-size: 16px
+            color: rgba(#fff, 0.7)
+        .breakdown-lists
+          li
+            padding: 10px 20px
+            font-size: 15px
+            &:nth-child(2n)
+              background-color: #f5f5f5
+
+    #flow
+      background-color: #f8f8f8
+      padding: 90px 0
+      .m-head2
+        margin-bottom: 50px
+      .flow-contents
+        width: 1000px
+        margin: 0 auto
+        .flow-content
+          background-size: 100% 100%
+          background-position: center
+          background-repeat: no-repeat
+          width: 33.33%
+          height: 200px
+          display: table
+          float: left
+          text-align: center
+          position: relative
+          &.step1
+            background-image: url("../img/flow1.png")
+          &.step2
+            background-image: url("../img/flow2.png")
+          &.step3
+            background-image: url("../img/flow2.png")
+          .num
+            position: absolute
+            width: 54px
+            height: 54px
+            background-color: $color-base
+            border-radius: 50%
+            color: #fff
+            font-weight: 500
+            font-size: 27px
+            line-height: 54px
+            left: -20px
+            top: -20px
+          .text
+            font-size: 20px
+            font-weight: 500
+            display: table-cell
+            vertical-align: middle
+
+    #application
+      padding: 90px 0
+      .application-content
+        text-align: center
+        .m-btn
+          width: 500px
+          padding: 20px 12px
+          font-size: 20px
+        .address
+          font-size: 16px
+          margin-top: 20px

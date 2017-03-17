@@ -1,0 +1,355 @@
+// carousel
+.carousel
+  position: relative
+.carousel-inner
+  position: relative
+  width: 100%
+  overflow: hidden
+.carousel-inner > .item
+  position: relative
+  display: none
+  transition: .6s ease-in-out left
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img
+  line-height: 1
+@media all and (transform-3d)
+  .carousel-inner > .item
+    transition: transform .6s ease-in-out
+    backface-visibility: hidden
+    perspective: 1000px
+
+  .carousel-inner > .item.next,
+  .carousel-inner > .item.active.right
+    left: 0
+    transform: translate3d(100%, 0, 0)
+
+  .carousel-inner > .item.prev,
+  .carousel-inner > .item.active.left
+    left: 0
+    transform: translate3d(-100%, 0, 0)
+
+  .carousel-inner > .item.next.left,
+  .carousel-inner > .item.prev.right,
+  .carousel-inner > .item.active
+    left: 0
+    transform: translate3d(0, 0, 0)
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev
+  display: block
+.carousel-inner > .active
+  left: 0
+.carousel-inner > .next,
+.carousel-inner > .prev
+  position: absolute
+  top: 0
+  width: 100%
+.carousel-inner > .next
+  left: 100%
+.carousel-inner > .prev
+  left: -100%
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right
+  left: 0
+.carousel-inner > .active.left
+  left: -100%
+.carousel-inner > .active.right
+  left: 100%
+.carousel-control
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  width: 15%
+  font-size: 20px
+  color: #fff
+  text-align: center
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
+  background-color: rgba(0, 0, 0, 0)
+  filter: alpha(opacity=50)
+  opacity: .8
+.carousel-control.left
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .15) 0%, rgba(0, 0, 0, .0001) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)
+  background-repeat: repeat-x
+.carousel-control.right
+  right: 0
+  left: auto
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .15) 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)
+  background-repeat: repeat-x
+.carousel-control:hover
+  color: #fff
+  text-decoration: none
+  filter: alpha(opacity=90)
+  outline: 0
+  opacity: .9
+.carousel-indicators
+  position: absolute
+  bottom: 15px
+  left: 50%
+  z-index: 15
+  width: 60%
+  padding-left: 0
+  margin-left: -30%
+  text-align: center
+  list-style: none
+.carousel-indicators li
+  display: inline-block
+  vertical-align: middle
+  margin: 0px 5px
+  width: 15px
+  height: 15px
+  text-indent: -999px
+  cursor: pointer
+  background-color: rgba(0, 0, 0, 0.2)
+  border-radius: 50%
+.carousel-indicators .active
+  width: 17px
+  height: 17px
+  margin: 0px 5px
+  background-color: rgba(0, 0, 0, 0.5)
+.fade-effect
+  .carousel-inner
+    .item
+      opacity: 0
+      transition-property: opacity
+      background-color: transparent
+      &.active
+        opacity: 1
+    .active
+      &.left, &.right
+        left: 0
+        opacity: 0
+        z-index: 1
+    .next.left, .prev.right
+      opacity: 1
+
+// dropdown
+.dropdown
+  z-index: 9999
+  width: auto
+  height: 100%
+  box-sizing: border-box
+
+.dropdown-toggle:focus
+  outline: 0
+
+.dropdown-menu
+  top: 100%
+  left: 0
+  z-index: 1000
+  display: none
+  min-width: 160px
+  width: 100%
+  padding: 5px 0
+  font-size: 14px
+  list-style: none
+  background-color: #fff
+  background-clip: padding-box
+  border-top: 2px solid $color-link
+  position: absolute
+  margin-top: -1px
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2)
+  .divider
+    height: 1px
+    margin: 9px 0
+    overflow: hidden
+    background-color: #e5e5e5
+  >
+    li > a
+      display: block
+      padding: 12px 20px
+      clear: both
+      font-weight: normal
+      line-height: 1.428571429
+      color: $color-link
+      white-space: nowrap
+      font-size: 16px
+      border-bottom: 1px solid $color-gray
+      &.logout
+        border-bottom: none
+      &:hover, &:focus
+        color: $color-link
+        text-decoration: none
+
+.open >
+  .dropdown-menu
+    display: block
+  a
+    outline: 0
+
+// nav
+.fade
+  opacity: 0
+  -webkit-transition: opacity .15s linear
+  -o-transition: opacity .15s linear
+  transition: opacity .15s linear
+  &.in
+    opacity: 1
+.nav
+  padding-left: 0
+  margin-bottom: 0
+  list-style: none
+  > li
+    position: relative
+    display: block
+    > a
+      position: relative
+      display: block
+      padding: 10px 15px
+      &:hover, &:focus
+        text-decoration: none
+        background-color: #eee
+    &.disabled > a
+      color: #777
+      &:hover, &:focus
+        color: #777
+        text-decoration: none
+        cursor: not-allowed
+        background-color: transparent
+  .open > a
+    background-color: #eee
+    border-color: #337ab7
+    &:hover, &:focus
+      background-color: #eee
+      border-color: #337ab7
+  .nav-divider
+    height: 1px
+    margin: 9px 0
+    overflow: hidden
+    background-color: #e5e5e5
+  > li > a > img
+    max-width: none
+
+.nav-tabs
+  border-bottom: 1px solid #ddd
+  > li
+    float: left
+    margin-bottom: -1px
+    > a
+      margin-right: 2px
+      line-height: 1.42857143
+      border: 1px solid transparent
+      border-radius: 4px 4px 0 0
+      &:hover
+        border-color: #eee #eee #ddd
+    &.active > a
+      color: #555
+      cursor: default
+      background-color: #fff
+      border: 1px solid #ddd
+      border-bottom-color: transparent
+      &:hover, &:focus
+        color: #555
+        cursor: default
+        background-color: #fff
+        border: 1px solid #ddd
+        border-bottom-color: transparent
+  &.nav-justified
+    width: 100%
+    border-bottom: 0
+    >
+      li
+        float: none
+        > a
+          margin-bottom: 5px
+          text-align: center
+      .dropdown .dropdown-menu
+        top: auto
+        left: auto
+      li > a
+        margin-right: 0
+        border-radius: 4px
+      .active > a
+        border: 1px solid #ddd
+        &:hover, &:focus
+          border: 1px solid #ddd
+
+@media (min-width: 768px)
+  .nav-tabs.nav-justified > li
+    display: table-cell
+    width: 1%
+    > a
+      margin-bottom: 0
+
+@media (min-width: 768px)
+  .nav-tabs.nav-justified >
+    li > a
+      border-bottom: 1px solid #ddd
+      border-radius: 4px 4px 0 0
+    .active > a
+      border-bottom-color: #fff
+      &:hover, &:focus
+        border-bottom-color: #fff
+
+.nav-pills > li
+  float: left
+  > a
+    border-radius: 4px
+  + li
+    margin-left: 2px
+  &.active > a
+    color: #fff
+    background-color: #337ab7
+    &:hover, &:focus
+      color: #fff
+      background-color: #337ab7
+
+.nav-stacked > li
+  float: none
+  + li
+    margin-top: 2px
+    margin-left: 0
+
+.nav-justified
+  width: 100%
+  >
+    li
+      float: none
+      > a
+        margin-bottom: 5px
+        text-align: center
+    .dropdown .dropdown-menu
+      top: auto
+      left: auto
+
+@media (min-width: 768px)
+  .nav-justified > li
+    display: table-cell
+    width: 1%
+    > a
+      margin-bottom: 0
+
+.nav-tabs-justified
+  border-bottom: 0
+  >
+    li > a
+      margin-right: 0
+      border-radius: 4px
+    .active > a
+      border: 1px solid #ddd
+      &:hover, &:focus
+        border: 1px solid #ddd
+
+@media (min-width: 768px)
+  .nav-tabs-justified >
+    li > a
+      border-bottom: 1px solid #ddd
+      border-radius: 4px 4px 0 0
+    .active > a
+      border-bottom-color: #fff
+      &:hover, &:focus
+        border-bottom-color: #fff
+
+.tab-content >
+  .tab-pane
+    display: none
+  .active
+    display: block
+
+.nav-tabs .dropdown-menu
+  margin-top: -1px
+  border-top-left-radius: 0
+  border-top-right-radius: 0
