@@ -52,3 +52,19 @@
 
 .fixed
   position: fixed
+
+// width
+@for $i from 1 through 100
+  $width-p: percentage($i/100)
+  .w#{$i}
+    width: $width-p
+
+// mobile
+.mobile
+  display: none !important
+
+@media only screen and (max-width: 414px)
+  .mobile
+    display: block !important
+  .mobile-none
+    display: none !important

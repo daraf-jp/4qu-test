@@ -1,22 +1,12 @@
 $footer-height: 250px
 
 body
-  background-color: #444
 
 // wrapper
 .l-wrapper
   min-height: 100%
   position: relative
-  max-width: 414px
   margin: 0 auto
-  background: #47bebf /* Old browsers */
-  background: -moz-linear-gradient(top,  #47bebf 0%, #4781bf 100%) /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #47bebf 0%,#4781bf 100%) /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #47bebf 0%,#4781bf 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47bebf', endColorstr='#4781bf',GradientType=0 ) /* IE6-9 */
-
-// main
-.l-main
 
 // container
 .l-container
@@ -28,11 +18,339 @@ body
   margin: 0 auto
 
 // header
-.l-header
+.staff
+  .l-header
+    width: 100%
+    height: 80px
+    padding: 0 30px
+    box-shadow: 0 1px 0 rgba($color-text, 0.2)
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .l-header-left
+      flex: 1
+      .m-btn-group
+        .m-btn
+          width: 110px
+          height: 35px
+          padding: 7px
+          font-size: 13px
+          &:hover
+            box-shadow: none
+
+    .l-header-center
+      flex: 1
+      img
+        height: 40px
+        display: block
+        margin: 0 auto
+
+    .l-header-right
+      flex: 1
+      ul
+        display: table
+        li
+          display: table-cell
+          vertical-align: middle
+          padding-right: 45px
+          &:last-child
+            padding-right: 0
+          a
+            color: $color-base
+            .icon
+              font-size: 25px
+            &:hover
+              color: $color-link
+          .user
+            display: table
+            .user-avatar
+              display: table-cell
+              vertical-align: middle
+              padding-right: 10px
+              .icon-profile
+                font-size: 30px
+            .user-info
+              display: table-cell
+              vertical-align: middle
+              .user-name
+                font-weight: 500
+              .user-id
+                font-size: 13px
+                color: $color-gray
+
+.owner
+  .l-header
+    width: 100%
+    height: 64px
+    padding: 0 30px
+    box-shadow: 0 1px 0 rgba($color-text, 0.2)
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .l-header-left
+      flex: 1
+      img
+        height: 35px
+        display: block
+
+    .l-header-center
+      width: 440px
+      ul
+        li
+          width: 110px
+          height: 35px
+          display: table
+          float: left
+          text-align: center
+          a
+            display: table-cell
+            vertical-align: middle
+            color: $color-text
+            font-size: 12px
+            &:hover
+              background-color: rgba($color-link, 0.1)
+              color: $color-link
+              border-radius: 5px
+          &.active
+            a
+              background-color: $color-link
+              color: #fff
+              border-radius: 5px
+
+    .l-header-right
+      flex: 1
+      ul
+        height: 64px
+        display: table
+        li
+          display: table-cell
+          vertical-align: middle
+          padding-right: 45px
+          &:last-child
+            padding-right: 0
+          a
+            color: $color-base
+            .icon-new
+              font-size: 25px
+            .icon-profile
+              font-size: 25px
+            &:hover
+              color: $color-link
+
+.l-header-mobile
+  .l-header-mobile-left
+    position: fixed
+    bottom: 20px
+    left: 15px
+    z-index: 9998
+    ul
+      li
+        &.menu
+          a
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            background-color: $color-link
+            box-shadow: 0 3px 1px rgba($color-text, 0.2)
+            color: #fff
+            .icon
+              font-size: 25px
+        &.logo
+          a
+            display: block
+            width: 50px
+            height: 50px
+            padding: 7px 9px 11px
+            background-color: $color-base
+            border-radius: 5px
+            box-shadow: 0 3px 1px rgba($color-text, 0.2)
+            img
+              width: 100%
+              display: block
+        &:nth-child(1)
+          margin-bottom: 15px
+  .l-header-mobile-right
+    position: fixed
+    bottom: 20px
+    right: 15px
+    z-index: 9998
+    ul
+      li
+        a
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 50px
+          height: 50px
+          border-radius: 50%
+          background-color: $color-link
+          box-shadow: 0 3px 1px rgba($color-text, 0.2)
+          color: #fff
+          .icon
+            font-size: 25px
+        &:nth-child(1)
+          margin-bottom: 15px
+
+// subheader
+.l-subheader
   width: 100%
-  height: 50px
-  background-color: #25374A
-  position: absolute
-  top: 0
-  left: 0
-  z-index: 9999
+  height: 75px
+  box-shadow: 0 1px 0 rgba($color-text, 0.2)
+  li
+    height: 75px
+    display: table
+    text-align: center
+    float: left
+    position: relative
+    a
+      display: table-cell
+      vertical-align: middle
+      color: $color-dark-gray
+      .icon
+        font-size: 32px
+      .title
+        font-size: 12px
+        margin-top: 4px
+      &:after
+        transition: all 0.3s
+        content: ""
+        width: 100%
+        height: 4px
+        background-color: transparent
+        left: 0
+        bottom: 0
+        position: absolute
+      &:hover
+        color: $color-link
+        &:after
+          background-color: $color-link
+    &.active
+      a
+        color: $color-link
+        &:after
+          background-color: $color-link
+  &-owner-exams
+    margin-bottom: 60px
+    li
+      width: 33.333%
+  &-staff-exams
+    li
+      width: 25%
+
+// main
+.l-main
+  width: 860px
+
+// side
+.l-side
+  width: 210px
+
+// tests
+.l-tests
+  &-embed
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    margin-top: -107px
+
+.l-test
+  &-embed
+    width: 375px
+    height: 600px
+    box-shadow: 2px 0 1px rgba($color-text, 0.2), -2px 0 1px rgba($color-text, 0.2), 0 2px 1px rgba($color-text, 0.2)
+    margin-bottom: 45px
+
+// search
+.l-search
+  &-m
+    width: 500px
+
+// breadcrumb
+.l-breadcrumb
+  width: 100%
+  height: 22px
+  padding: 0 30px
+  background-color: $color-base
+  box-shadow: 0 1px 0 rgba($color-text, 0.2)
+  display: flex
+  align-items: center
+
+// スマホ用のスタイル
+@media only screen and (max-width: 414px)
+
+  // container
+  .l-container
+    width: 100%
+    padding: 0 20px
+
+  // header
+  .staff
+    .l-header
+      height: 65px
+      padding: 0 15px
+      .l-header-left
+        .m-btn-group
+          .m-btn
+            width: 50px
+
+      .l-header-center
+        img
+          height: 35px
+
+      .l-header-right
+        ul
+          li
+            &:nth-child(1)
+              padding-right: 25px
+            &:nth-child(2)
+              padding-right: 0
+  .owner
+    .l-header
+      height: 65px
+      padding: 0 15px
+
+      .l-header-center
+        width: 100%
+        ul
+          li
+            width: 25%
+
+  // subheader
+  .l-subheader
+    height: 60px
+    li
+      height: 60px
+      a
+        .icon
+          font-size: 25px
+        .title
+          font-size: 10px
+          margin-top: 2px
+    &-owner-exams
+      margin-bottom: 50px
+
+  // main
+  .l-main
+    width: 100%
+    float: none
+
+  // tests
+  .l-tests
+    &-embed
+      margin-top: 0
+
+  // search
+  .l-search
+    &-m
+      width: 100%
+
+  // breadcrumb
+  .l-breadcrumb
+    padding: 0 20px

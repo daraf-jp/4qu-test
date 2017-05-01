@@ -1,20 +1,54 @@
 .static
-  .question-nav
-    width: 100%
-    height: 45px
-    background-color: #fff
-    box-shadow: 0 1px 0 rgba(#25374A, 0.2)
-    position: absolute
-    top: 50px
-    left: 0
-    z-index: 9998
+  // wrapper
+  .l-wrapper
+    min-height: 100%
+    position: relative
+    max-width: 414px
+    margin: 0 auto
+    background: #47bebf /* Old browsers */
+    background: -moz-linear-gradient(top,  #47bebf 0%, #4781bf 100%) /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #47bebf 0%,#4781bf 100%) /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #47bebf 0%,#4781bf 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47bebf', endColorstr='#4781bf',GradientType=0 ) /* IE6-9 */
+
+  // main
   .l-main
+
+  // container
+  .l-container
+    width: 1100px
+    margin: 0 auto
+
+  .l-middle-container
+    width: 700px
+    margin: 0 auto
+
+  // header
+  .l-header
     width: 100%
-    height: 100%
+    height: 50px
+    background-color: #25374A
+    position: absolute
     top: 0
     left: 0
-    position: absolute
-    padding: 115px 0 0 0
+    z-index: 9999
+    .question-nav
+      width: 100%
+      height: 45px
+      background-color: #fff
+      box-shadow: 0 1px 0 rgba(#25374A, 0.2)
+      position: absolute
+      top: 50px
+      left: 0
+      z-index: 9998
+    .l-main
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      position: absolute
+      padding: 115px 0 0 0
+
   .question-content
     position: relative
     width: 100%

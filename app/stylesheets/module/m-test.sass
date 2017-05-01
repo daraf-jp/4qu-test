@@ -1,0 +1,111 @@
+.m-test
+  &-background
+    width: 100%
+    height: 100%
+    background: #47bebf /* Old browsers */
+    background: -moz-linear-gradient(top,  #47bebf 0%, #4781bf 100%) /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #47bebf 0%,#4781bf 100%) /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #47bebf 0%,#4781bf 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47bebf', endColorstr='#4781bf',GradientType=0 ) /* IE6-9 */
+  &-embed
+    width: 100%
+    height: 100%
+    padding: 20px
+  &-eyecatch
+    width: 100%
+    height: 150px
+    position: relative
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    border-radius: 10px 10px 0 0
+  &-eyecatch-back
+    width: 100%
+    height: 100%
+    background: rgba(#333, 0) /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(#333, 0) 50%, rgba(#333, 0.4) 100%) /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(#333, 0) 50%,rgba(#333, 0.4) 100%) /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(#333, 0) 50%,rgba(#333, 0.4) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(#333, 0)', endColorstr='rgba(#333, 0)',GradientType=0 ) /* IE6-9 */
+  &-answers
+    background-color: rgba(#fff, 0.95)
+    min-width: 115px
+    border-radius: 0 15px 15px 0
+    box-shadow: 0 1px 0 rgba($color-text, 0.2)
+    font-size: 12px
+    padding: 5px 10px
+    position: absolute
+    left: 0
+    bottom: 15px
+  &-answers-num
+    font-weight: 500
+    font-size: 14px
+  &-info
+    padding: 15px 20px
+  &-industry
+    font-size: 13px
+    display: inline-block
+    margin-right: 15px
+    color: $color-dark-gray
+  &-author
+    font-size: 13px
+    display: inline-block
+  &-title
+    font-size: 20px
+    font-weight: 500
+    margin: 10px 0 15px 0
+  &-start-comment
+    padding: 15px 0
+  &-questions
+    width: 50%
+    text-align: center
+    border-right: 1px solid $color-gray
+  &-questions-title
+    font-size: 12px
+    color: $color-dark-gray
+  &-questions-num
+    font-size: 26px
+    font-weight: 500
+  &-time-limit
+    width: 50%
+    text-align: center
+  &-time-limit-title
+    font-size: 12px
+    color: $color-dark-gray
+  &-time-limit-num
+    font-size: 26px
+    font-weight: 500
+  &-time-limit-unit
+    font-size: 13px
+  &-start-btn
+    width: 90px
+    height: 90px
+    color: #fff
+    font-size: 30px
+    border-radius: 50%
+    display: table
+    text-align: center
+    background: #48b6c6 /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #48b6c6 0%, #3f94e2 100%) /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #48b6c6 0%,#3f94e2 100%) /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #48b6c6 0%,#3f94e2 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48b6c6', endColorstr='#3f94e2',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
+    position: absolute
+    left: 50%
+    margin-left: -45px
+    bottom: 50px
+    .icon-share-fill
+      display: table-cell
+      vertical-align: middle
+      padding-left: 4px
+    &:hover
+      color: #fff
+      box-shadow: 0 3px 1px rgba($color-text, 0.2)
+
+// スマホ用のスタイル
+@media only screen and (max-width: 414px)
+  .m-test
+    &-embed
+      padding: 15px
+    &-info
+      padding: 15px

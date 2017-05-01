@@ -1,0 +1,22 @@
+.m-side
+  &-head
+    font-size: 12px
+    margin-bottom: 10px
+
+  &-nav
+    li
+      a
+        font-size: 13px
+        color: $color-dark-gray
+        display: block
+        padding: 12px 0 12px 12px
+        &:hover
+          color: $color-link
+          background-color: rgba($color-link, 0.1)
+      &.active
+        a
+          background-color: rgba($color-link, 0.1)
+          color: $color-link
+          border-left: 4px solid $color-link
+    & + .m-side-head
+      margin-top: 30px
