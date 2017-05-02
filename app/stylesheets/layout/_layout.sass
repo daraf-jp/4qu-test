@@ -158,7 +158,7 @@ body
             height: 50px
             border-radius: 50%
             background-color: $color-link
-            box-shadow: 0 3px 1px rgba($color-text, 0.2)
+            box-shadow: 0 3px 1px rgba($color-text, 0.3)
             color: #fff
             .icon
               font-size: 25px
@@ -170,7 +170,7 @@ body
             padding: 7px 9px 11px
             background-color: $color-base
             border-radius: 5px
-            box-shadow: 0 3px 1px rgba($color-text, 0.2)
+            box-shadow: 0 3px 1px rgba($color-text, 0.3)
             img
               width: 100%
               display: block
@@ -191,7 +191,7 @@ body
           height: 50px
           border-radius: 50%
           background-color: $color-link
-          box-shadow: 0 3px 1px rgba($color-text, 0.2)
+          box-shadow: 0 3px 1px rgba($color-text, 0.3)
           color: #fff
           .icon
             font-size: 25px
@@ -241,6 +241,7 @@ body
     li
       width: 33.333%
   &-staff-exams
+    margin-bottom: 60px
     li
       width: 25%
 
@@ -252,25 +253,47 @@ body
 .l-side
   width: 210px
 
-// tests
-.l-tests
+.l-search + .l-side
+  margin-top: 55px
+
+// exams
+.l-exams
   &-embed
     display: flex
-    justify-content: space-around
     flex-wrap: wrap
-    margin-top: -107px
+    margin-top: -52px
 
-.l-test
+.l-exam
   &-embed
     width: 375px
     height: 600px
     box-shadow: 2px 0 1px rgba($color-text, 0.2), -2px 0 1px rgba($color-text, 0.2), 0 2px 1px rgba($color-text, 0.2)
     margin-bottom: 45px
+    margin-right: 45px
+
+.l-exam-header
+  width: 100%
+  height: 110px
+  padding: 0 30px
+  margin-bottom: 40px
+  display: flex
+  align-items: center
+  box-shadow: 0 1px 0 rgba($color-text, 0.2)
+  .l-exam-header-left
+    flex: 1
+
+.l-exam-setting
+  width: 900px
+  margin: 0 auto
 
 // search
 .l-search
   &-m
     width: 500px
+
+// pop
+.l-pop
+  width: 795px
 
 // breadcrumb
 .l-breadcrumb
@@ -281,6 +304,17 @@ body
   box-shadow: 0 1px 0 rgba($color-text, 0.2)
   display: flex
   align-items: center
+
+// form
+.l-form-group
+  display: flex
+  margin-bottom: 60px
+
+.l-form-group-left
+  width: 200px
+
+.l-form-group-right
+  flex: 1
 
 // スマホ用のスタイル
 @media only screen and (max-width: 414px)
@@ -335,19 +369,28 @@ body
           margin-top: 2px
     &-owner-exams
       margin-bottom: 50px
+    &-staff-exams
+      margin-bottom: 50px
 
   // main
   .l-main
     width: 100%
     float: none
 
-  // tests
-  .l-tests
+  // exams
+  .l-exams
     &-embed
       margin-top: 0
 
+  .l-exam
+    &-embed
+      margin-right: 0
+
   // search
   .l-search
+    display: flex
+    align-items: flex-end
+    margin-bottom: 45px
     &-m
       width: 100%
 

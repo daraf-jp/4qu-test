@@ -1,4 +1,4 @@
-.m-test
+.m-exam
   &-background
     width: 100%
     height: 100%
@@ -31,7 +31,7 @@
     background-color: rgba(#fff, 0.95)
     min-width: 115px
     border-radius: 0 15px 15px 0
-    box-shadow: 0 1px 0 rgba($color-text, 0.2)
+    box-shadow: 0 1px 1px rgba($color-text, 0.2)
     font-size: 12px
     padding: 5px 10px
     position: absolute
@@ -100,11 +100,60 @@
       padding-left: 4px
     &:hover
       color: #fff
-      box-shadow: 0 3px 1px rgba($color-text, 0.2)
+      box-shadow: 0 4px 1px rgba($color-text, 0.3)
+  &-header-title
+    font-size: 23px
+    font-weight: 500
+  &-header-nav
+    height: 110px
+    display: flex
+    align-items: center
+    li
+      height: 110px
+      display: flex
+      align-items: center
+      position: relative
+      a
+        text-align: center
+        display: block
+        width: 100px
+        color: $color-dark-gray
+        &:after
+          -webkit-transition: all 0.3s
+          transition: all 0.3s
+          content: ""
+          width: 100px
+          height: 4px
+          background-color: transparent
+          left: 0
+          bottom: 0
+          position: absolute
+        &:hover
+          color: $color-link
+          &:after
+            background-color: $color-link
+      &.active
+        a
+          color: $color-link
+          &:after
+            background-color: $color-link
+  &-header-nav-icon
+    font-size: 32px
+  &-header-nav-title
+    font-size: 12px
+    margin-top: 6px
+  &-header-info
+    display: flex
+    align-items: baseline
+    margin-top: 15px
+  &-header-time-limit
+    margin-right: 25px
+  &-header-mode
+    margin-right: 25px
 
 // スマホ用のスタイル
 @media only screen and (max-width: 414px)
-  .m-test
+  .m-exam
     &-embed
       padding: 15px
     &-info
