@@ -1,0 +1,49 @@
+.m-graph
+
+  &-answer-num
+    font-size: 13px
+    position: absolute
+    right: 0
+    top: -45px
+
+  &-y-scale
+    width: auto
+    height: 33.333%
+    font-size: 12px
+    color: $color-dark-gray
+
+  &-x-scale
+    width: 20%
+    text-align: center
+    font-size: 12px
+    color: $color-dark-gray
+
+  &-content
+    width: 20%
+    position: relative
+
+  &-point
+    width: 58px
+    height: 58px
+    color: #aaa
+    position: absolute
+    left: 50%
+    margin-left: -29px
+    cursor: pointer
+    transition: all 0.3s
+    &:hover
+      color: $color-link
+    &.active
+      color: $color-link
+
+  &-point-icon
+    font-size: 58px
+
+  &-point-num
+    width: 100%
+    height: 100%
+    top: 0
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center

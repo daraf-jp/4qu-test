@@ -17,6 +17,10 @@ body
   width: 700px
   margin: 0 auto
 
+// main
+.l-main
+  padding-bottom: 60px
+
 // header
 .staff
   .l-header
@@ -240,20 +244,24 @@ body
     margin-bottom: 60px
     li
       width: 33.333%
+  &-owner-stores
+    margin-bottom: 60px
+    li
+      width: 25%
   &-staff-exams
     margin-bottom: 60px
     li
       width: 25%
 
 // main
-.l-main
+.l-main-content
   width: 860px
 
 // side
-.l-side
+.l-side-content
   width: 210px
 
-.l-search + .l-side
+.l-search + .l-side-content
   margin-top: 55px
 
 // exams
@@ -261,6 +269,7 @@ body
   &-embed
     display: flex
     flex-wrap: wrap
+    justify-content: space-around
     margin-top: -52px
 
 .l-exam
@@ -269,7 +278,6 @@ body
     height: 600px
     box-shadow: 2px 0 1px rgba($color-text, 0.2), -2px 0 1px rgba($color-text, 0.2), 0 2px 1px rgba($color-text, 0.2)
     margin-bottom: 45px
-    margin-right: 45px
 
 .l-exam-header
   width: 100%
@@ -285,15 +293,19 @@ body
 .l-exam-setting
   width: 900px
   margin: 0 auto
+  padding-top: 30px
 
 // search
 .l-search
   &-m
     width: 500px
 
+  &-head
+    margin-bottom: 50px
+
 // pop
 .l-pop
-  width: 795px
+  width: 805px
 
 // breadcrumb
 .l-breadcrumb
@@ -315,6 +327,74 @@ body
 
 .l-form-group-right
   flex: 1
+
+.l-form-switch
+  display: flex
+  align-items: flex-start
+
+.l-form-submit
+  text-align: center
+  margin-bottom: 60px
+
+// correction
+.l-correction
+  width: 240px
+  margin: 0 auto
+
+// insight
+.l-insight
+  margin-top: 40px
+
+  &-correction
+    position: relative
+
+// graph
+.l-graph
+  width: 100%
+  height: 330px
+  border-top: 1px solid $color-gray
+  border-bottom: 1px solid $color-gray
+  padding: 60px 20px 55px 50px
+  margin: 25px 0 50px 0
+  background-color: #fafafa
+
+  &-inner
+    width: 100%
+    height: 100%
+    position: relative
+
+  &-y
+    width: auto
+    height: 100%
+    position: absolute
+    left: -20px
+
+  &-x
+    width: 100%
+    height: auto
+    position: absolute
+    bottom: -20px
+    padding: 0 10px
+
+  &-content
+    width: 100%
+    height: 100%
+    padding: 8px 10px
+
+  &-content-inner
+    width: 100%
+    height: 100%
+    border-top: 1px solid $color-light-gray
+    border-bottom: 1px solid $color-light-gray
+    position: relative
+    &:after
+      content: ""
+      width: 100%
+      height: 1px
+      background-color: $color-light-gray
+      position: absolute
+      top: 50%
+
 
 // スマホ用のスタイル
 @media only screen and (max-width: 414px)
@@ -373,7 +453,7 @@ body
       margin-bottom: 50px
 
   // main
-  .l-main
+  .l-main-content
     width: 100%
     float: none
 

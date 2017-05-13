@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('https://dl.dropboxusercontent.com/s/kh9a2czfghms214/icomoon.eot?ylzpaj');
-  src:  url('https://dl.dropboxusercontent.com/s/kh9a2czfghms214/icomoon.eot?ylzpaj#iefix') format('embedded-opentype'),
-    url('https://dl.dropboxusercontent.com/s/lwaqvk5bnhb2413/icomoon.ttf?ylzpaj') format('truetype'),
-    url('https://dl.dropboxusercontent.com/s/cffecbrxlotkoap/icomoon.woff?ylzpaj') format('woff'),
-    url('https://dl.dropboxusercontent.com/s/csnrju9hgm0petx/icomoon.svg?ylzpaj#icomoon') format('svg');
+  src:  url('https://dl.dropboxusercontent.com/s/kh9a2czfghms214/icomoon.eot?11kbry');
+  src:  url('https://dl.dropboxusercontent.com/s/kh9a2czfghms214/icomoon.eot?11kbry#iefix') format('embedded-opentype'),
+    url('https://dl.dropboxusercontent.com/s/lwaqvk5bnhb2413/icomoon.ttf?11kbry') format('truetype'),
+    url('https://dl.dropboxusercontent.com/s/cffecbrxlotkoap/icomoon.woff?11kbry') format('woff'),
+    url('https://dl.dropboxusercontent.com/s/csnrju9hgm0petx/icomoon.svg?11kbry#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +23,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-pentagon:before {
+  content: "\e91c";
+}
+.icon-incorrect:before {
+  content: "\e918";
+}
+.icon-correct:before {
+  content: "\e91b";
+}
+.icon-answer:before {
+  content: "\e919";
+}
+.icon-choice:before {
+  content: "\e91a";
+}
 .icon-sort-list:before {
   content: "\e917";
 }

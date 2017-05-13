@@ -1,0 +1,62 @@
+.m-quiz
+  border: 1px solid $color-gray
+  border-radius: 10px
+  min-height: 460px
+  margin-bottom: 35px
+  img
+    width: 100%
+    max-width: 100%
+    display: block
+    margin-top: 15px
+  iframe
+    width: 100%
+    height: 200px
+    margin-top: 15px
+
+  &-content
+    width: 33.333%
+    border-right: 1px solid $color-gray
+    &:last-child
+      border-right: none
+
+  &-head
+    color: $color-base
+    padding: 15px
+
+  &-icon
+    font-size: 35px
+    margin-right: 5px
+
+  &-title
+    font-size: 18px
+    font-weight: 500
+
+  &-question-text
+    padding: 0 15px 15px
+    font-weight: 400
+    font-size: 16px
+
+  &-choices
+    border-top: 1px solid $color-light-gray
+    border-bottom: 1px solid $color-light-gray
+
+  &-choice
+    padding: 20px 45px 20px 15px
+    border-bottom: 1px solid $color-light-gray
+    position: relative
+    &:last-child
+      border-bottom: none
+
+  &-choice-icon
+    position: absolute
+    font-size: 25px
+    right: 15px
+    top: 50%
+    margin-top: -12px
+    &.icon-correct
+      color: rgba($color-green, 0.5)
+    &.icon-incorrect
+      color: rgba($color-red, 0.5)
+
+  &-answer-text
+    padding: 0 15px 15px

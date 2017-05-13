@@ -1,0 +1,106 @@
+doctype html
+html
+  include _head
+  body.owner.teams.teams-index
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ストア
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | チーム
+        .l-container.flex.justify-content-space-between
+          .l-side-content.mobile-none
+            .m-side-head
+              | タイプ
+            ul.m-side-nav
+              li
+                a href=""
+                  | オーナー(2)
+              li
+                a href=""
+                  | マネージャー(26)
+              li
+                a href=""
+                  | スタッフ(600)
+            .m-side-head
+              | スタッフ
+            ul.m-side-nav
+              li.active
+                a href=""
+                  | 自分(20)
+              li
+                a href=""
+                  | 東急戸越銀座駅前店(13)
+              li
+                a href=""
+                  | 東急白楽駅前通店(13)
+              li
+                a href=""
+                  | 富士高島町店(14)
+              li
+                a href=""
+                  | 緑区中山店(14)
+          .l-main-content
+            .l-search-head.flex.justify-content-space-between
+              .l-search.l-search-m
+                .m-search
+                  form.m-form.m-search-form
+                    input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="チームを検索" type="text"
+                a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
+                  .icon-sort-list
+              .l-new-btn
+                a.m-btn.m-btn-blue.m-btn-new.mobile-none href=""
+                  | + チーム新規作成
+            .l-table
+              table.m-table.mobile-none
+                thead
+                  tr
+                    th
+                      | アイコン
+                    th.align-left
+                      | 名前
+                      span.icon-sort-down.m-table-sort
+                    th
+                      | TEL
+                    th
+                      | LINE
+                    th
+                      | アプリDL
+                    th
+                      | 作成日
+                    th
+                      | 最終アクセス
+                    th
+                      | 担当マネージャー
+                    th
+                      | その他
+                tbody
+                  tr
+                    td.w10
+                      .icon-profile
+                    td.align-left.w15
+                      | 寺西勁人
+                    td.10
+                      a href=""
+                        | 09012345678
+                    td.w9
+                      .icon-profile
+                    td.w9
+                      .icon-profile
+                    td.w10
+                      | 17.02.27
+                      br
+                      | 13:00
+                    td.w15
+                      | 17.02.27
+                      br
+                      | 13:00
+                    td.w15
+                      | JR飯田橋駅西口店
+                    td.w7
+                      a href=""
+                        .m-table-icon-other.icon-other

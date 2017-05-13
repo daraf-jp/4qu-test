@@ -1,0 +1,15 @@
+doctype html
+html
+  include _head
+  body.owner.stores-public.stores-public-index
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ストア
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 公開
+        include _owner_stores_subheader

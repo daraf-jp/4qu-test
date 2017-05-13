@@ -1,0 +1,36 @@
+.m-tab
+  border-bottom: 1px solid $color-gray
+  margin-bottom: 35px
+  &-list
+    margin-right: 20px
+    margin-bottom: -1px
+    a
+      width: 150px
+      height: 48px
+      border: 1px solid $color-gray
+      justify-content: center
+      align-items: center
+      border-radius: 6px 6px 0 0
+      position: relative
+      color: $color-dark-gray
+      font-size: 13px
+      &:after
+        content: ""
+        position: absolute
+        width: 100%
+        height: 4px
+        border-radius: 6px 6px 0 0
+        background-color: transparent
+        left: 0
+        top: 0
+        transition: all 0.3s
+      &:hover
+        color: $color-link
+        &:after
+          background-color: $color-link
+    &.active
+      a
+        border-bottom-color: #fff
+        color: $color-link
+        &:after
+          background-color: $color-link

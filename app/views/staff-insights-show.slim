@@ -1,0 +1,195 @@
+doctype html
+html
+  include _head
+  body.staff.insights.insights-show
+    .l-wrapper
+      include _staff_header
+      include _staff_exams_subheader
+      .l-main
+        .l-container.flex.justify-content-space-between
+          .l-side-content.mobile-none
+            .m-side-head
+              | 種類
+            ul.m-side-nav
+              li.active
+                a href=""
+                  | 公開テスト
+              li
+                a href=""
+                  | JR飯田橋駅西口店
+              li
+                a href=""
+                  | 自分で作成
+          .l-main-content
+            .l-return
+              a.m-return href="./staff-insights-index.html"
+                .m-return-icon.icon-return.inline-block.align-middle
+                .m-return-text.inline-block.align-middle
+                  | 一覧へ戻る
+            .l-exam-info
+              .m-exam-header-title
+                | 2017.3月度新メニュークイズ
+              .m-exam-header-info
+                .m-exam-header-time-limit
+                  span.m-exam-header-time-limit-title
+                    | 制限時間：
+                  span.m-exam-header-time-limit-num
+                    | 15分
+                .m-exam-header-mode
+                  span.m-exam-header-mode-title
+                    | モード：
+                  span.m-exam-header-mode-text
+                    | テスト
+                .m-exam-header-category
+                  span.m-exam-header-category-title
+                    | カテゴリ：
+                  a.m-tag href=""
+                    | マニュアル
+            .l-insight.flex.align-items-center
+              .l-insight-date
+                .m-insight-date.align-center
+                  | 17.02.27
+                  br
+                  | 13:00
+              .l-insight-correct
+                .m-insight-correct
+                  #correct-progress
+                  / .m-insight-correct-text
+                  /   | 正答率
+              .l-insight-correction
+                .m-insight-correction-text.align-right
+                  | 7/10
+                .m-insight-correction.flex.flex-wrap-wrap
+                  .m-correction.correct
+                  .m-correction.correct
+                  .m-correction.correct
+                  .m-correction.incorrect
+                  .m-correction.correct
+                  .m-correction.correct
+                  .m-correction.incorrect
+                  .m-correction.correct
+                  .m-correction.correct
+                  .m-correction.incorrect
+            .l-graph
+              .l-graph-inner
+                .m-graph-answer-num
+                  | 合計：5回
+                .l-graph-y.flex.justify-content-space-between.flex-direction-column
+                  .m-graph-y-scale.flex.align-items-flex-start.justify-content-flex-end
+                    | 100
+                  .m-graph-y-scale.flex.align-items-center.justify-content-flex-end
+                    | 50
+                  .m-graph-y-scale.flex.align-items-flex-end.justify-content-flex-end
+                    | 0
+                .l-graph-x.flex.justify-content-space-between
+                  .m-graph-x-scale
+                    | 1回目
+                  .m-graph-x-scale
+                    | 2回目
+                  .m-graph-x-scale
+                    | 3回目
+                  .m-graph-x-scale
+                    | 4回目
+                  .m-graph-x-scale
+                    | 5回目
+                .l-graph-content
+                  .l-graph-content-inner.flex
+                    .m-graph-content
+                      .m-graph-point style="bottom: 10%; margin-bottom: -25px;"
+                        .m-graph-point-icon.icon-pentagon
+                        .m-graph-point-num
+                          | 10%
+                    .m-graph-content
+                      .m-graph-point.active style="bottom: 70%; margin-bottom: -29px;"
+                        .m-graph-point-icon.icon-pentagon
+                        .m-graph-point-num
+                          | 70%
+                    .m-graph-content
+                      .m-graph-point style="bottom: 80%; margin-bottom: -29px;"
+                        .m-graph-point-icon.icon-pentagon
+                        .m-graph-point-num
+                          | 80%
+                    .m-graph-content
+                      .m-graph-point style="bottom: 100%; margin-bottom: -29px;"
+                        .m-graph-point-icon.icon-pentagon
+                        .m-graph-point-num
+                          | 100%
+                    .m-graph-content
+                      .m-graph-point style="bottom: 100%; margin-bottom: -29px;"
+                        .m-graph-point-icon.icon-pentagon
+                        .m-graph-point-num
+                          | 100%
+            .l-table
+              table.m-table.mobile-none
+                thead
+                  tr
+                    th
+                      | Q
+                    th.align-left
+                      | 問題文
+                    th
+                      | 解答
+                    th
+                      | 正解
+                    th
+                      | 正誤
+                tbody
+                  tr
+                    td.w10
+                      | 1
+                    td.align-left.w60
+                      a href=""
+                        | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
+                    td.w10
+                      | 1
+                    td.w10
+                      | 1
+                    td.w10
+                      .m-table-icon-correct.icon-correct
+                  tr
+                    td.w10
+                      | 2
+                    td.align-left.w60
+                      a href=""
+                        | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
+                    td.w10
+                      | 1
+                    td.w10
+                      | 2
+                    td.w10
+                      .m-table-icon-incorrect.icon-incorrect
+                  tr
+                    td.w10
+                      | 3
+                    td.align-left.w60
+                      a href=""
+                        | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
+                    td.w10
+                      | 1
+                    td.w10
+                      | 2
+                    td.w10
+                      .m-table-icon-incorrect.icon-incorrect
+                  tr
+                    td.w10
+                      | 4
+                    td.align-left.w60
+                      a href=""
+                        | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
+                    td.w10
+                      | 1
+                    td.w10
+                      | 2
+                    td.w10
+                      .m-table-icon-incorrect.icon-incorrect
+
+javascript:
+  $('#correct-progress').radialIndicator({
+    barColor: '#37CC82',
+    barWidth: 6,
+    initValue: 70,
+    roundCorner : true,
+    percentage: true,
+    fontSize: 24,
+    fontWeight: 400,
+  });
