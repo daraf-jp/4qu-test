@@ -1,7 +1,7 @@
 doctype html
 html
   include _head
-  body.owner.library-exams.library-exams-index
+  body.owner.libraries.libraries-assets.libraries-assets-index
     .l-wrapper
       include _owner_header
       .l-main
@@ -11,7 +11,7 @@ html
           span.m-breadcrumb-arrow
             | >
           span.m-breadcrumb.active
-            | テスト
+            | 画像・動画
         include _owner_exams_subheader
         .l-container.flex.justify-content-space-between
           .l-side-content.mobile-none
@@ -50,12 +50,12 @@ html
               .l-search.l-search-m
                 .m-search
                   form.m-form.m-search-form
-                    input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="テストを検索" type="text"
+                    input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="画像・動画を検索" type="text"
                 a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
                   .icon-sort-list
               .l-new-btn
                 a.m-btn.m-btn-blue.m-btn-new.mobile-none href=""
-                  | + 新規テスト作成
+                  | + 画像・動画を新規作成
             .l-table
               table.m-table.mobile-none
                 thead
@@ -63,87 +63,88 @@ html
                     th
                       | 日付
                       span.icon-sort-down.m-table-sort
-                    th.align-left
-                      | テストのタイトル
                     th
-                      | 集計
-                    th
-                      | 制限時間
-                    th
-                      | 設問数
-                    th
-                      | カテゴリ
+                      | 種類
                       span.icon-sort-down.m-table-sort
+                    th.align-left
+                      | 名前
+                      span.icon-sort-down.m-table-sort
+                    th
+                      | 作成者
+                    th
+                      | スタッフ
+                    th
+                      | 採用数
+                      span.icon-sort-down.m-table-sort
+                    th
+                      | その他
                 tbody
                   tr
-                    td.w15
+                    td.w10
                       | 17.02.27
                       br
                       | 13:00
+                    td.w10
+                      | 画像
                     td.align-left.w35
-                      a href=""
-                        | 3月新メニューテスト
-                    td.15
-                      a href="./owner-library-exams-insight.html"
-                        | 168人(詳細へ)
-                    td.w10
-                      | 15分
-                    td.w10
-                      | 10問
+                      .l-file.flex.align-items-center
+                        .m-file-image
+                          img src="./img/file-image1.png" width="35" height="35"
+                        .m-file-name
+                          | タンドリーチキン.png
                     td.w15
+                      | 寺西勁人
+                    td.w10
+                      .icon-profile
+                    td.w10
                       a.m-tag href=""
-                        | マニュアル
+                        | 3
+                    td.w10
+                      a href=""
+                        .icon-other.m-table-icon-other
                   tr
-                    td.w15
+                    td.w10
                       | 17.02.27
                       br
                       | 13:00
+                    td.w10
+                      | 動画
                     td.align-left.w35
-                      a href=""
-                        | 3月新メニューテスト
-                    td.15
-                      a href="./owner-library-exams-insight.html"
-                        | 168人(詳細へ)
-                    td.w10
-                      | 15分
-                    td.w10
-                      | 10問
+                      .l-file.flex.align-items-center
+                        .m-file-image
+                          img src="./img/file-movie1.png" width="35" height="35"
+                        .m-file-name
+                          | 【発声】いらっしゃいませ①.mp4
                     td.w15
+                      | 寺西勁人
+                    td.w10
+                      .icon-profile
+                    td.w10
                       a.m-tag href=""
-                        | マニュアル
+                        | 3
+                    td.w10
+                      a href=""
+                        .icon-other.m-table-icon-other
                   tr
-                    td.w15
+                    td.w10
                       | 17.02.27
                       br
                       | 13:00
+                    td.w10
+                      | 音声
                     td.align-left.w35
-                      a href=""
-                        | 3月新メニューテスト
-                    td.15
-                      a href="./owner-library-exams-insight.html"
-                        | 168人(詳細へ)
-                    td.w10
-                      | 15分
-                    td.w10
-                      | 10問
+                      .l-file.flex.align-items-center
+                        .m-file-image
+                          img src="./img/file-voice1.png" width="35" height="35"
+                        .m-file-name
+                          | 宅配電話.mp3
                     td.w15
+                      | 寺西勁人
+                    td.w10
+                      .icon-profile
+                    td.w10
                       a.m-tag href=""
-                        | マニュアル
-                  tr
-                    td.w15
-                      | 17.02.27
-                      br
-                      | 13:00
-                    td.align-left.w35
+                        | 3
+                    td.w10
                       a href=""
-                        | 3月新メニューテスト
-                    td.15
-                      a href="./owner-library-exams-insight.html"
-                        | 168人(詳細へ)
-                    td.w10
-                      | 15分
-                    td.w10
-                      | 10問
-                    td.w15
-                      a.m-tag href=""
-                        | マニュアル
+                        .icon-other.m-table-icon-other

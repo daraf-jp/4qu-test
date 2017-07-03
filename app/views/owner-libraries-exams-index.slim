@@ -1,7 +1,7 @@
 doctype html
 html
   include _head
-  body.owner.library-quizzes.library-quizzes-index
+  body.owner.libraries-exams.libraries-exams-index
     .l-wrapper
       include _owner_header
       .l-main
@@ -11,7 +11,7 @@ html
           span.m-breadcrumb-arrow
             | >
           span.m-breadcrumb.active
-            | クイズ
+            | テスト
         include _owner_exams_subheader
         .l-container.flex.justify-content-space-between
           .l-side-content.mobile-none
@@ -20,9 +20,11 @@ html
             ul.m-side-nav
               li.active
                 a href=""
-                  | JR飯田橋駅西口店(20)
+                  | JR飯田橋駅西口店
+                  span.m-side-nav-num
+                    | (20)
             .m-side-head
-              | オーナー(2)
+              | オーナー (2)
             ul.m-side-nav
               li
                 a href=""
@@ -31,31 +33,39 @@ html
                 a href=""
                   | 大鷲専務
             .m-side-head
-              | マネージャー(26)
+              | マネージャー (26)
             ul.m-side-nav
               li
                 a href=""
-                  | 東急戸越銀座駅前店(13)
+                  | 東急戸越銀座駅前店
+                  span.m-side-nav-num
+                    | (13)
               li
                 a href=""
-                  | 東急白楽駅前通店(3)
+                  | 東急白楽駅前通店
+                  span.m-side-nav-num
+                    | (3)
               li
                 a href=""
-                  | 富士高島町店(4)
+                  | 富士高島町店
+                  span.m-side-nav-num
+                    | (4)
               li
                 a href=""
-                  | 緑区中山店(4)
+                  | 緑区中山店
+                  span.m-side-nav-num
+                    | (4)
           .l-main-content
             .l-search-head.flex.justify-content-space-between
               .l-search.l-search-m
                 .m-search
                   form.m-form.m-search-form
-                    input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="クイズを検索" type="text"
+                    input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="テストを検索" type="text"
                 a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
                   .icon-sort-list
               .l-new-btn
                 a.m-btn.m-btn-blue.m-btn-new.mobile-none href=""
-                  | + 新規クイズ作成
+                  | + 新規テスト作成
             .l-table
               table.m-table.mobile-none
                 thead
@@ -64,72 +74,86 @@ html
                       | 日付
                       span.icon-sort-down.m-table-sort
                     th.align-left
-                      | 問題文
+                      | テストのタイトル
                     th
-                      | 作成者
+                      | 集計
                     th
-                      | スタッフ
+                      | 制限時間
                     th
-                      | 採用テスト数
+                      | 設問数
+                    th
+                      | カテゴリ
                       span.icon-sort-down.m-table-sort
                 tbody
                   tr
-                    td.w10
+                    td.w15
                       | 17.02.27
                       br
                       | 13:00
-                    td.align-left.w50
+                    td.align-left.w35
                       a href=""
-                        | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
+                        | 3月新メニューテスト
                     td.15
-                      | 寺西 勁人
+                      a href="./owner-libraries-exams-insight.html"
+                        | 168人(詳細へ)
                     td.w10
-                      .icon-profile
+                      | 15分
+                    td.w10
+                      | 10問
                     td.w15
                       a.m-tag href=""
-                        | 3
+                        | マニュアル
                   tr
-                    td.w10
+                    td.w15
                       | 17.02.27
                       br
                       | 13:00
-                    td.align-left.w50
+                    td.align-left.w35
                       a href=""
-                        | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
+                        | 3月新メニューテスト
                     td.15
-                      | 寺西 勁人
+                      a href="./owner-libraries-exams-insight.html"
+                        | 168人(詳細へ)
                     td.w10
-                      .icon-profile
+                      | 15分
+                    td.w10
+                      | 10問
                     td.w15
                       a.m-tag href=""
-                        | 3
+                        | マニュアル
                   tr
-                    td.w10
+                    td.w15
                       | 17.02.27
                       br
                       | 13:00
-                    td.align-left.w50
+                    td.align-left.w35
                       a href=""
-                        | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
+                        | 3月新メニューテスト
                     td.15
-                      | 寺西 勁人
+                      a href="./owner-libraries-exams-insight.html"
+                        | 168人(詳細へ)
                     td.w10
-                      .icon-profile
+                      | 15分
+                    td.w10
+                      | 10問
                     td.w15
                       a.m-tag href=""
-                        | 3
+                        | マニュアル
                   tr
-                    td.w10
+                    td.w15
                       | 17.02.27
                       br
                       | 13:00
-                    td.align-left.w50
+                    td.align-left.w35
                       a href=""
-                        | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
+                        | 3月新メニューテスト
                     td.15
-                      | 寺西 勁人
+                      a href="./owner-libraries-exams-insight.html"
+                        | 168人(詳細へ)
                     td.w10
-                      .icon-profile
+                      | 15分
+                    td.w10
+                      | 10問
                     td.w15
                       a.m-tag href=""
-                        | 3
+                        | マニュアル

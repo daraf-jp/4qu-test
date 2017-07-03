@@ -1,0 +1,106 @@
+doctype html
+html
+  include _head
+  body.owner.stores.stores-follow.stores-follow-index
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ストア
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 秘密
+        include _owner_stores_subheader
+        .l-container.flex.justify-content-space-between
+          .l-side-content.mobile-none
+            .m-side-head
+              | 種類
+            ul.m-side-nav
+              li
+                a href="./owner-stores-secret-index.html"
+                  | 秘密テスト
+              li.active
+                a href=""
+                  | フォロー企業
+          .l-main-content
+            .l-search.flex.justify-content-flex-end
+              a.m-btn.m-btn-blue.m-btn-new href="./owner-stores-follow-search.html"
+                | + 企業を探す
+            .l-table
+              table.m-table.m-store-company-table
+                thead
+                  tr
+                    th.align-left colspan="4"
+                      | フォローリクエスト
+                tbody
+                  tr
+                    td.w10.align-top
+                      img.m-store-company-avatar src="./img/yahoo.png"
+                    td.w60.align-left
+                      .m-store-company-name
+                        | YAHOO!
+                      .m-store-company-info
+                        .m-store-company-id
+                          | 従業員数：150
+                        .m-store-company-tel
+                          | TEL：0312345678
+                        .m-store-company-address
+                          | 住所：東京都渋谷区神泉町8-13
+                        .m-store-company-url
+                          | URL：https://www.yahoo.co.jp/
+                      .m-store-company-description
+                        | Yahoo公式アカウント
+                    td.w15
+                      a.m-btn.m-btn-blue-transparent.m-store-company-btn href=""
+                        | 許可する
+                    td.w15
+                      a.m-btn.m-btn-gray-transparent.m-store-company-btn href=""
+                        | 拒否する
+              table.m-table.m-store-company-table
+                thead
+                  tr
+                    th.align-left colspan="4"
+                      | フォロー企業
+                tbody
+                  tr
+                    td.w10.align-top
+                      img.m-store-company-avatar src="./img/yoshinoya.png"
+                    td.w75.align-left
+                      .m-store-company-name
+                        | 吉野家
+                      .m-store-company-info
+                        .m-store-company-id
+                          | 従業員数：150
+                        .m-store-company-tel
+                          | TEL：0312345678
+                        .m-store-company-address
+                          | 住所：東京都渋谷区神泉町8-13
+                        .m-store-company-url
+                          | URL：https://www.yoshinoya.com/
+                      .m-store-company-description
+                        | (株)吉野家が運営する公式アカウントです。日常で感じたことや、吉野家のお得な情報をつぶやきます。 なお、店舗や商品に関するお問い合わせは、お問い合わせフォームhttps://customer.yoshinoya.com/contact/index  よりご連絡ください。
+                    td.w15
+                      .m-store-company-following
+                        | フォロー中
+                  tr
+                    td.w10.align-top
+                      img.m-store-company-avatar src="./img/cocoichi.png"
+                    td.w75.align-left
+                      .m-store-company-name
+                        | CoCo壱番屋
+                      .m-store-company-info
+                        .m-store-company-id
+                          | 従業員数：150
+                        .m-store-company-tel
+                          | TEL：0312345678
+                        .m-store-company-address
+                          | 住所：東京都渋谷区神泉町8-13
+                        .m-store-company-url
+                          | URL：http://www.ichibanya.co.jp/comp/
+                      .m-store-company-description
+                        | 株式会社壱番屋は、カレーハウスCoCo壱番屋を運営する日本のカレー専門店チェーンです。
+                    td.w15
+                      .m-store-company-following
+                        | フォロー中

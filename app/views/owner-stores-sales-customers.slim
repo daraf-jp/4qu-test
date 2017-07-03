@@ -1,0 +1,95 @@
+doctype html
+html
+  include _head
+  body.owner.stores.stores-sales.stores-sales-customers
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ストア
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 売上管理
+        include _owner_stores_subheader
+        .l-container.flex.justify-content-space-between
+          .l-side-content.mobile-none
+            .m-side-head
+              | 売上管理
+            ul.m-side-nav
+              li
+                a href="./owner-stores-sales-index.html"
+                  | 売上
+              li
+                a href=""
+                  | 送金
+              li
+                a href="./owner-stores-sales-exams.html"
+                  | 販売中のテスト
+              li.active
+                a href="./owner-stores-sales-customers.html"
+                  | 顧客・購入者
+          .l-main-content
+            .l-search-head.flex.justify-content-space-between
+              .l-search.l-search-m
+                .m-search
+                  form.m-form.m-search-form
+                    input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="顧客・購入者を検索" type="text"
+                a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
+                  .icon-sort-list
+            .l-table
+              table.m-table
+                thead
+                  tr
+                    th
+                      | 画像
+                    th.align-left
+                      | 企業名
+                    th
+                      | 従業員数
+                    th.align-left
+                      | 基本情報
+                    th.align-left
+                      | 直近の購入
+                    th
+                      | 購入数
+                tbody
+                  tr
+                    td.w10
+                      img src="./img/yoshinoya.png" width="45" height="45"
+                    td.w20.align-left
+                      | 吉野家
+                    td.w10
+                      | 150
+                    td.w35.align-left
+                      | TEL：0312345678
+                      br
+                      | 住所：東京都渋谷区神泉町8-13
+                      br
+                      | URL：https://www.yoshinoya.com/
+                    td.w15.align-left
+                      | 17.02.27
+                      br
+                      | ストレスケア
+                    td.w10
+                      | 12
+                  tr
+                    td.w10
+                      img src="./img/cocoichi.png" width="45" height="45"
+                    td.w20.align-left
+                      | CoCo壱番屋
+                    td.w10
+                      | 150
+                    td.w35.align-left
+                      | TEL：0312345678
+                      br
+                      | 住所：東京都渋谷区神泉町8-13
+                      br
+                      | URL：http://www.ichibanya.co.jp/comp/
+                    td.w15.align-left
+                      | 17.02.27
+                      br
+                      | ストレスケア
+                    td.w10
+                      | 12

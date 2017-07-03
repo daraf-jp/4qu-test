@@ -1,0 +1,99 @@
+doctype html
+html
+  include _head
+  body.owner.stores.stores-sales.stores-sales-exams
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ストア
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 売上管理
+        include _owner_stores_subheader
+        .l-container.flex.justify-content-space-between
+          .l-side-content.mobile-none
+            .m-side-head
+              | 売上管理
+            ul.m-side-nav
+              li
+                a href="./owner-stores-sales-index.html"
+                  | 売上
+              li
+                a href=""
+                  | 送金
+              li.active
+                a href="./owner-stores-sales-exams.html"
+                  | 販売中のテスト
+              li
+                a href="./owner-stores-sales-customers.html"
+                  | 顧客・購入者
+          .l-main-content
+            .l-search-head.flex.justify-content-space-between
+              .l-search.l-search-m
+                .m-search
+                  form.m-form.m-search-form
+                    input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="テストを検索" type="text"
+                a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
+                  .icon-sort-list
+              .l-new-btn
+                a.m-btn.m-btn-blue.m-btn-new.mobile-none href=""
+                  | + 新規テスト作成
+            .l-table
+              table.m-table
+                thead
+                  tr
+                    th
+                      | 日付
+                      span.icon-sort-down.m-table-sort
+                    th
+                      | 画像
+                    th.align-left
+                      | タイトル
+                    th
+                      | 価格
+                    th
+                      | 範囲
+                    th
+                      | クイズ数
+                    th.align-left
+                      | 説明文
+                tbody
+                  tr
+                    td.w10
+                      | 17.02.27
+                      br
+                      | 13:00
+                    td.w10
+                      .m-table-exam-image(style="background-image: url('./img/exam-eyecatch3.jpg');")
+                    td.w20.align-left
+                      a href=""
+                        | ストレスケア
+                    td.w10
+                      | ¥400
+                    td.w10
+                      | 公開
+                    td.w10
+                      | 10問
+                    td.w30.align-left
+                      | 複雑な社会や人間関係の中でストレスをためてしまい、体調をくずす方が増えてきています。
+                  tr
+                    td.w10
+                      | 17.02.27
+                      br
+                      | 13:00
+                    td.w10
+                      .m-table-exam-image(style="background-image: url('./img/exam-eyecatch4.jpg');")
+                    td.w20.align-left
+                      a href=""
+                        | SNSリスクテラシー
+                    td.w10
+                      | ¥400
+                    td.w10
+                      | 公開
+                    td.w10
+                      | 10問
+                    td.w30.align-left
+                      | 企業の従業員に求められるSNS利用のための基本的な知識です。この知識を従業員は理解していますか？

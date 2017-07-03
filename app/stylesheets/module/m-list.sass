@@ -1,0 +1,53 @@
+.m-list
+
+  &-head
+    background-color: #f1f1f1
+    padding: 8px 20px 8px
+    color: $color-dark-gray
+    font-size: 12px
+    border-bottom: 1px solid $color-light-gray
+
+  &-item
+    border-bottom: 1px solid $color-light-gray
+
+  &-left
+    display: flex
+    align-items: center
+
+  &-link
+    display: flex
+    justify-content: space-between
+    padding: 20px 30px
+    color: $color-base
+    position: relative
+
+    &:after
+      transition: all 0.3s
+      content: ""
+      position: absolute
+      width: 4px
+      height: 100%
+      background-color: transparent
+      left: 0
+      top: 0
+
+    &:hover
+      color: $color-link
+
+      &:after
+        background-color: $color-link
+
+  &-icon
+    font-size: 23px
+    margin-right: 10px
+
+  &-right
+    display: flex
+    align-items: center
+
+  &-data
+    margin-right: 10px
+    color: $color-dark-gray
+
+  &-arrow
+    color: $color-gray

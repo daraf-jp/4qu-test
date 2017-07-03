@@ -1,0 +1,81 @@
+doctype html
+html
+  include _head
+  body.owner.stores.stores-follow.stores-follow-search
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ストア
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 秘密
+        include _owner_stores_subheader
+        .l-container.flex.justify-content-space-between
+          .l-side-content.mobile-none
+            .m-side-head
+              | 種類
+            ul.m-side-nav
+              li
+                a href="./owner-stores-secret-index.html"
+                  | 秘密テスト
+              li.active
+                a href="./owner-stores-follow-index.html"
+                  | フォロー企業
+          .l-main-content
+            .l-search-head.flex.justify-content-space-between
+              .l-search.l-search-m
+                .m-search
+                  form.m-form.m-search-form
+                    input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="企業を検索" type="text"
+                a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
+                  .icon-sort-list
+            .l-table
+              table.m-table.m-store-company-table
+                thead
+                  tr
+                    th.align-left colspan="4"
+                      | 検索結果：すべて
+                tbody
+                  tr
+                    td.w10.align-top
+                      img.m-store-company-avatar src="./img/yoshinoya.png"
+                    td.w75.align-left
+                      .m-store-company-name
+                        | 吉野家
+                      .m-store-company-info
+                        .m-store-company-id
+                          | 従業員数：150
+                        .m-store-company-tel
+                          | TEL：0312345678
+                        .m-store-company-address
+                          | 住所：東京都渋谷区神泉町8-13
+                        .m-store-company-url
+                          | URL：https://www.yoshinoya.com/
+                      .m-store-company-description
+                        | (株)吉野家が運営する公式アカウントです。日常で感じたことや、吉野家のお得な情報をつぶやきます。 なお、店舗や商品に関するお問い合わせは、お問い合わせフォームhttps://customer.yoshinoya.com/contact/index  よりご連絡ください。
+                    td.w15
+                      a.m-btn.m-btn-blue-transparent.m-store-company-btn
+                        | フォロー申請
+                  tr
+                    td.w10.align-top
+                      img.m-store-company-avatar src="./img/cocoichi.png"
+                    td.w75.align-left
+                      .m-store-company-name
+                        | CoCo壱番屋
+                      .m-store-company-info
+                        .m-store-company-id
+                          | 従業員数：150
+                        .m-store-company-tel
+                          | TEL：0312345678
+                        .m-store-company-address
+                          | 住所：東京都渋谷区神泉町8-13
+                        .m-store-company-url
+                          | URL：http://www.ichibanya.co.jp/comp/
+                      .m-store-company-description
+                        | 株式会社壱番屋は、カレーハウスCoCo壱番屋を運営する日本のカレー専門店チェーンです。
+                    td.w15
+                      a.m-btn.m-btn-blue-transparent.m-store-company-btn
+                        | フォロー申請

@@ -118,18 +118,56 @@
 .fixed
   position: fixed
 
+// color
+.red
+  color: $color-red
+
 // width
 @for $i from 1 through 100
   $width-p: percentage($i/100)
   .w#{$i}
     width: $width-p
 
+// tablet
+.tablet
+  display: none !important
+
 // mobile
 .mobile
   display: none !important
 
+@media only screen and (max-width: 767px)
+  .tablet
+    display: inherit !important
+  .tablet-inline
+    display: inline !important
+  .tablet-block
+    display: block !important
+  .tablet-inline-block
+    display: inline-block !important
+  .tablet-table
+    display: table !important
+  .tablet-table-cell
+    display: table-cell !important
+  .tablet-flex
+    display: flex !important
+  .tablet-none
+    display: none !important
+
 @media only screen and (max-width: 414px)
   .mobile
     display: inherit !important
+  .mobile-inline
+    display: inline !important
+  .mobile-block
+    display: block !important
+  .mobile-inline-block
+    display: inline-block !important
+  .mobile-table
+    display: table !important
+  .mobile-table-cell
+    display: table-cell !important
+  .mobile-flex
+    display: flex !important
   .mobile-none
     display: none !important

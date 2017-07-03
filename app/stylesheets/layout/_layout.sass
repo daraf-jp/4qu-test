@@ -35,17 +35,20 @@ body
 
     .l-header-left
       flex: 1
+
       .m-btn-group
         .m-btn
           width: 110px
           height: 35px
           padding: 7px
           font-size: 13px
+
           &:hover
             box-shadow: none
 
     .l-header-center
       flex: 1
+
       img
         height: 40px
         display: block
@@ -53,33 +56,45 @@ body
 
     .l-header-right
       flex: 1
+
       ul
         display: table
+
         li
           display: table-cell
           vertical-align: middle
           padding-right: 45px
+
           &:last-child
             padding-right: 0
+
           a
             color: $color-base
+
             .icon
               font-size: 25px
+
             &:hover
               color: $color-link
+
           .user
             display: table
+
             .user-avatar
               display: table-cell
               vertical-align: middle
               padding-right: 10px
+
               .icon-profile
                 font-size: 30px
+
             .user-info
               display: table-cell
               vertical-align: middle
+
               .user-name
                 font-weight: 500
+
               .user-id
                 font-size: 13px
                 color: $color-gray
@@ -146,11 +161,13 @@ body
               color: $color-link
 
 .l-header-mobile
+
   .l-header-mobile-left
     position: fixed
     bottom: 20px
     left: 15px
     z-index: 9998
+
     ul
       li
         &.menu
@@ -164,8 +181,10 @@ body
             background-color: $color-link
             box-shadow: 0 3px 1px rgba($color-text, 0.3)
             color: #fff
+
             .icon
               font-size: 25px
+
         &.logo
           a
             display: block
@@ -175,16 +194,20 @@ body
             background-color: $color-base
             border-radius: 5px
             box-shadow: 0 3px 1px rgba($color-text, 0.3)
+
             img
               width: 100%
               display: block
+
         &:nth-child(1)
           margin-bottom: 15px
+
   .l-header-mobile-right
     position: fixed
     bottom: 20px
     right: 15px
     z-index: 9998
+
     ul
       li
         a
@@ -197,8 +220,10 @@ body
           background-color: $color-link
           box-shadow: 0 3px 1px rgba($color-text, 0.3)
           color: #fff
+
           .icon
             font-size: 25px
+
         &:nth-child(1)
           margin-bottom: 15px
 
@@ -207,21 +232,33 @@ body
   width: 100%
   height: 75px
   box-shadow: 0 1px 0 rgba($color-text, 0.2)
+  display: flex
+  margin-bottom: 60px
+
   li
     height: 75px
-    display: table
-    text-align: center
-    float: left
+    display: flex
+    justify-content: center
+    align-items: center
     position: relative
+    flex: 1
+
     a
-      display: table-cell
-      vertical-align: middle
       color: $color-dark-gray
+      width: 100%
+      height: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+
       .icon
         font-size: 32px
+
       .title
         font-size: 12px
         margin-top: 4px
+
       &:after
         transition: all 0.3s
         content: ""
@@ -231,27 +268,19 @@ body
         left: 0
         bottom: 0
         position: absolute
+
       &:hover
         color: $color-link
+
         &:after
           background-color: $color-link
+
     &.active
       a
         color: $color-link
+
         &:after
           background-color: $color-link
-  &-owner-exams
-    margin-bottom: 60px
-    li
-      width: 33.333%
-  &-owner-stores
-    margin-bottom: 60px
-    li
-      width: 25%
-  &-staff-exams
-    margin-bottom: 60px
-    li
-      width: 25%
 
 // main
 .l-main-content
@@ -292,6 +321,11 @@ body
 
 .l-exam-setting
   width: 900px
+  margin: 0 auto
+  padding-top: 30px
+
+.l-setting
+  width: 700px
   margin: 0 auto
   padding-top: 30px
 
@@ -395,6 +429,10 @@ body
       position: absolute
       top: 50%
 
+// store
+.l-store
+  &-exam
+    width: 780px
 
 // スマホ用のスタイル
 @media only screen and (max-width: 414px)

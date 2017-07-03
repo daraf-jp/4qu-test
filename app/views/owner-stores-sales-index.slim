@@ -1,0 +1,164 @@
+doctype html
+html
+  include _head
+  body.owner.stores.stores-sales.stores-sales-index
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ストア
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 売上管理
+        include _owner_stores_subheader
+        .l-container.flex.justify-content-space-between
+          .l-side-content.mobile-none
+            .m-side-head
+              | 売上管理
+            ul.m-side-nav
+              li.active
+                a href="./owner-stores-sales-index.html"
+                  | 売上
+              li
+                a href=""
+                  | 送金
+              li
+                a href="./owner-stores-sales-exams.html"
+                  | 販売中のテスト
+              li
+                a href="./owner-stores-sales-customers.html"
+                  | 顧客・購入者
+          .l-main-content
+            .sales-boxes
+              .sales-box.sales-month
+                .box-left
+                  .icon-profit.icon
+                .box-right
+                  .title
+                    | 今月の売上
+                  .data
+                    | ¥105,000
+              .sales-box.sales-exams
+                .box-left
+                  .icon-test.icon
+                .box-right
+                  .title
+                    | 販売中のテスト
+                  .data
+                    | 8
+              .sales-box.sales-customer
+                .box-left
+                  .icon-team.icon
+                .box-right
+                  .title
+                    | 顧客数
+                  .data
+                    | 120
+            .l-sales-graph
+              .graph-head
+                form.graph-head-left
+                  select.m-form-control
+                    option 2017.06
+                    option 2017.05
+                  a.m-btn.m-btn-gray-transparent
+                    | 表示
+              canvas id="sales-graph"
+            .l-table
+              .m-table-head
+                | 販売ログ
+              table.m-table
+                thead
+                  tr
+                    th
+                      | 日付
+                      span.icon-sort-down.m-table-sort
+                    th.align-left
+                      | タイトル
+                    th
+                      | 価格
+                    th
+                      | 範囲
+                    th
+                      | 購入の種類
+                    th.align-left
+                      | 購入者
+                    th
+                      | 注文番号
+                tbody
+                  tr
+                    td.w10
+                      | 17.02.27
+                      br
+                      | 13:00
+                    td.align-left.w25
+                      a href=""
+                        | ビジネスマナー
+                    td.w10
+                      | ¥150
+                    td.w10
+                      | 公開
+                    td.w10
+                      | レンタル
+                    td.align-left.w25
+                      | 株式会社スカイスクレイパー
+                    td.w10
+                      | 98765456
+                  tr
+                    td.w10
+                      | 17.02.27
+                      br
+                      | 13:00
+                    td.align-left.w25
+                      a href=""
+                        | ストレスケア
+                    td.w10
+                      | ¥400
+                    td.w10
+                      | 公開
+                    td.w10
+                      | 購入
+                    td.align-left.w25
+                      | 株式会社スカイスクレイパー
+                    td.w10
+                      | 98765456
+                  tr
+                    td.w10
+                      | 17.02.27
+                      br
+                      | 13:00
+                    td.align-left.w25
+                      a href=""
+                        | SNSリテラシー
+                    td.w10
+                      | ¥400
+                    td.w10
+                      | 秘密
+                    td.w10
+                      | 購入
+                    td.align-left.w25
+                      | 株式会社スカイスクレイパー
+                    td.w10
+                      | 98765456
+
+javascript:
+  var ctx = document.getElementById("sales-graph").getContext('2d');
+  var myLineChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ["06-01","06-02","06-03","06-04","06-05","06-06","06-07","06-08","06-09","06-10","06-11","06-12","06-13","06-14","06-15","06-16","06-17","06-18","06-19","06-20","06-21","06-22","06-23","06-24","06-25","06-26","06-27","06-28","06-29","06-30"],
+        datasets: [{
+          label: '売上',
+          data: [150, 1200, 400, 600, 1200, 300, 800, 400, 600, 900, 700, 1200, 1000, 1200, 400, 600, 1200, 300, 800, 400, 600, 900, 700, 1200, 600, 900, 700, 1200, 1100, 1000],
+          backgroundColor: [
+            'rgba(62, 143, 230, 0.1)'
+          ],
+          borderColor: [
+            'rgba(62,143,230,1)'
+          ],
+          borderWidth: 1,
+          lineTension: 0
+        }]
+      },
+  });

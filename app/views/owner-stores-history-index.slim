@@ -1,0 +1,160 @@
+doctype html
+html
+  include _head
+  body.owner.stores.stores-history.stores-history-index
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ストア
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 購入履歴
+        include _owner_stores_subheader
+        .l-container
+          .l-search-head.flex.justify-content-space-between
+            .l-search.l-search-m
+              .m-search
+                form.m-form.m-search-form
+                  input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="購入履歴を検索" type="text"
+              a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
+                .icon-sort-list
+          .l-table
+            table.m-table
+              thead
+                tr
+                  th
+                    | 購入日
+                    span.icon-sort-down.m-table-sort
+                  th
+                    | 画像
+                  th.align-left
+                    | テストのタイトル
+                  th.align-left
+                    | 販売者
+                  th
+                    | 範囲
+                  th
+                    | 利用
+                  th
+                    | 価格
+                  th
+                    | 購入者
+                  th
+                    | 注文番号
+                  th
+                    | 領収書
+              tbody
+                tr
+                  td.w5
+                    | 17.02.27
+                    br
+                    | 13:00
+                  td.w10
+                    .m-table-exam-image(style="background-image: url('./img/exam-eyecatch2.png');")
+                  td.align-left.w20
+                    a href=""
+                      | お会計時の言葉使いと知識
+                  td.align-left.w15
+                    a href=""
+                      | 株式会社スカイスクレイパー
+                  td.w5
+                    | 秘密
+                  td.w10
+                    | レンタル
+                    br
+                    | (残り14日)
+                  td.w5
+                    | ¥150
+                  td.w10
+                    | 寺西勁人
+                  td.w10
+                    | 98765456
+                  td.w10
+                    a href=""
+                      | 領収書
+                tr
+                  td.w5
+                    | 17.02.27
+                    br
+                    | 13:00
+                  td.w10
+                    .m-table-exam-image(style="background-image: url('./img/exam-eyecatch3.jpg');")
+                  td.align-left.w20
+                    a href=""
+                      | ストレスケア
+                  td.align-left.w15
+                    a href=""
+                      | 株式会社ダラフ
+                  td.w5
+                    | 公開
+                  td.w10
+                    | 購入済み
+                  td.w5
+                    | ¥400
+                  td.w10
+                    | 寺西勁人
+                  td.w10
+                    | 98765457
+                  td.w10
+                    a href=""
+                      | 領収書
+                tr
+                  td.w5
+                    | 17.02.27
+                    br
+                    | 13:00
+                  td.w10
+                    .m-table-exam-image(style="background-image: url('./img/exam-eyecatch4.jpg');")
+                  td.align-left.w20
+                    a href=""
+                      | SNSリテラシー
+                  td.align-left.w15
+                    a href=""
+                      | 株式会社ダラフ
+                  td.w5
+                    | 公開
+                  td.w10
+                    | レンタル
+                    br
+                    | (残り7日)
+                  td.w5
+                    | ¥150
+                  td.w10
+                    | 寺西勁人
+                  td.w10
+                    | 98765457
+                  td.w10
+                    a href=""
+                      | 領収書
+                tr
+                  td.w5
+                    | 17.02.27
+                    br
+                    | 13:00
+                  td.w10
+                    .m-table-exam-image(style="background-image: url('./img/exam-eyecatch5.jpg');")
+                  td.align-left.w20
+                    a href=""
+                      | 飲食店の接客英語
+                  td.align-left.w15
+                    a href=""
+                      | 株式会社ダラフ
+                  td.w5
+                    | 公開
+                  td.w10
+                    | レンタル
+                    br
+                    span.red
+                      | (残り1日)
+                  td.w5
+                    | ¥150
+                  td.w10
+                    | 寺西勁人
+                  td.w10
+                    | 98765457
+                  td.w10
+                    a href=""
+                      | 領収書

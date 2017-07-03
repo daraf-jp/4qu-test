@@ -1,0 +1,157 @@
+doctype html
+html
+  include _head
+  body.owner.settings.settings-user
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | 設定
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | ユーザー
+        include _owner_settings_subheader
+        .l-setting
+          form
+            .m-head-setting
+              | 基本情報
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 名前
+              .l-form-group-right
+                input.m-form-control.m-form-group-control type="text" placeholder="名前を入力"
+                .m-form-group-annotation
+                  | 4文字〜20文字
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | メールアドレス
+              .l-form-group-right
+                input.m-form-control.m-form-group-control type="text" placeholder="メールアドレスを入力"
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | アイコン
+              .l-form-group-right.flex.align-items-center
+                .m-form-upload-image
+                  img src="./img/default-avatar.png" width="70" height="70"
+                .m-form-upload
+                  input type="file"
+                  a.m-form-upload-btn.m-btn.m-btn-gray-transparent href="/"
+                    | ファイルを選択
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 権限
+              .l-form-group-right
+                input.m-form-control.m-form-select.m-form-group-control type="text" placeholder="権限を選択"
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | ステータス
+              .l-form-group-right
+            .l-form-submit
+              a.m-btn.m-btn-blue-transparent.m-form-submit href=""
+                | 更新する
+          form
+            .m-head-setting
+              | 通知設定
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | email
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="email" id="email-on" checked=""
+                    label.m-form-switch-radio-label for="email-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="email" id="email-off"
+                    label.m-form-switch-radio-label for="email-off"
+                      | OFF
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | iPhone
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="iphone" id="iphone-on" checked=""
+                    label.m-form-switch-radio-label for="iphone-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="iphone" id="iphone-off"
+                    label.m-form-switch-radio-label for="iphone-off"
+                      | OFF
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | Android
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="android" id="android-on" checked=""
+                    label.m-form-switch-radio-label for="android-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="android" id="android-off"
+                    label.m-form-switch-radio-label for="android-off"
+                      | OFF
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | LINE
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="line" id="line-on" checked=""
+                    label.m-form-switch-radio-label for="line-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="line" id="line-off"
+                    label.m-form-switch-radio-label for="line-off"
+                      | OFF
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | Slack
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="slack" id="slack-on" checked=""
+                    label.m-form-switch-radio-label for="slack-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="slack" id="slack-off"
+                    label.m-form-switch-radio-label for="slack-off"
+                      | OFF
+            .l-form-submit
+              a.m-btn.m-btn-blue-transparent.m-form-submit href=""
+                | 更新する
+          form
+            .m-head-setting
+              | パスワード変更
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 現在のパスワード
+              .l-form-group-right
+                input.m-form-control.m-form-group-control type="text" placeholder="現在のパスワードを入力"
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 新しいパスワード
+              .l-form-group-right
+                input.m-form-control.m-form-group-control type="text" placeholder="新しいパスワードを入力"
+                .m-form-group-annotation
+                  | 英数字6文字以上32文字以下
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 新しいパスワード(確認)
+              .l-form-group-right
+                input.m-form-control.m-form-group-control type="text" placeholder="新しいパスワード(確認)を入力"
+                .m-form-group-annotation
+                  | 英数字6文字以上32文字以下
+            .l-form-submit
+              a.m-btn.m-btn-blue-transparent.m-form-submit href=""
+                | 更新する

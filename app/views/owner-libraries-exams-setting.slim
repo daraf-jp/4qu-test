@@ -1,7 +1,7 @@
 doctype html
 html
   include _head
-  body.owner.library-exam.library-exam-setting
+  body.owner.libraries.libraries-exam.libraries-exam-setting
     .l-wrapper
       include _owner_header
       .l-main
@@ -32,7 +32,7 @@ html
                 .m-form-group-label
                   | カテゴリ
               .l-form-group-right
-                input.m-form-control.m-form-select.m-form-group-control type="text" placeholder="カテゴリを選択"
+                input.m-form-control.m-form-control-half.m-form-group-control type="text" placeholder="カテゴリを選択"
                 a.m-btn.m-btn-gray-transparent.m-form-category-btn href=""
                   | + 新規カテゴリ
             .l-form-group
@@ -161,7 +161,8 @@ html
                     input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="expiration" id="expiration-off" checked=""
                     label.m-form-switch-radio-label for="expiration-off"
                       | OFF
-                  input.m-form-control.m-form-calendar.m-form-group-control type="text" placeholder="年/月/日"
+                  .m-form-switch-data
+                    input.m-form-control.m-form-control-half.m-form-group-control type="calendar" placeholder="年/月/日"
             .l-form-group
               .l-form-group-left
                 .m-form-group-label
@@ -176,7 +177,7 @@ html
                     label.m-form-switch-radio-label for="pin-code-off"
                       | OFF
                   .m-form-switch-data
-                    input.m-form-control.m-form-calendar.m-form-group-control type="text" placeholder="1234"
+                    input.m-form-control.m-form-control-half.m-form-group-control type="text" placeholder="1234"
                     .m-form-group-annotation
                       | 数字で4桁
             .l-form-group
@@ -193,7 +194,7 @@ html
                     label.m-form-switch-radio-label for="exam-time-limit-off"
                       | OFF
                   .m-form-switch-data
-                    input.m-form-control.m-form-calendar.m-form-group-control type="text" placeholder="10"
+                    input.m-form-control.m-form-control-half.m-form-group-control type="text" placeholder="10"
                     .m-form-group-annotation
                       | 単位：分
             .l-form-group
@@ -210,7 +211,7 @@ html
                     label.m-form-switch-radio-label for="quiz-countdown-off"
                       | OFF
                   .m-form-switch-data
-                    input.m-form-control.m-form-calendar.m-form-group-control type="text" placeholder="15"
+                    input.m-form-control.m-form-control-half.m-form-group-control type="text" placeholder="15"
                     .m-form-group-annotation
                       | 単位：秒
             .l-form-group

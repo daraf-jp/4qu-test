@@ -5,19 +5,34 @@
     color: $color-dark-gray
 
   &-nav
+
+    &-num
+      color: $color-gray
+      margin-left: 4px
+      transition: all 0.3s
+
     li
       a
         font-size: 13px
         color: $color-text
         display: block
         padding: 12px 0 12px 12px
+
         &:hover
           color: $color-link
           background-color: rgba($color-link, 0.1)
+
+          .m-side-nav-num
+            color: $color-link
+
       &.active
         a
           background-color: rgba($color-link, 0.1)
           color: $color-link
           border-left: 4px solid $color-link
+
+          .m-side-nav-num
+            color: $color-link
+
     & + .m-side-head
       margin-top: 30px

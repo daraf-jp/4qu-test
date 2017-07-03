@@ -1,0 +1,256 @@
+doctype html
+html
+  include _head
+  body.owner.settings.settings-payment
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | 設定
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 支払い
+        include _owner_settings_subheader
+        .l-container.flex.justify-content-space-between
+          .l-setting
+            .payment-content
+              .m-head-setting
+                | ご利用プラン
+              .l-table
+                table.m-table
+                  thead
+                    tr
+                      th.align-left
+                        | ご利用中のプラン
+                      th
+                        | 月間解答数
+                      th
+                        | ご利用の期間
+                      th
+                        | 次回の引き落とし
+                      th
+                        | 変更
+                  tbody
+                    tr
+                      td.w20.align-left
+                        | スタートプラン
+                      td.w20
+                        | 300
+                      td.w20
+                        | 17/06/04 - 17/07/03
+                      td.w20
+                        | 17/08/04
+                      td.w20
+                        a.m-btn.m-btn-blue-transparent.edit-btn href=""
+                          | プラン変更
+            .payment-content
+              .m-head-setting
+                | お支払い方法
+              .l-table
+                table.m-table
+                  thead
+                    tr
+                      th
+                        | ご登録カード
+                      th
+                        | 有効期限
+                      th
+                        | 名義人
+                      th
+                        | 編集
+                  tbody
+                    tr
+                      td.w30
+                        .registration-card.flex.align-items-center.justify-content-center
+                          img src="./img/visa.png" width="40"
+                          .card-info
+                            | VISA 下4桁 5012
+                      td.w15
+                        | 09/2020
+                      td.w30
+                        | HITOSHI SAIWAKI
+                      td.w20
+                        a.m-btn.m-btn-gray-transparent.edit-btn href=""
+                          | 編集する
+            .payment-content
+              .m-head-setting
+                | 今月のお支払い総額
+              .payment-box.flex.align-items-center.justify-content-space-between
+                .box-left
+                  .title.flex.align-items-center
+                    .payment-month
+                      | 2017年6月
+                    .text
+                      | お支払い総額
+                  .payment-date
+                    | お支払い日：17/07/03
+                .box-right
+                  .payment-price
+                    | ¥ 2,500
+              .l-table
+                table.m-table
+                  thead
+                    tr
+                      th
+                        |
+                      th
+                        | 日付
+                      th
+                        | ID
+                      th
+                        | 料金
+                      th
+                        | 種類
+                      th
+                        | PDF
+                  tbody
+                    tr
+                      td.w6
+                        .icon-check
+                      td.w14
+                        | 17/06/04
+                      td.w15
+                        | 219HE0123
+                      td.w20
+                        | ¥1,500
+                      td.w20
+                        | 月額利用料
+                      td.w25
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 請求書
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 領収書
+                    tr
+                      td.w6
+                        .icon-check
+                      td.w14
+                        | 17/06/04
+                      td.w15
+                        | 219HE0123
+                      td.w20
+                        | ¥400
+                      td.w20
+                        | ストア購入
+                      td.w25
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 請求書
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 領収書
+                    tr
+                      td.w6
+                        .icon-check
+                      td.w14
+                        | 17/06/04
+                      td.w15
+                        | 219HE0123
+                      td.w20
+                        | ¥400
+                      td.w20
+                        | ストア購入
+                      td.w25
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 請求書
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 領収書
+                    tr
+                      td.w6
+                        .icon-check
+                      td.w14
+                        | 17/06/04
+                      td.w15
+                        | 219HE0123
+                      td.w20
+                        | ¥200
+                      td.w20
+                        | ストア購入
+                      td.w25
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 請求書
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 領収書
+            .payment-content
+              .m-head-setting
+                | 支払い履歴
+              .l-table
+                table.m-table
+                  thead
+                    tr
+                      th
+                        |
+                      th
+                        | 日付
+                      th
+                        | ID
+                      th
+                        | 料金
+                      th
+                        | 種類
+                      th
+                        | PDF
+                  tbody
+                    tr
+                      td.w6
+                        .icon-check
+                      td.w14
+                        | 17/06/04
+                      td.w15
+                        | 219HE0123
+                      td.w20
+                        | ¥1,500
+                      td.w20
+                        | 月額利用料
+                      td.w25
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 請求書
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 領収書
+                    tr
+                      td.w6
+                        .icon-incorrect
+                      td.w14
+                        | 17/06/04
+                      td.w15
+                        | 219HE0123
+                      td.w20
+                        | ¥400
+                      td.w20
+                        | ストア購入
+                      td.w25
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 請求書
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 領収書
+                    tr
+                      td.w6
+                        .icon-check
+                      td.w14
+                        | 17/06/04
+                      td.w15
+                        | 219HE0123
+                      td.w20
+                        | ¥400
+                      td.w20
+                        | ストア購入
+                      td.w25
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 請求書
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 領収書
+                    tr
+                      td.w6
+                        .icon-check
+                      td.w14
+                        | 17/06/04
+                      td.w15
+                        | 219HE0123
+                      td.w20
+                        | ¥200
+                      td.w20
+                        | ストア購入
+                      td.w25
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 請求書
+                        a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                          | 領収書
