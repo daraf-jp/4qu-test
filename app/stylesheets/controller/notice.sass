@@ -111,3 +111,92 @@
             .name
               font-weight: 500
               margin-left: 10px
+
+  &-send
+
+    .send-lists
+      width: 630px
+
+      .send-list
+        border: 1px solid $color-gray
+        margin-top: 20px
+
+        .send-link
+          padding: 15px
+          color: $color-text
+          border-bottom: 1px solid $color-gray
+          position: relative
+          display: block
+
+          &:last-child, &:only-child
+            border-bottom: none
+
+          &:hover
+            background-color: rgba($color-link, 0.1)
+
+          .detail
+            .detail-header
+              .title
+                font-size: 16px
+                font-weight: 500
+
+              .date
+                font-size: 12px
+                color: $color-dark-gray
+                text-align: right
+
+              .send-status
+                display: flex
+                margin: 10px 0
+                font-size: 13px
+
+                strong
+                  font-weight: 300
+                  color: $color-dark-gray
+                  border: 1px solid $color-dark-gray
+                  font-size: 11px
+                  width: 40px
+                  height: 20px
+                  border-radius: 10px
+                  display: flex
+                  justify-content: center
+                  align-items: center
+                  margin-right: 5px
+
+                .send-num
+                  margin-right: 15px
+
+            .detail-body
+              .detail-content
+                .text
+                  font-size: 13px
+
+    .send-content
+      width: 440px
+      border: 1px solid $color-gray
+
+      .send-user
+        display: flex
+        align-items: center
+        padding: 20px
+        border-bottom: 1px solid $color-gray
+
+        .receiver
+          display: flex
+          align-items: center
+
+          .avatar
+            width: 30px
+            height: 30px
+
+          .name
+            margin-left: 5px
+            font-size: 13px
+            font-weight: 500
+
+        .reception-type
+          font-size: 13px
+
+        .opened-time
+          font-size: 12px
+          color: $color-dark-gray
