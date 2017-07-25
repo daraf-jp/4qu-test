@@ -1,7 +1,7 @@
 doctype html
 html
   include _head
-  body.staff.profiles.profiles-exams.profiles-exams-index
+  body.staff.profiles.profiles-quizzes.profiles-quizzes-index
     .l-wrapper
       include _staff_header
       include _staff_exams_subheader
@@ -13,7 +13,7 @@ html
               .m-head-text
                 | 一覧へ戻る
             .m-head-title
-              | 作成したテスト
+              | 作成したクイズ
           .l-table
             table.m-table
               thead
@@ -22,9 +22,10 @@ html
                     | 日付
                     span.icon-sort-down.m-table-sort
                   th.align-left
-                    | テストのタイトル
+                    | 問題文
                   th
-                    | 集計
+                    | 採用テスト数
+                    span.icon-sort-down.m-table-sort
                   th
                     | 共有
               tbody
@@ -35,24 +36,10 @@ html
                     | 13:00
                   td.w50.align-left
                     a href=""
-                      | 3月新メニューテスト
+                      | 入荷時登録に必要な商品は、半熟卵・ミルク・ゆで卵・生卵と、次の選択肢のうちどれか？
                   td.w18
-                    a href=""
-                      | 168人(詳細へ)
-                  td.w18
-                    a.m-btn.m-btn-gray-transparent href=""
-                      | 共有
-                tr
-                  td.w14
-                    | 17.02.27
-                    br
-                    | 13:00
-                  td.w50.align-left
-                    a href=""
-                      | 3月新メニューテスト
-                  td.w18
-                    a href=""
-                      | 168人(詳細へ)
+                    a.m-tag href=""
+                      | 1
                   td.w18
                     a.m-btn.m-btn-gray-transparent href=""
                       | 共有
@@ -63,10 +50,38 @@ html
                     | 13:00
                   td.w50.align-left
                     a href=""
-                      | 3月新メニューテスト
+                      | 冷凍庫の正しい温度帯はつぎのうちどれでしょう？
                   td.w18
+                    a.m-tag href=""
+                      | 1
+                  td.w18
+                    a.m-btn.m-btn-gray-transparent href=""
+                      | 共有
+                tr
+                  td.w14
+                    | 17.02.27
+                    br
+                    | 13:00
+                  td.w50.align-left
                     a href=""
-                      | 168人(詳細へ)
+                      | では冷蔵庫の正しい温度帯は次のうちどれでしょうか？
+                  td.w18
+                    a.m-tag href=""
+                      | 1
+                  td.w18
+                    a.m-btn.m-btn-gray-transparent href=""
+                      | 共有
+                tr
+                  td.w14
+                    | 17.02.27
+                    br
+                    | 13:00
+                  td.w50.align-left
+                    a href=""
+                      | 唱和、繁盛すべて原点は接客にあり「ニコ・キビ・ハキ」の意味として当てはまらないものは次のうちどれか？
+                  td.w18
+                    a.m-tag href=""
+                      | 1
                   td.w18
                     a.m-btn.m-btn-gray-transparent href=""
                       | 共有
