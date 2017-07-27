@@ -5,24 +5,97 @@
     &-index
 
     &-insights
-      .l-insight-head
-        form
-          .m-form-checkbox-label
-            margin-right: 25px
-            font-size: 12px
+      &-index
+        .l-insight-head
+          form
+            .m-form-checkbox-label
+              margin-right: 25px
+              font-size: 12px
 
-        .download-btn
-          .m-btn
-            font-size: 12px
-            &:first-child
-              margin-right: 15px
+          .download-btn
+            .m-btn
+              font-size: 12px
+              &:first-child
+                margin-right: 15px
 
-      .l-table
-        .m-table
-          margin-top: 35px
+        .l-table
+          .m-table
+            margin-top: 35px
+
+      &-quiz
+
+        .question-content
+          width: 45%
+
+        .insight-content
+          width: 55%
+
+        .insights-quiz-list
+          display: flex
+          position: relative
+          border-bottom: 1px solid $color-light-gray
+
+          &:last-child
+            border-bottom: none
+
+          .ratio
+            width: 20%
+            display: flex
+            justify-content: center
+            align-items: center
+            border-right: 1px dashed $color-light-gray
+            flex-direction: column
+
+            .percent
+              font-size: 16px
+
+            .num
+              font-size: 12px
+
+          .choice
+            width: 80%
+            padding: 20px 45px 20px 15px
+            position: relative
+
+            .text
+              position: relative
+              z-index: 2
+
+            .ratio-bar
+              position: absolute
+              height: 94%
+              left: -1px
+              top: 3%
+
+          &.high
+            .ratio
+              .percent
+                font-weight: 500
+                color: $color-green
+
+            .choice
+              .ratio-bar
+                background-color: #9ec7f2
+
+          &.middle
+            .ratio
+              .percent
+                font-weight: 400
+
+            .choice
+              .ratio-bar
+                background-color: #cfe3f9
+
+          &.row
+            .ratio
+              .percent
+                color: #aaa
+
+            .choice
+              .ratio-bar
+                background-color: #eee
 
   &-exam-quizzes
-
 
     .exam-quizzes-list-content
       padding: 20px 15px
