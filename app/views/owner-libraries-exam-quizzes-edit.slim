@@ -1,0 +1,140 @@
+doctype html
+html
+  include _head
+  body.owner.libraries.libraries-exam-quizzes.libraries-exam-quizzes-edit
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ライブラリ
+          span.m-breadcrumb-arrow
+            | >
+          a.m-breadcrumb href=""
+            | テスト
+          span.m-breadcrumb-arrow
+            | >
+          a.m-breadcrumb href=""
+            | 2017.3月度新メニュークイズ
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | クイズ編集
+        include _owner_exams_header
+        .l-container
+          .l-tab
+            ul.m-tab.flex
+              li.m-tab-list
+                a.flex href="./owner-libraries-exams-show.html"
+                  | クイズ一覧
+              li.m-tab-list.active
+                a.flex href="./owner-libraries-exam-quizzes-edit.html"
+                  | クイズ編集
+          .l-quiz
+            .m-quiz.flex
+              .m-quiz-content.exam-quizzes-list-content
+                .m-quiz-lists
+                  .m-quiz-list
+                    .m-quiz-list-link href=""
+                      .m-quiz-list-num
+                        | 1
+                      .m-quiz-list-content
+                        | 入荷時登録に必要な商品は、半熟卵・ミルク・ゆで卵・生卵と、 次の選択肢のうちどれか？
+                      a.m-quiz-delete href=""
+                        | 削除
+                  .m-quiz-list
+                    .m-quiz-list-link href=""
+                      .m-quiz-list-num
+                        | 2
+                      .m-quiz-list-content
+                        | 冷蔵庫の正しい温度帯は次のうちどれでしょう？
+                      a.m-quiz-delete href=""
+                        | 削除
+                  .m-quiz-list
+                    .m-quiz-list-link href=""
+                      .m-quiz-list-num
+                        | 3
+                      .m-quiz-list-content
+                        | では冷蔵庫の正しい温度帯は次のうちどれでしょうか？
+                      a.m-quiz-delete href=""
+                        | 削除
+                  .m-quiz-list
+                    .m-quiz-list-link href=""
+                      .m-quiz-list-num
+                        | 4
+                      .m-quiz-list-content
+                        | 唱和、繁盛すべて原点は接客にあり
+                        br
+                        | 「ニコ・キビ・ハキ」の意味として当てはまらないものは次のうちどれか？
+                      a.m-quiz-delete href=""
+                        | 削除
+                .btn-group
+                  a.add-btn.m-btn.m-btn-blue href=""
+                    span.icon-plus
+                    | クイズ追加
+                  a.csv-btn.m-btn.m-btn-gray-transparent href=""
+                    | CSVインポート
+              .m-quiz-content.exam-quizzes-edit-content
+                form.m-form
+                  .m-form-label
+                    | 問題文
+                  textarea.m-form-textarea placeholder="問題文を入力"
+                  .m-form-label
+                    | 解答
+                  .m-form-choices
+                    .m-form-choice
+                      input.m-form-choice-input type="radio" name="choice" id="choice1" checked=""
+                      label.m-form-choice-label for="choice1"
+                      textarea.m-form-textarea placeholder="解答1"
+                    .m-form-choice
+                      input.m-form-choice-input type="radio" name="choice" id="choice2"
+                      label.m-form-choice-label for="choice2"
+                      textarea.m-form-textarea placeholder="解答2"
+                    .m-form-choice
+                      input.m-form-choice-input type="radio" name="choice" id="choice3"
+                      label.m-form-choice-label for="choice3"
+                      textarea.m-form-textarea placeholder="解答3"
+                    .m-form-choice
+                      input.m-form-choice-input type="radio" name="choice" id="choice4"
+                      label.m-form-choice-label for="choice4"
+                      textarea.m-form-textarea placeholder="解答4"
+                  .m-form-label
+                    | 解説
+                  textarea.m-form-textarea placeholder="解説を入力"
+                  a.m-btn.m-btn-blue.submit-btn href=""
+                    | 保存する
+              .m-quiz-content.exam-quizzes-assets-content
+                .draganddrop
+                .assets-content
+                  .item
+                    .inner style="background-image: url(./img/asset1.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset2.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset3.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset4.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset5.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset6.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset7.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset8.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset9.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset10.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset11.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset12.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset13.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset14.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset15.jpg);"
+                  .item
+                    .inner style="background-image: url(./img/asset16.jpg);"
