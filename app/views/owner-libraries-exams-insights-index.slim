@@ -21,6 +21,16 @@ html
           span.m-breadcrumb.active
             | 解答者集計
         include _owner_exams_header
+        .l-container
+          .l-tab
+            ul.m-tab.flex
+              li.m-tab-list.active
+                a.flex href=""
+                  | 解答者
+                  | (179)
+              li.m-tab-list
+                a.flex href=""
+                  | クイズ
         .l-container.flex.justify-content-space-between
           .l-side-content.mobile-none
             .m-side-head
@@ -48,15 +58,6 @@ html
                 a href=""
                   | 緑区中山店(4)
           .l-main-content
-            .l-tab
-              ul.m-tab.flex
-                li.m-tab-list.active
-                  a.flex href=""
-                    | 解答者
-                    | (179)
-                li.m-tab-list
-                  a.flex href=""
-                    | クイズ
             .l-insight-head.flex.justify-content-space-between.align-items-center
               form
                 input.m-form-checkbox type="checkbox" name="insight_type" id="insight-all" checked=""
