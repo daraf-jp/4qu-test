@@ -1,0 +1,323 @@
+doctype html
+html
+  include _head
+  body.owner.libraries.libraries-exam.libraries-exam-new
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ライブラリ
+          span.m-breadcrumb-arrow
+            | >
+          a.m-breadcrumb href=""
+            | テスト
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 新規テスト作成
+        .l-exam-setting
+          form
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | タイトル *
+              .l-form-group-right
+                input.m-form-control.m-form-group-control type="text" placeholder="タイトルを入力"
+                .m-form-group-annotation
+                  | 4文字〜80文字
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | カテゴリ
+              .l-form-group-right
+                input.m-form-control.m-form-control-half.m-form-group-control type="text" placeholder="カテゴリを選択"
+                a.m-btn.m-btn-gray-transparent.m-form-category-btn href=""
+                  | + 新規カテゴリ
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 使い方 *
+              .l-form-group-right
+                input.m-form-radio type="radio" name="usage" id="learning" checked=""
+                label.m-form-radio-label for="learning"
+                  | 学習
+                input.m-form-radio type="radio" name="usage" id="survey"
+                label.m-form-radio-label for="survey"
+                  | アンケート
+                input.m-form-radio type="radio" name="usage" id="checklist"
+                label.m-form-radio-label for="checklist"
+                  | チェックリスト
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 選択肢の数 *
+              .l-form-group-right
+                input.m-form-radio type="radio" name="choices_num" id="choices-num-4" checked=""
+                label.m-form-radio-label for="choices-num-4"
+                  | 4
+                input.m-form-radio type="radio" name="choices_num" id="choices-num-3"
+                label.m-form-radio-label for="choices-num-3"
+                  | 3
+                input.m-form-radio type="radio" name="choices_num" id="choices-num-2"
+                label.m-form-radio-label for="choices-num-2"
+                  | 2
+                input.m-form-radio type="radio" name="choices_num" id="choices-num-1"
+                label.m-form-radio-label for="choices-num-1"
+                  | 1
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 表示方法 *
+              .l-form-group-right
+                input.m-form-radio type="radio" name="display" id="horizontal" checked=""
+                label.m-form-radio-label for="horizontal"
+                  | 横に並べる
+                input.m-form-radio type="radio" name="display" id="vertical"
+                label.m-form-radio-label for="vertical"
+                  | 縦に並べる
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 公開範囲 *
+              .l-form-group-right
+                input.m-form-radio type="radio" name="open_range" id="team" checked=""
+                label.m-form-radio-label for="team"
+                  | チーム
+                input.m-form-radio type="radio" name="open_range" id="media"
+                label.m-form-radio-label for="media"
+                  | メディア
+                input.m-form-radio type="radio" name="open_range" id="sale"
+                label.m-form-radio-label for="sale"
+                  | ストア
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | クイズを表示 *
+              .l-form-group-right
+                input.m-form-radio type="radio" name="start_before_quizzes" id="start-before-quizzes1" checked=""
+                label.m-form-radio-label for="start-before-quizzes1"
+                  | 開始前に表示
+                input.m-form-radio type="radio" name="start_before_quizzes" id="start-before-quizzes2"
+                label.m-form-radio-label for="start-before-quizzes2"
+                  | 開始後に表示
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | ログイン方法 *
+              .l-form-group-right
+                input.m-form-radio type="radio" name="login_type" id="anonymous" checked=""
+                label.m-form-radio-label for="anonymous"
+                  | 不要
+                input.m-form-radio type="radio" name="login_type" id="input"
+                label.m-form-radio-label for="input"
+                  | フォーム入力
+                input.m-form-radio type="radio" name="login_type" id="tel"
+                label.m-form-radio-label for="tel"
+                  | 電話番号
+                input.m-form-radio type="radio" name="login_type" id="email"
+                label.m-form-radio-label for="email"
+                  | メール
+                input.m-form-radio type="radio" name="login_type" id="line"
+                label.m-form-radio-label for="line"
+                  | LINE
+                input.m-form-radio type="radio" name="login_type" id="facebook"
+                label.m-form-radio-label for="facebook"
+                  | Facebook
+                input.m-form-radio type="radio" name="login_type" id="twitter"
+                label.m-form-radio-label for="twitter"
+                  | Twitter
+                input.m-form-radio type="radio" name="login_type" id="google"
+                label.m-form-radio-label for="google"
+                  | Google
+                input.m-form-radio type="radio" name="login_type" id="slack"
+                label.m-form-radio-label for="slack"
+                  | Slack
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 入力項目 *
+              .l-form-group-right
+                input.m-form-checkbox type="checkbox" name="input_type" id="input-name" checked=""
+                label.m-form-checkbox-label for="input-name"
+                  | 名前
+                input.m-form-checkbox type="checkbox" name="input_type" id="input-tel" checked=""
+                label.m-form-checkbox-label for="input-tel"
+                  | 電話番号
+                input.m-form-checkbox type="checkbox" name="input_type" id="input-email"
+                label.m-form-checkbox-label for="input-email"
+                  | メール
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 有効期限
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="expiration" id="expiration-on"
+                    label.m-form-switch-radio-label for="expiration-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="expiration" id="expiration-off" checked=""
+                    label.m-form-switch-radio-label for="expiration-off"
+                      | OFF
+                  .m-form-switch-data
+                    input.m-form-control.m-form-control-half.m-form-group-control type="calendar" placeholder="年/月/日"
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | ピンコード
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="pin_code" id="pin-code-on"
+                    label.m-form-switch-radio-label for="pin-code-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="pin_code" id="pin-code-off" checked=""
+                    label.m-form-switch-radio-label for="pin-code-off"
+                      | OFF
+                  .m-form-switch-data
+                    input.m-form-control.m-form-control-half.m-form-group-control type="text" placeholder="1234"
+                    .m-form-group-annotation
+                      | 数字で4桁
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 制限時間
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="exam_time_limit" id="exam-time-limit-on" checked=""
+                    label.m-form-switch-radio-label for="exam-time-limit-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="exam_time_limit" id="exam-time-limit-off"
+                    label.m-form-switch-radio-label for="exam-time-limit-off"
+                      | OFF
+                  .m-form-switch-data
+                    input.m-form-control.m-form-control-half.m-form-group-control type="text" placeholder="10"
+                    .m-form-group-annotation
+                      | 単位：分
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | カウントダウン
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="quiz_countdown" id="quiz-countdown-on"
+                    label.m-form-switch-radio-label for="quiz-countdown-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="quiz_countdown" id="quiz-countdown-off" checked=""
+                    label.m-form-switch-radio-label for="quiz-countdown-off"
+                      | OFF
+                  .m-form-switch-data
+                    input.m-form-control.m-form-control-half.m-form-group-control type="text" placeholder="15"
+                    .m-form-group-annotation
+                      | 単位：秒
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 開始画面 *
+              .l-form-group-right
+                textarea.m-form-textarea type="text" placeholder="コメントを入力"
+                .m-form-group-annotation
+                  | 3000文字まで
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | フロントページ
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="front_page" id="front-page-on"
+                    label.m-form-switch-radio-label for="front-page-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="front_page" id="front-page-off" checked=""
+                    label.m-form-switch-radio-label for="front-page-off"
+                      | OFF
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 解説ページ
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="comment_page" id="comment-page-on"
+                    label.m-form-switch-radio-label for="comment-page-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="comment_page" id="comment-page-off" checked=""
+                    label.m-form-switch-radio-label for="comment-page-off"
+                      | OFF
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 確認ページ
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="confirm_page" id="confirm-page-on"
+                    label.m-form-switch-radio-label for="confirm-page-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="confirm_page" id="confirm-page-off" checked=""
+                    label.m-form-switch-radio-label for="confirm-page-off"
+                      | OFF
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 完了方法 *
+              .l-form-group-right
+                input.m-form-radio type="radio" name="done_timing" id="complete" checked=""
+                label.m-form-radio-label for="complete"
+                  | 完了ボタンを押す
+                input.m-form-radio type="radio" name="done_timing" id="mistake"
+                label.m-form-radio-label for="mistake"
+                  | 全てのクイズに解答
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | エンドページ
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="end_page" id="end-page-on"
+                    label.m-form-switch-radio-label for="end-page-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="end_page" id="end-page-off" checked=""
+                    label.m-form-switch-radio-label for="end-page-off"
+                      | OFF
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | スコア表示
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="end_score" id="end-score-on"
+                    label.m-form-switch-radio-label for="end-score-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="end_score" id="end-score-off" checked=""
+                    label.m-form-switch-radio-label for="end-score-off"
+                      | OFF
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 解説表示
+              .l-form-group-right
+                .l-form-switch
+                  .m-form-switch
+                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="end_comment_index" id="end-comment-index-on"
+                    label.m-form-switch-radio-label for="end-comment-index-on"
+                      | ON
+                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="end_comment_index" id="end-comment-index-off" checked=""
+                    label.m-form-switch-radio-label for="end-comment-index-off"
+                      | OFF
+            .l-form-group
+              .l-form-group-left
+                .m-form-group-label
+                  | 終了画面 *
+              .l-form-group-right
+                textarea.m-form-textarea type="text" placeholder="コメントを入力"
+                .m-form-group-annotation
+                  | 3000文字まで
+            .l-form-submit
+              a.m-btn.m-btn-blue-transparent.m-form-submit href="./owner-libraries-exams-index.html"
+                | 作成する
