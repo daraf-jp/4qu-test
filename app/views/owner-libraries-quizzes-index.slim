@@ -66,80 +66,151 @@ html
               .l-new-btn
                 a.m-btn.m-btn-blue.m-btn-new.mobile-none href=""
                   | + 新規クイズ作成
-            .l-table
-              table.m-table.mobile-none
-                thead
-                  tr
-                    th
-                      | 日付
-                      span.icon-sort-down.m-table-sort
-                    th.align-left
-                      | 問題文
-                    th
-                      | 作成者
-                    th
-                      | スタッフ
-                    th
-                      | 採用テスト数
-                      span.icon-sort-down.m-table-sort
-                tbody
-                  tr
-                    td.w10
-                      | 17.02.27
-                      br
-                      | 13:00
-                    td.align-left.w50
-                      a href=""
-                        | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
-                    td.15
-                      | 寺西 勁人
-                    td.w10
-                      .icon-profile
-                    td.w15
-                      a.m-tag href=""
-                        | 3
-                  tr
-                    td.w10
-                      | 17.02.27
-                      br
-                      | 13:00
-                    td.align-left.w50
-                      a href=""
-                        | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
-                    td.15
-                      | 寺西 勁人
-                    td.w10
-                      .icon-profile
-                    td.w15
-                      a.m-tag href=""
-                        | 3
-                  tr
-                    td.w10
-                      | 17.02.27
-                      br
-                      | 13:00
-                    td.align-left.w50
-                      a href=""
-                        | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
-                    td.15
-                      | 寺西 勁人
-                    td.w10
-                      .icon-profile
-                    td.w15
-                      a.m-tag href=""
-                        | 3
-                  tr
-                    td.w10
-                      | 17.02.27
-                      br
-                      | 13:00
-                    td.align-left.w50
-                      a href=""
-                        | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
-                    td.15
-                      | 寺西 勁人
-                    td.w10
-                      .icon-profile
-                    td.w15
-                      a.m-tag href=""
-                        | 3
+            .l-quizzes.flex.justify-content-space-between
+              .l-table
+                table.m-table.mobile-none
+                  tbody
+                    tr
+                      td.align-left.w75
+                        .date
+                          | 17.02.27 13:00
+                        a href=""
+                          | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
+                        .owner-author.flex
+                          .owner
+                            img.avatar src="./img/default-avatar.png"
+                            .text
+                              | JR飯田橋駅西口店
+                          .author
+                            | 作成者：
+                            img.avatar src="./img/default-avatar.png"
+                            .text
+                              | 寺西 勁人
+                      td.w25
+                        .adoption-text
+                          | 採用テスト数
+                        .adoption-num
+                          | 3
+                    tr
+                      td.align-left.w75
+                        .date
+                          | 17.02.27 13:00
+                        a href=""
+                          | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
+                        .owner-author.flex
+                          .owner
+                            img.avatar src="./img/default-avatar.png"
+                            .text
+                              | JR飯田橋駅西口店
+                          .author
+                            | 作成者：
+                            img.avatar src="./img/default-avatar.png"
+                            .text
+                              | 寺西 勁人
+                      td.w25
+                        .adoption-text
+                          | 採用テスト数
+                        .adoption-num
+                          | 3
+                    tr
+                      td.align-left.w75
+                        .date
+                          | 17.02.27 13:00
+                        a href=""
+                          | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
+                        .owner-author.flex
+                          .owner
+                            img.avatar src="./img/default-avatar.png"
+                            .text
+                              | JR飯田橋駅西口店
+                          .author
+                            | 作成者：
+                            img.avatar src="./img/default-avatar.png"
+                            .text
+                              | 寺西 勁人
+                      td.w25
+                        .adoption-text
+                          | 採用テスト数
+                        .adoption-num
+                          | 3
+                    tr
+                      td.align-left.w75
+                        .date
+                          | 17.02.27 13:00
+                        a href=""
+                          | 業冷庫や製氷機、コールドテーブルなどの機器下に、食材やスプーンが転がり落ちてしまいました。 どうしますか？
+                        .owner-author.flex
+                          .owner
+                            img.avatar src="./img/default-avatar.png"
+                            .text
+                              | JR飯田橋駅西口店
+                          .author
+                            | 作成者：
+                            img.avatar src="./img/default-avatar.png"
+                            .text
+                              | 寺西 勁人
+                      td.w25
+                        .adoption-text
+                          | 採用テスト数
+                        .adoption-num
+                          | 3
+              .l-quiz
+                .m-quiz.flex
+                  .m-quiz-content.quiz-content
+                    .edit.flex.justify-content-flex-end
+                      a.edit-btn.m-btn.m-btn-gray-transparent href=""
+                        | 編集する
+                    .question-content
+                      .m-quiz-head.flex.align-items-center
+                        .m-quiz-icon.icon-quiz
+                        .m-quiz-title
+                          | 問題文
+                      .m-quiz-question-text
+                        | 毎年人気の手仕込ささみカツカレー。仕込む時のポイントは？
+                        iframe width="560" height="315" src="https://www.youtube.com/embed/G26YiqIt7xw" frameborder="0" allowfullscreen
+                    .choice-content
+                      .m-quiz-head.flex.align-items-center
+                        .m-quiz-icon.icon-choice
+                        .m-quiz-title
+                          | 選択肢
+                      ul.m-quiz-choices
+                        li.m-quiz-choice
+                          | 潰されないように丸くふっくら衣をつける
+                          .m-quiz-choice-icon.icon-correct
+                        li.m-quiz-choice
+                          | 大きく見えるように平べったく衣をつける
+                          .m-quiz-choice-icon.icon-incorrect
+                        li.m-quiz-choice
+                          | -
+                          .m-quiz-choice-icon.icon-incorrect
+                        li.m-quiz-choice
+                          | -
+                          .m-quiz-choice-icon.icon-incorrect
+                    .answer-content
+                      .m-quiz-head.flex.align-items-center
+                        .m-quiz-icon.icon-answer
+                        .m-quiz-title
+                          | 解説
+                      .m-quiz-answer-text
+                        | 全てにささみカツを使っています！
+                        br
+                        | 手仕込ヒレささみは、ヒレカツ1枚・ささみカツ1本、
+                        br
+                        | 手仕込三昧は、ささみカツ1本・ヒレカツ1枚・とんかつ1枚、
+                        br
+                        | チキン三昧は、ささみカツ2本・フライドチキン・チキン煮込みです。
+                        img src="./img/answer1.png"
+                    .adoption-test-content
+                      .m-quiz-head.flex.align-items-center
+                        .m-quiz-title
+                          | 採用テスト一覧
+                      ul.adoption-test-lists
+                        li.adoption-test-list
+                          a href=""
+                            | 3月新メニューテスト
+                        li.adoption-test-list
+                          a href=""
+                            | 2017年4月衛生テスト
+                        li.adoption-test-list
+                          a href=""
+                            | WEBお知らせ&日経クイズ 2016年9月第2回
