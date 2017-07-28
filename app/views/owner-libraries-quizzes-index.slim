@@ -57,15 +57,17 @@ html
                     | (4)
           .l-main-content
             .l-search-head.flex.justify-content-space-between
-              .l-search.l-search-m
+              .l-search
                 .m-search
                   form.m-form.m-search-form
                     input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="クイズを検索" type="text"
                 a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
                   .icon-sort-list
-              .l-new-btn
-                a.m-btn.m-btn-blue.m-btn-new.mobile-none href=""
+              .l-new-btn.flex
+                a.m-btn.m-btn-blue.m-btn-new.mobile-none href="./owner-libraries-quizzes-new.html"
                   | + 新規クイズ作成
+                a.m-btn.m-btn-gray-transparent.import-btn href="./owner-libraries-quizzes-import.html"
+                  | クイズインポート
             .l-quizzes.flex.justify-content-space-between
               .l-table
                 table.m-table.mobile-none

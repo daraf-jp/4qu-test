@@ -69,12 +69,12 @@ html
                       a.m-quiz-delete href=""
                         | 削除
                 .btn-group
-                  a.add-btn.m-btn.m-btn-blue href=""
+                  a.add-btn.m-btn.m-btn-blue.m-quiz-btn href=""
                     span.icon-plus
                     | クイズ追加
-                  a.csv-btn.m-btn.m-btn-gray-transparent href=""
+                  a.csv-btn.m-btn.m-btn-gray-transparent.m-quiz-btn href=""
                     | CSVインポート
-              .m-quiz-content.exam-quizzes-edit-content
+              .m-quiz-content.m-quiz-content-edit.exam-quizzes-edit-content
                 form.m-form
                   .m-form-label
                     | 問題文
@@ -101,10 +101,10 @@ html
                   .m-form-label
                     | 解説
                   textarea.m-form-textarea placeholder="解説を入力"
-                  a.m-btn.m-btn-blue.submit-btn href=""
+                  a.submit-btn.m-btn.m-btn-blue.m-quiz-btn href=""
                     | 保存する
               .m-quiz-content.exam-quizzes-assets-content
-                .draganddrop-content
+                .m-draganddrop-content
                   .m-draganddrop
                     .m-draganddrop-text
                       | アップロードするファイルをドロップ
@@ -115,36 +115,36 @@ html
                     .m-draganddrop-limit
                       | 最大アップロードサイズ： 150MB
                 .assets-content
-                  .items
-                    .item
-                      .file-preview style="background-image: url(./img/asset1.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset2.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset3.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset4.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset5.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset6.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset7.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset8.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset9.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset10.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset11.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset12.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset13.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset14.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset15.jpg);"
-                    .item
-                      .file-preview style="background-image: url(./img/asset16.jpg);"
+                  .m-asset-items
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset1.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset2.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset3.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset4.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset5.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset6.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset7.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset8.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset9.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset10.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset11.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset12.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset13.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset14.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset15.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset16.jpg);"

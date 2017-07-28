@@ -112,32 +112,21 @@
         width: 100%
 
         .add-btn
-          width: 100%
           margin-bottom: 10px
 
           .icon-plus
             margin-right: 4px
 
-        .csv-btn
-          width: 100%
-
     .exam-quizzes-edit-content
-      padding: 20px 15px
-
       .submit-btn
-        width: 100%
         margin-top: 25px
 
     .exam-quizzes-assets-content
+      .m-draganddrop
+        height: 150px
 
-      .draganddrop-content
-        padding: 20px 15px 15px
-
-        .m-draganddrop
-          height: 150px
-
-          &-text
-            margin-top: 0
+        &-text
+          margin-top: 0
 
       .assets-content
         .items
@@ -160,6 +149,20 @@
   &-quizzes
 
     &-index
+
+      .l-search-head
+        .l-search
+          width: 415px
+        .l-new-btn
+          .import-btn
+            width: 200px
+            height: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 8px 12px
+            margin-left: 15px
+
       .quiz-content
         width: 100%
 
@@ -253,12 +256,41 @@
         margin: 25px 0 15px
 
         .save-btn
+          width: 200px
+          height: 40px
+          display: flex
+          justify-content: center
+          align-items: center
           margin-right: 15px
+
+        .cancel-btn
+          width: 200px
+          height: 40px
+          display: flex
+          justify-content: center
+          align-items: center
 
       .l-quiz
         &:last-child
           .m-quiz
             margin-bottom: 0
+
+    &-new
+      .l-breadcrumb
+        margin-bottom: 60px
+
+      .l-quiz
+        width: 860px
+        margin: 0 auto
+
+        .quizzes-edit-content
+          width: 50%
+
+          .submit-btn
+            margin-top: 25px
+
+        .quizzes-assets-content
+          width: 50%
 
   &-assets
 

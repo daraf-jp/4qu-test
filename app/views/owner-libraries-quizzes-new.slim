@@ -1,0 +1,95 @@
+doctype html
+html
+  include _head
+  body.owner.libraries.libraries-quizzes.libraries-quizzes-new
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ライブラリ
+          span.m-breadcrumb-arrow
+            | >
+          a.m-breadcrumb href=""
+            | クイズ
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 新規クイズ作成
+        .l-container
+          .l-quiz
+            .m-quiz.flex
+              .m-quiz-content.m-quiz-content-edit.quizzes-edit-content
+                form.m-form
+                  .m-form-label
+                    | 問題文
+                  textarea.m-form-textarea placeholder="問題文を入力"
+                  .m-form-label
+                    | 解答
+                  .m-form-choices
+                    .m-form-choice
+                      input.m-form-choice-input type="radio" name="choice" id="choice1" checked=""
+                      label.m-form-choice-label for="choice1"
+                      textarea.m-form-textarea placeholder="解答1"
+                    .m-form-choice
+                      input.m-form-choice-input type="radio" name="choice" id="choice2"
+                      label.m-form-choice-label for="choice2"
+                      textarea.m-form-textarea placeholder="解答2"
+                    .m-form-choice
+                      input.m-form-choice-input type="radio" name="choice" id="choice3"
+                      label.m-form-choice-label for="choice3"
+                      textarea.m-form-textarea placeholder="解答3"
+                    .m-form-choice
+                      input.m-form-choice-input type="radio" name="choice" id="choice4"
+                      label.m-form-choice-label for="choice4"
+                      textarea.m-form-textarea placeholder="解答4"
+                  .m-form-label
+                    | 解説
+                  textarea.m-form-textarea placeholder="解説を入力"
+                  a.submit-btn.m-btn.m-btn-blue.m-quiz-btn href="./owner-libraries-quizzes-index.html"
+                    | 保存する
+              .m-quiz-content.m-quiz-content-assets.quizzes-assets-content
+                .m-draganddrop-content
+                  .m-draganddrop
+                    .m-draganddrop-text
+                      | アップロードするファイルをドロップ
+                    .m-draganddrop-or
+                      | または
+                    a.m-draganddrop-btn.m-btn.m-btn-gray-transparent href=""
+                      | ファイルを選択
+                    .m-draganddrop-limit
+                      | 最大アップロードサイズ： 150MB
+                .assets-content
+                  .m-asset-items
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset1.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset2.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset3.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset4.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset5.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset6.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset7.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset8.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset9.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset10.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset11.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset12.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset13.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset14.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset15.jpg);"
+                    .m-asset-item
+                      .m-asset-file-preview style="background-image: url(./img/asset16.jpg);"
