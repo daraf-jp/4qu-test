@@ -112,12 +112,14 @@ body
 
     .l-header-left
       flex: 1
+
       img
         height: 35px
         display: block
 
     .l-header-center
       width: 440px
+
       ul
         li
           width: 110px
@@ -125,15 +127,18 @@ body
           display: table
           float: left
           text-align: center
+
           a
             display: table-cell
             vertical-align: middle
             color: $color-text
             font-size: 12px
+
             &:hover
               background-color: rgba($color-link, 0.1)
               color: $color-link
               border-radius: 5px
+
           &.active
             a
               background-color: $color-link
@@ -142,21 +147,28 @@ body
 
     .l-header-right
       flex: 1
+
       ul
         height: 64px
         display: table
+
         li
           display: table-cell
           vertical-align: middle
           padding-right: 45px
+
           &:last-child
             padding-right: 0
+
           a
             color: $color-base
+
             .icon-new
               font-size: 25px
-            .icon-profile
+
+            .icon-setting
               font-size: 25px
+
             &:hover
               color: $color-link
 
