@@ -1,8 +1,8 @@
 .teams
 
   &-index
-    .l-container
-      padding-top: 60px
+    .l-breadcrumb
+      margin-bottom: 60px
 
     .icon
       font-size: 25px
@@ -15,3 +15,54 @@
 
       &-android
         color: $color-android
+
+  &-show
+    .user
+      padding: 30px 0
+      border-bottom: 1px solid $color-gray
+      margin-bottom: 30px
+
+      .l-container
+        display: flex
+
+        .avatar
+          img
+            display: block
+            width: 120px
+            height: 120px
+            border-radius: 50%
+
+        .info
+          padding-top: 10px
+          padding-left: 20px
+
+          .info-content
+            display: flex
+            align-items: center
+
+            .name
+              font-size: 22px
+              margin-bottom: 20px
+              margin-right: 30px
+              font-weight: 500
+
+            .edit-btn
+              width: 120px
+              margin-bottom: 20px
+
+            .text
+              margin-bottom: 12px
+              margin-right: 20px
+
+              strong
+                font-weight: 500
+
+  &-users
+    &-new
+      .l-breadcrumb
+        margin-bottom: 60px
+
+  &-staffs
+    &-new
+      .l-breadcrumb
+        margin-bottom: 60px

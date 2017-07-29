@@ -1,7 +1,7 @@
 doctype html
 html
   include _head
-  body.owner.libraries.libraries-exams.libraries-exams-insight
+  body.owner.libraries.libraries-exams.libraries-exams-insights.libraries-exams-insights-index
     .l-wrapper
       include _owner_header
       .l-main
@@ -21,6 +21,15 @@ html
           span.m-breadcrumb.active
             | 解答者集計
         include _owner_exams_header
+        .l-container
+          .l-tab
+            ul.m-tab.flex
+              li.m-tab-list.active
+                a.flex href="./owner-libraries-exams-insights-index.html"
+                  | 解答者 (179)
+              li.m-tab-list
+                a.flex href="./owner-libraries-exams-insights-quiz.html"
+                  | クイズ
         .l-container.flex.justify-content-space-between
           .l-side-content.mobile-none
             .m-side-head
@@ -28,35 +37,38 @@ html
             ul.m-side-nav
               li.active
                 a href=""
-                  | 自分の集計(169)
+                  | 自分の集計
+                  span.m-side-nav-num
+                    | (169)
               li
                 a href=""
-                  | 横断集計(179)
+                  | 横断集計
+                  span.m-side-nav-num
+                    | (179)
             .m-side-head
-              | その他(26)
+              | その他 (26)
             ul.m-side-nav
               li
                 a href=""
-                  | 東急戸越銀座駅前店(13)
+                  | 東急戸越銀座駅前店
+                  span.m-side-nav-num
+                    | (13)
               li
                 a href=""
-                  | 東急白楽駅前通店(3)
+                  | 東急白楽駅前通店
+                  span.m-side-nav-num
+                    | (3)
               li
                 a href=""
-                  | 富士高島町店(4)
+                  | 富士高島町店
+                  span.m-side-nav-num
+                    | (4)
               li
                 a href=""
-                  | 緑区中山店(4)
+                  | 緑区中山店
+                  span.m-side-nav-num
+                    | (4)
           .l-main-content
-            .l-tab
-              ul.m-tab.flex
-                li.m-tab-list.active
-                  a.flex href=""
-                    | 解答者
-                    | (179)
-                li.m-tab-list
-                  a.flex href=""
-                    | クイズ
             .l-insight-head.flex.justify-content-space-between.align-items-center
               form
                 input.m-form-checkbox type="checkbox" name="insight_type" id="insight-all" checked=""
@@ -68,10 +80,10 @@ html
                 input.m-form-checkbox type="checkbox" name="insight_type" id="insight-incomplete"
                 label.m-form-checkbox-label for="insight-incomplete"
                   | 未完了者
-              .download-btn
-                a.m-btn.m-btn-gray-transparent href=""
+              .csv-btn-group
+                a.m-btn.m-btn-gray-transparent.m-btn-csv href=""
                   | CSVダウンロード(Shift_JIS)
-                a.m-btn.m-btn-gray-transparent href=""
+                a.m-btn.m-btn-gray-transparent.m-btn-csv href=""
                   | CSVダウンロード(UTF-8)
             .l-table
               table.m-table
@@ -101,7 +113,7 @@ html
                     td.w15
                       | 寺西勁人
                     td.w15
-                      a href=""
+                      a href="./owner-libraries-exams-insights-show.html"
                         | 09012345678
                     td.w20
                       .m-correct.high

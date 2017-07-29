@@ -1,0 +1,52 @@
+doctype html
+html
+  include _head
+  body.owner.teams.teams-staffs.teams-staffs-new
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | チーム
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 新規作成
+        .l-container
+          .l-team-new
+            form
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | 名前
+                .l-form-group-right
+                  input.m-form-control.m-form-group-control type="text" placeholder="名前を入力"
+                  .m-form-group-annotation
+                    | 4文字〜20文字
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | メールアドレス
+                .l-form-group-right
+                  input.m-form-control.m-form-group-control type="text" placeholder="メールアドレスを入力"
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | 電話番号
+                .l-form-group-right
+                  input.m-form-control.m-form-control-half.m-form-group-control type="text" placeholder="電話番号を入力"
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | ポジション
+                .l-form-group-right
+                  input.m-form-control.m-form-control-half.m-form-group-control type="text" placeholder="ポジションを入力"
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | メモ
+                .l-form-group-right
+                  textarea.m-form-textarea type="text" placeholder="メモを入力"
+              .l-form-submit
+                a.m-btn.m-btn-blue.m-form-submit href="./owner-teams-index.html"
+                  | 作成する

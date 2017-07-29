@@ -7,71 +7,113 @@ html
       .l-main
         .l-breadcrumb.mobile-none
           a.m-breadcrumb href=""
-            | 通知
+            | お知らせ
           span.m-breadcrumb-arrow
             | >
           span.m-breadcrumb.active
             | 送信
         include _owner_notice_subheader
-        .l-container
-          .l-search-head.flex.justify-content-space-between
-            .l-search.l-search-m
-              .m-search
-                form.m-form.m-search-form
-                  input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="検索" type="text"
-              a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
-                .icon-sort-list
-            .l-new-btn
-              a.m-btn.m-btn-blue.m-btn-new.mobile-none href=""
-                | + 新規お知らせ作成
-          .l-table
-            table.m-table.mobile-none
-              thead
-                tr
-                  th
-                    | 送信日時
-                    span.icon-sort-down.m-table-sort
-                  th.align-left
-                    | 内容
-                  th
-                    | 受信した人
-              tbody
-                tr
-                  td
-                    | 17.02.27
-                    br
-                    | 13:00
-                  td.align-left
-                    .m-notice-title
-                      | 衛生テストの実施
-                    .m-notice-content
-                      | 「衛生テスト2016.10月」の実施をお願いします。100点目指して20日までに実施お願いします。
-                  td
-                    a href=""
-                      | 300人
-                tr
-                  td
-                    | 17.02.27
-                    br
-                    | 13:00
-                  td.align-left
-                    .m-notice-title
-                      | 衛生テストの実施
-                    .m-notice-content
-                      | 「衛生テスト2016.10月」の実施をお願いします。100点目指して20日までに実施お願いします。
-                  td
-                    a href=""
-                      | 300人
-                tr
-                  td
-                    | 17.02.27
-                    br
-                    | 13:00
-                  td.align-left
-                    .m-notice-title
-                      | 衛生テストの実施
-                    .m-notice-content
-                      | 「衛生テスト2016.10月」の実施をお願いします。100点目指して20日までに実施お願いします。
-                  td
-                    a href=""
-                      | 300人
+        .l-container.flex.justify-content-space-between
+          .send-lists
+            .l-search-head.flex.justify-content-space-between
+              .l-search
+                .m-search
+                  form.m-form.m-search-form
+                    input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="検索" type="text"
+                a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
+                  .icon-sort-list
+              .l-new-btn
+                a.m-btn.m-btn-blue.m-btn-new.mobile-none href="./owner-notice-new.html"
+                  | + 新規お知らせ作成
+            .send-list
+              a.send-link.active href=""
+                .detail
+                  .detail-header
+                    .title-date.flex.justify-content-space-between
+                      .title
+                        | 衛生テストの実施
+                      .date
+                        | 17.02.27 13:00
+                    .send-status
+                      .send-num.flex.align-items-center
+                        strong
+                          | 送信
+                        | 35人
+                      .already-read.flex.align-items-center
+                        strong
+                          | 既読
+                        | 12人
+                  .detail-body
+                    .detail-content
+                      .text
+                        | 「衛生テスト2016.10月」の実施をお願いします。100点目差して20日までに実施お願いします。
+              a.send-link href=""
+                .detail
+                  .detail-header
+                    .title-date.flex.justify-content-space-between
+                      .title
+                        | 衛生テストの実施
+                      .date
+                        | 17.02.27 13:00
+                    .send-status
+                      .send-num.flex.align-items-center
+                        strong
+                          | 送信
+                        | 35人
+                      .already-read.flex.align-items-center
+                        strong
+                          | 既読
+                        | 12人
+                  .detail-body
+                    .detail-content
+                      .text
+                        | 「衛生テスト2016.10月」の実施をお願いします。100点目差して20日までに実施お願いします。
+              a.send-link href=""
+                .detail
+                  .detail-header
+                    .title-date.flex.justify-content-space-between
+                      .title
+                        | 衛生テストの実施
+                      .date
+                        | 17.02.27 13:00
+                    .send-status
+                      .send-num.flex.align-items-center
+                        strong
+                          | 送信
+                        | 35人
+                      .already-read.flex.align-items-center
+                        strong
+                          | 既読
+                        | 12人
+                  .detail-body
+                    .detail-content
+                      .text
+                        | 「衛生テスト2016.10月」の実施をお願いします。100点目差して20日までに実施お願いします。
+          .send-content
+            .send-user
+              .receiver.w30
+                img.avatar src="./img/default-avatar.png"
+                .name
+                  | 寺西 勁人
+              .reception-type.w30.align-center
+                | LINEで受信
+              .opened-time.w40.align-center
+                | 17.02.27 13:00に開封
+            .send-user
+              .receiver.w30
+                img.avatar src="./img/default-avatar.png"
+                .name
+                  | 寺西 勁人
+              .reception-type.w30.align-center
+                | LINEで受信
+              .opened-time.w40.align-center
+                | 17.02.27 13:00に開封
+            .send-user
+              .receiver.w30
+                img.avatar src="./img/default-avatar.png"
+                .name
+                  | 寺西 勁人
+              .reception-type.w30.align-center
+                | LINEで受信
+              .opened-time.w40.align-center
+                | 17.02.27 13:00に開封

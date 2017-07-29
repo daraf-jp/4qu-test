@@ -1,7 +1,7 @@
 doctype html
 html
   include _head
-  body.owner.libraries.libraries-exams.libraries-exams-quiz
+  body.owner.libraries.libraries-exams.libraries-exams-show
     .l-wrapper
       include _owner_header
       .l-main
@@ -19,16 +19,16 @@ html
           span.m-breadcrumb-arrow
             | >
           span.m-breadcrumb.active
-            | クイズ
+            | クイズ一覧
         include _owner_exams_header
         .l-container
           .l-tab
             ul.m-tab.flex
               li.m-tab-list.active
-                a.flex href=""
+                a.flex href="./owner-libraries-exams-show.html"
                   | クイズ一覧
               li.m-tab-list
-                a.flex href=""
+                a.flex href="./owner-libraries-exam-quizzes-edit.html"
                   | クイズ編集
           .l-quiz
             .m-quiz.flex

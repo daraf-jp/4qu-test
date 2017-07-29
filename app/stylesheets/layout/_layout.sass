@@ -1,7 +1,5 @@
 $footer-height: 250px
 
-body
-
 // wrapper
 .l-wrapper
   min-height: 100%
@@ -22,7 +20,7 @@ body
   padding-bottom: 60px
 
 // header
-.staff
+.staff, .owner.teaser
   .l-header
     width: 100%
     height: 80px
@@ -112,12 +110,14 @@ body
 
     .l-header-left
       flex: 1
+
       img
         height: 35px
         display: block
 
     .l-header-center
       width: 440px
+
       ul
         li
           width: 110px
@@ -125,15 +125,18 @@ body
           display: table
           float: left
           text-align: center
+
           a
             display: table-cell
             vertical-align: middle
             color: $color-text
             font-size: 12px
+
             &:hover
               background-color: rgba($color-link, 0.1)
               color: $color-link
               border-radius: 5px
+
           &.active
             a
               background-color: $color-link
@@ -142,21 +145,28 @@ body
 
     .l-header-right
       flex: 1
+
       ul
         height: 64px
         display: table
+
         li
           display: table-cell
           vertical-align: middle
           padding-right: 45px
+
           &:last-child
             padding-right: 0
+
           a
             color: $color-base
+
             .icon-new
               font-size: 25px
-            .icon-profile
+
+            .icon-setting
               font-size: 25px
+
             &:hover
               color: $color-link
 
@@ -308,26 +318,25 @@ body
     box-shadow: 2px 0 1px rgba($color-text, 0.2), -2px 0 1px rgba($color-text, 0.2), 0 2px 1px rgba($color-text, 0.2)
     margin-bottom: 45px
 
-.l-exam-header
-  width: 100%
-  height: 110px
-  padding: 0 30px
-  margin-bottom: 40px
-  display: flex
-  align-items: center
-  box-shadow: 0 1px 0 rgba($color-text, 0.2)
-  .l-exam-header-left
-    flex: 1
+  &-header
+    width: 100%
+    height: 110px
+    padding: 0 30px
+    margin-bottom: 40px
+    display: flex
+    align-items: center
+    box-shadow: 0 1px 0 rgba($color-text, 0.2)
 
-.l-exam-setting
-  width: 900px
-  margin: 0 auto
-  padding-top: 30px
+    &-left
+      flex: 1
+
+  &-setting
+    width: 900px
+    margin: 0 auto
 
 .l-setting
   width: 700px
   margin: 0 auto
-  padding-top: 30px
 
 // search
 .l-search
@@ -389,7 +398,7 @@ body
   border-top: 1px solid $color-gray
   border-bottom: 1px solid $color-gray
   padding: 60px 20px 55px 50px
-  margin: 25px 0 50px 0
+  margin: 25px 0 0 0
   background-color: #fafafa
 
   &-inner
@@ -428,6 +437,11 @@ body
       background-color: $color-light-gray
       position: absolute
       top: 50%
+
+// team
+.l-team-new
+  width: 700px
+  margin: 0 auto
 
 // store
 .l-store

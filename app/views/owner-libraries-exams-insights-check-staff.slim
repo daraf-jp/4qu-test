@@ -1,0 +1,326 @@
+doctype html
+html
+  include _head
+  body.owner.libraries.libraries-exams.libraries-exams-insights.libraries-exams-insights-check.libraries-exams-insights-check-staff
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ライブラリ
+          span.m-breadcrumb-arrow
+            | >
+          a.m-breadcrumb href=""
+            | テスト
+          span.m-breadcrumb-arrow
+            | >
+          a.m-breadcrumb href=""
+            | 2017.3月度新メニュークイズ
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 解答者集計
+        include _owner_exams_header
+        .l-container
+          .l-return
+            a.m-return href="./owner-libraries-exams-insights-check.html"
+              .m-return-icon.icon-return.inline-block.align-middle
+              .m-return-text.inline-block.align-middle
+                | 一覧へ戻る
+          .m-staff
+            .m-staff-avatar
+              img src="./img/default-avatar.png"
+            .m-staff-info
+              .m-staff-info-content
+                .m-staff-name
+                  | 寺西勁人
+                .m-staff-btn-group
+                  a.m-btn.m-btn-gray-transparent.m-staff-registration-btn href=""
+                    | プロフィール登録
+                  a.m-btn.m-btn-red-transparent.m-staff-delete-btn href=""
+                    | 削除
+              .m-staff-info-content
+                .m-staff-text
+                  strong TEL：
+                  | 09012345678
+                .m-staff-text
+                  strong マネージャー：
+                  | JR飯田橋駅西口店
+          .l-insight.flex.align-items-center
+            .l-insight-date
+              .m-insight-date.align-center
+                | 17.02.27
+                br
+                | 13:00
+            .l-insight-correct
+              .m-insight-correct
+                #correct-progress
+            .l-insight-correction
+              .m-insight-correction-text.align-right
+                | 10/10
+              .m-insight-correction.flex.flex-wrap-wrap
+                .m-correction.correct
+                .m-correction.correct
+                .m-correction.correct
+                .m-correction.correct
+                .m-correction.correct
+                .m-correction.correct
+                .m-correction.correct
+                .m-correction.correct
+                .m-correction.correct
+                .m-correction.correct
+          .l-graph
+            .l-graph-inner
+              .m-graph-answer-num
+                | 合計：5回
+              .l-graph-y.flex.justify-content-space-between.flex-direction-column
+                .m-graph-y-scale.flex.align-items-flex-start.justify-content-flex-end
+                  | 100
+                .m-graph-y-scale.flex.align-items-center.justify-content-flex-end
+                  | 50
+                .m-graph-y-scale.flex.align-items-flex-end.justify-content-flex-end
+                  | 0
+              .l-graph-x.flex.justify-content-space-between
+                .m-graph-x-scale
+                  | 1回目
+                .m-graph-x-scale
+                  | 2回目
+                .m-graph-x-scale
+                  | 3回目
+                .m-graph-x-scale
+                  | 4回目
+                .m-graph-x-scale
+                  | 5回目
+              .l-graph-content
+                .l-graph-content-inner.flex
+                  .m-graph-content
+                    .m-graph-point style="bottom: 100%; margin-bottom: -29px;"
+                      .m-graph-point-icon.icon-pentagon
+                      .m-graph-point-num
+                        | 100%
+                  .m-graph-content
+                    .m-graph-point.active style="bottom: 100%; margin-bottom: -29px;"
+                      .m-graph-point-icon.icon-pentagon
+                      .m-graph-point-num
+                        | 100%
+                  .m-graph-content
+                    .m-graph-point style="bottom: 100%; margin-bottom: -29px;"
+                      .m-graph-point-icon.icon-pentagon
+                      .m-graph-point-num
+                        | 100%
+                  .m-graph-content
+                    .m-graph-point style="bottom: 100%; margin-bottom: -29px;"
+                      .m-graph-point-icon.icon-pentagon
+                      .m-graph-point-num
+                        | 100%
+                  .m-graph-content
+                    .m-graph-point style="bottom: 100%; margin-bottom: -29px;"
+                      .m-graph-point-icon.icon-pentagon
+                      .m-graph-point-num
+                        | 100%
+          .l-table
+            table.m-table
+              thead
+                tr
+                  th.num
+                    | #
+                  th.question.align-left
+                    | チェックリスト
+                  th.date
+                    | 17.03.03
+                  th.date
+                    | 17.03.02
+                  th.date
+                    | 17.03.01
+                  th.date
+                    | 17.02.27
+                  th.date
+                    | 17.02.25
+                  th.date
+                    | 17.02.24
+                  th.date
+                    | 17.02.23
+                  th.date
+                    | 17.02.22
+                  th.date
+                    | 17.02.21
+                  th.date
+                    | 17.02.20
+              tbody
+                tr
+                  td.start-time-text colspan="2"
+                    | 開始時刻
+                  td.start-time
+                    | 10:00
+                  td.start-time
+                    | 10:00
+                  td.start-time
+                    | 10:00
+                  td.start-time
+                    | 10:00
+                  td.start-time
+                    | 10:00
+                  td.start-time
+                    | 10:00
+                  td.start-time
+                    | 10:00
+                  td.start-time
+                    | 10:00
+                  td.start-time
+                    | 10:00
+                  td.start-time
+                    | 10:00
+                tr
+                  td.end-time-text colspan="2"
+                    | 終了時刻
+                  td.end-time
+                    | 11:00
+                  td.end-time
+                    | 11:00
+                  td.end-time
+                    | 11:00
+                  td.end-time
+                    | 11:00
+                  td.end-time
+                    | 11:00
+                  td.end-time
+                    | 11:00
+                  td.end-time
+                    | 11:00
+                  td.end-time
+                    | 11:00
+                  td.end-time
+                    | 11:00
+                  td.end-time
+                    | 11:00
+                tr
+                  td.completion-rate-text colspan="2"
+                    | 完了率
+                  td.completion-rate
+                    | 100%
+                  td.completion-rate
+                    | 100%
+                  td.completion-rate
+                    | 100%
+                  td.completion-rate
+                    | 100%
+                  td.completion-rate
+                    | 100%
+                  td.completion-rate
+                    | 100%
+                  td.completion-rate
+                    | 100%
+                  td.completion-rate
+                    | 100%
+                  td.completion-rate
+                    | 100%
+                  td.completion-rate
+                    | 100%
+                tr
+                  td.num
+                    | Q1
+                  td.question.align-left
+                    | (1) 換気
+                    br
+                    | 1. 道路側の窓を開ける
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                tr
+                  td.num
+                    | Q2
+                  td.question.align-left
+                    | (2) 机
+                    br
+                    | ● 使用道具
+                    br
+                    | ・キッチン用アルコール除菌
+                    br
+                    | ・白のダスター
+                    br
+                    | 1. キッチン用アルコール除菌を机に吹きかけて白のダスターで店内の机を全て拭く
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                tr
+                  td.num
+                    | Q3
+                  td.question.align-left
+                    | (3) トイレ
+                    br
+                    | ● 使用道具
+                    br
+                    | ・デイリークリーナー
+                    br
+                    | ・ブラシ
+                    br
+                    | ・青のダスター
+                    br
+                    | ・ほうき
+                    br
+                    | 1. デイリークリーナーとブラシで便器の中を磨く
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+                  td.check
+                    .icon-check
+
+javascript:
+  $('#correct-progress').radialIndicator({
+    barColor: '#37CC82',
+    barWidth: 6,
+    initValue: 100,
+    roundCorner : true,
+    percentage: true,
+    fontSize: 24,
+    fontWeight: 400,
+  });

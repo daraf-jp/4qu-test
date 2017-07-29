@@ -1,7 +1,7 @@
 doctype html
 html
   include _head
-  body.owner.libraries.libraries-exam.libraries-exam-setting
+  body.owner.libraries.libraries-exams.libraries-exams-setting
     .l-wrapper
       include _owner_header
       .l-main
@@ -219,7 +219,7 @@ html
                 .m-form-group-label
                   | 開始画面 *
               .l-form-group-right
-                textarea.m-form-control.m-form-group-control type="text" placeholder="コメントを入力"
+                textarea.m-form-textarea type="text" placeholder="コメントを入力"
                 .m-form-group-annotation
                   | 3000文字まで
             .l-form-group
@@ -316,9 +316,9 @@ html
                 .m-form-group-label
                   | 終了画面 *
               .l-form-group-right
-                textarea.m-form-control.m-form-group-control type="text" placeholder="コメントを入力"
+                textarea.m-form-textarea type="text" placeholder="コメントを入力"
                 .m-form-group-annotation
                   | 3000文字まで
             .l-form-submit
-              a.m-btn.m-btn-blue-transparent.m-form-submit href=""
+              a.m-btn.m-btn-blue.m-form-submit href=""
                 | 更新する

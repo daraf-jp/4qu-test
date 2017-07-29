@@ -11,13 +11,32 @@
     .m-btn
       &:first-child
         border-radius: 6px 0 0 6px
+
       &:last-child
         border-radius: 0 6px 6px 0
+
+  &-base
+    color: #fff
+    background-color: $color-base
+    border: 1px solid $color-base
+
+    &:hover
+      color: #fff
+      box-shadow: 0 3px 1px rgba($color-text, 0.3)
+
+  &-base-transparent
+    color: $color-base
+    border: 1px solid $color-base
+
+    &:hover
+      color: #fff
+      background-color: $color-base
 
   &-blue
     color: #fff
     background-color: $color-link
     border: 1px solid $color-link
+
     &:hover
       color: #fff
       box-shadow: 0 3px 1px rgba($color-text, 0.3)
@@ -25,6 +44,7 @@
   &-blue-transparent
     color: $color-link
     border: 1px solid $color-link
+
     &:hover
       color: #fff
       background-color: $color-link
@@ -33,21 +53,43 @@
     color: #fff
     background-color: #37CC82
     border: 1px solid #37CC82
+
     &:hover
       color: #fff
       box-shadow: 0 3px 1px rgba($color-text, 0.3)
 
+  &-red-transparent
+    color: $color-red
+    border: 1px solid $color-red
+
+    &:hover
+      color: #fff
+      background-color: $color-red
+
   &-gray-transparent
     color: $color-dark-gray
     border: 1px solid $color-dark-gray
+
     &:hover
       color: #fff
       background-color: $color-dark-gray
+
+  &-light-gray
+    color: #fff
+    background-color: $color-gray
+    border: 1px solid $color-gray
+
+    &:hover
+      color: #fff
+      box-shadow: 0 3px 1px rgba($color-text, 0.3)
 
   &-new
     width: 200px
     height: 40px
     padding: 8px 12px
+    display: flex
+    justify-content: center
+    align-items: center
 
   &-sort-list
     font-size: 20px
@@ -58,3 +100,9 @@
     align-items: center
     padding: 0
     margin-left: 15px
+
+  &-csv
+    font-size: 12px
+
+    &:first-child
+      margin-right: 15px
