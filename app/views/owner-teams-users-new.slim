@@ -1,0 +1,51 @@
+doctype html
+html
+  include _head
+  body.owner.teams.teams-users.teams-users-new
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | チーム
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 新規作成
+        .l-container
+          .l-team-new
+            form
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | ロール
+                .l-form-group-right
+                  input.m-form-control.m-form-control-half.m-form-group-control type="text" placeholder="ロールを選択"
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | 名前
+                .l-form-group-right
+                  input.m-form-control.m-form-group-control type="text" placeholder="名前を入力"
+                  .m-form-group-annotation
+                    | 4文字〜20文字
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | メールアドレス
+                .l-form-group-right
+                  input.m-form-control.m-form-group-control type="text" placeholder="メールアドレスを入力"
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | アイコン
+                .l-form-group-right.flex.align-items-center
+                  .m-form-upload-image
+                    img src="./img/default-avatar.png" width="70" height="70"
+                  .m-form-upload
+                    input type="file"
+                    a.m-form-upload-btn.m-btn.m-btn-gray-transparent href="/"
+                      | ファイルを選択
+              .l-form-submit
+                a.m-btn.m-btn-blue.m-form-submit href="./owner-teams-index.html"
+                  | 作成する
