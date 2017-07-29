@@ -22,7 +22,7 @@ gulp.task('browser-sync', function(){
     server: {
       baseDir: './public/'
     },
-    port: 8000
+    port: 4040
   });
 });
 
