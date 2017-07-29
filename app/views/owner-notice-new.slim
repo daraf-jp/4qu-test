@@ -1,0 +1,15 @@
+doctype html
+html
+  include _head
+  body.owner.notice.notice-new
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | お知らせ
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 新規作成
+        include _owner_notice_subheader

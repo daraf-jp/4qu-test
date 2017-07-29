@@ -7,7 +7,7 @@ html
       .l-main
         .l-breadcrumb.mobile-none
           a.m-breadcrumb href=""
-            | 通知
+            | お知らせ
           span.m-breadcrumb-arrow
             | >
           span.m-breadcrumb.active
@@ -15,10 +15,16 @@ html
         include _owner_notice_subheader
         .l-container.flex.justify-content-space-between
           .send-lists
-            .l-search
-              .m-search
-                form.m-form.m-search-form
-                  input.m-form-control.m-form-search.m-form-search-m placeholder="検索" type="text"
+            .l-search-head.flex.justify-content-space-between
+              .l-search.l-search-m
+                .m-search
+                  form.m-form.m-search-form
+                    input.m-form-control.m-form-search.m-form-search-m.float-left placeholder="検索" type="text"
+                a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
+                  .icon-sort-list
+              .l-new-btn
+                a.m-btn.m-btn-blue.m-btn-new.mobile-none href="./owner-notice-new.html"
+                  | + 新規お知らせ作成
             .send-list
               a.send-link.active href=""
                 .detail
