@@ -1,0 +1,98 @@
+.results
+  &-index
+  &-show
+    .insight-detail-btn
+      display: flex
+      width: 100%
+      justify-content: center
+      align-items: center
+      padding: 15px
+      border: 1px solid $color-gray
+      margin-top: -1px
+      color: $color-dark-gray
+
+      i
+        font-size: 18px
+        margin-left: 5px
+
+      &:hover
+        background-color: $color-gray
+        color: #fff
+
+      &[aria-expanded="true"]
+        background-color: $color-gray
+        color: #fff
+
+        i
+          transform: rotate(90deg)
+
+    .insight-detail-content
+
+      .l-table
+        overflow-x: scroll
+        margin-top: 25px
+
+        table
+          table-layout: fixed
+
+          .num
+            width: 50px
+
+          .question
+            width: 350px
+
+          .correct-answer
+            width: 80px
+
+          .date
+            width: 100px
+
+          .answer
+            width: 100px
+            position: relative
+
+            .falsefood
+              position: absolute
+              font-size: 30px
+              left: 50%
+              margin-left: -15px
+              top: 50%
+              margin-top: -15px
+
+              &.icon-correct
+                color: rgba($color-green, 0.25)
+
+              &.icon-incorrect
+                color: rgba($color-red, 0.25)
+
+            .choice
+              position: relative
+              z-index: 2
+
+          .correct-answer-rate-text
+            font-weight: 500
+
+          .correct-answer-rate
+            font-weight: 500
+
+    .l-quizzes
+      padding-top: 35px
+
+      .question-choice-content
+        width: 50%
+        height: 460px
+        overflow: scroll
+
+        .question-content
+          .m-quiz-question-text
+            padding-bottom: 0
+
+        .choice-content
+          margin-top: 15px
+          overflow: scroll
+
+      .answer-content
+        width: 50%
+        height: 460px
+        overflow: scroll
+        border-radius: 0 10px 0 0
