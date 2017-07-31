@@ -27,7 +27,7 @@ html
               ul.m-tab.flex
                 li.m-tab-list.active
                   a.flex href="./owner-libraries-exams-insights-questionnaire-index.html"
-                    | 解答者 (179)
+                    | 回答数 (169)
                 li.m-tab-list
                   a.flex href="./owner-libraries-exams-insights-questionnaire-quiz.html"
                     | クイズ
@@ -71,16 +71,15 @@ html
                       | (4)
             .l-main-content
               .l-insight-head.flex.justify-content-space-between.align-items-center
-                form
-                  input.m-form-checkbox type="checkbox" name="insight_type" id="insight-all" checked=""
-                  label.m-form-checkbox-label for="insight-all"
+                .m-btn-segment
+                  a.m-btn-segment-control.active href=""
                     | 全て
-                  input.m-form-checkbox type="checkbox" name="insight_type" id="insight-done"
-                  label.m-form-checkbox-label for="insight-done"
-                    | 完了者
-                  input.m-form-checkbox type="checkbox" name="insight_type" id="insight-incomplete"
-                  label.m-form-checkbox-label for="insight-incomplete"
-                    | 未完了者
+                    .m-btn-segment-num
+                      | (169)
+                  a.m-btn-segment-control href=""
+                    | 回答者
+                    .m-btn-segment-num
+                      | (20)
                 .csv-btn-group
                   a.m-btn.m-btn-gray-transparent.m-btn-csv href=""
                     | CSVダウンロード(Shift_JIS)
@@ -100,7 +99,7 @@ html
                       th
                         | 回答
                       th
-                        | 解答数
+                        | 回答数
                         span.icon-sort-down.m-table-sort
                   tbody
                     tr

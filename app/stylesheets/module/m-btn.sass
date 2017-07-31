@@ -106,3 +106,34 @@
 
     &:first-child
       margin-right: 15px
+
+  &-segment
+    font-size: 12px
+    display: flex
+    align-items: center
+
+    &-control
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 6px 12px
+      border: 1px solid $color-link
+      border-right: none
+
+      &:first-child
+        border-radius: 5px 0 0 5px
+
+      &:last-child
+        border-radius: 0 5px 5px 0
+        border-right: 1px solid $color-link
+
+      &:hover
+        background-color: $color-link
+        color: #fff
+
+      &.active
+        background-color: $color-link
+        color: #fff
+
+    &-num
+      margin-left: 4px
