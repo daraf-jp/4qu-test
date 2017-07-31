@@ -26,13 +26,28 @@
         // アンケート
         .questionnaire
 
-          .answer-lists
-            border-top: 1px solid $color-light-gray
+          .l-table
+            margin-top: 10px
 
-          .answer-link
-            display: flex
-            justify-content: space-between
-            padding: 15px
+            .m-table
+              border-top: 1px solid $color-light-gray
+
+              td
+                border-color: $color-light-gray
+                padding: 18px 15px
+
+                .times-answer
+                  display: flex
+                  align-items: center
+
+                  .times
+                    margin-right: 15px
+
+                  .m-answer
+                    margin: 0
+
+                .date
+                  color: $color-dark-gray
 
       &-quiz
 
