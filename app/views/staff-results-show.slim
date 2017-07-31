@@ -6,562 +6,547 @@ html
       include _staff_header
       include _staff_exams_subheader
       .l-main
-        .l-container.flex.justify-content-space-between
-          .l-side-content.mobile-none
-            .m-side-head
-              | 種類
-            ul.m-side-nav
-              li.active
-                a href=""
-                  | 公開テスト
-              li
-                a href=""
-                  | JR飯田橋駅西口店
-              li
-                a href=""
-                  | 自分で作成
-          .l-main-content
-            .l-return
-              a.m-return href="./staff-insights-index.html"
-                .m-return-icon.icon-return.inline-block.align-middle
-                .m-return-text.inline-block.align-middle
-                  | 一覧へ戻る
-            .l-exam-info
-              .m-exam-header-title
-                | 2017.3月度新メニュークイズ
-              .m-exam-header-info
-                .m-exam-header-time-limit
-                  span.m-exam-header-time-limit-title
-                    | 制限時間：
-                  span.m-exam-header-time-limit-num
-                    | 15分
-                .m-exam-header-mode
-                  span.m-exam-header-mode-title
-                    | モード：
-                  span.m-exam-header-mode-text
-                    | テスト
-                .m-exam-header-category
-                  span.m-exam-header-category-title
-                    | カテゴリ：
-                  a.m-tag href=""
-                    | マニュアル
-            .l-insight.flex.align-items-center
-              .l-insight-date
-                .m-insight-date.align-center
-                  | 17.02.27
-                  br
-                  | 13:00
-              .l-insight-correct
-                .m-insight-correct
-                  #correct-progress
-                  / .m-insight-correct-text
-                  /   | 正答率
-              .l-insight-correction
-                .m-insight-correction-text.align-right
-                  | 7/10
-                .m-insight-correction.flex.flex-wrap-wrap
-                  .m-correction.correct
-                  .m-correction.correct
-                  .m-correction.correct
-                  .m-correction.incorrect
-                  .m-correction.correct
-                  .m-correction.correct
-                  .m-correction.incorrect
-                  .m-correction.correct
-                  .m-correction.correct
-                  .m-correction.incorrect
-            .l-graph
-              .l-graph-inner
-                .m-graph-answer-num
-                  | 合計：5回
-                .l-graph-y.flex.justify-content-space-between.flex-direction-column
-                  .m-graph-y-scale.flex.align-items-flex-start.justify-content-flex-end
-                    | 100
-                  .m-graph-y-scale.flex.align-items-center.justify-content-flex-end
-                    | 50
-                  .m-graph-y-scale.flex.align-items-flex-end.justify-content-flex-end
-                    | 0
-                .l-graph-x.flex.justify-content-space-between
-                  .m-graph-x-scale
-                    | 1回目
-                  .m-graph-x-scale
-                    | 2回目
-                  .m-graph-x-scale
-                    | 3回目
-                  .m-graph-x-scale
-                    | 4回目
-                  .m-graph-x-scale
-                    | 5回目
-                .l-graph-content
-                  .l-graph-content-inner.flex
-                    .m-graph-content
-                      .m-graph-point style="bottom: 10%; margin-bottom: -25px;"
-                        .m-graph-point-icon.icon-pentagon
-                        .m-graph-point-num
-                          | 10%
-                    .m-graph-content
-                      .m-graph-point.active style="bottom: 70%; margin-bottom: -29px;"
-                        .m-graph-point-icon.icon-pentagon
-                        .m-graph-point-num
-                          | 70%
-                    .m-graph-content
-                      .m-graph-point style="bottom: 80%; margin-bottom: -29px;"
-                        .m-graph-point-icon.icon-pentagon
-                        .m-graph-point-num
-                          | 80%
-                    .m-graph-content
-                      .m-graph-point style="bottom: 100%; margin-bottom: -29px;"
-                        .m-graph-point-icon.icon-pentagon
-                        .m-graph-point-num
-                          | 100%
-                    .m-graph-content
-                      .m-graph-point style="bottom: 100%; margin-bottom: -29px;"
-                        .m-graph-point-icon.icon-pentagon
-                        .m-graph-point-num
-                          | 100%
-            .l-graph-detail
-              a.insight-detail-btn data-toggle="collapse" href="#collapse-insights" aria-expanded="false" aria-controls="collapse-insights"
-                | 詳細
-                i.fa.fa-angle-right
-              .insight-detail-content.collapse#collapse-insights
-                .l-table
-                  table.m-table
-                    thead
-                      tr
-                        th.num
-                          | #
-                        th.question.align-left
-                          | 問題文
-                        th.correct-answer
-                          | 正解
-                        th.date
-                          | 17.03.03
-                        th.date
-                          | 17.03.02
-                        th.date
-                          | 17.03.01
-                        th.date
-                          | 17.02.27
-                        th.date
-                          | 17.02.25
-                    tbody
-                      tr
-                        td.num
-                          | Q1
-                        td.align-left.question
-                          | ささみカツの油調時間は？
-                        td.correct-answer
-                          | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-incorrect
-                          .choice
-                            | 2
-                      tr
-                        td.num
-                          | Q2
-                        td.align-left.question
-                          | 毎年人気のささみカツカレー。
-                          br
-                          | 仕込む時のポイントは？
-                        td.correct-answer
-                          | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-incorrect
-                          .choice
-                            | 2
-                      tr
-                        td.num
-                          | Q3
-                        td.align-left.question
-                          | チキン三昧カレーのトッピングの中身は？
-                        td.correct-answer
-                          | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-incorrect
-                          .choice
-                            | 2
-                      tr
-                        td.num
-                          | Q4
-                        td.align-left.question
-                          | ささみカツカレー、ハーフささみカツカレー以外にささみカツを使っているメニューは？
-                        td.correct-answer
-                          | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-incorrect
-                          .choice
-                            | 2
-                      tr
-                        td.num
-                          | Q5
-                        td.align-left.question
-                          | タンドリーチキンスープカレーのタンドリーチキンだけ単品で頼みたいとお客様にお願いされました。
-                          br
-                          | どう対応しますか？
-                        td.correct-answer
-                          | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-incorrect
-                          .choice
-                            | 2
-                      tr
-                        td.num
-                          | Q6
-                        td.align-left.question
-                          | グランドマザーカレーで使っている特製スパイス。
-                          br
-                          | ２月末でグラマ販売終了ですがどうしたらいいでしょうか？
-                        td.correct-answer
-                          | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-incorrect
-                          .choice
-                            | 2
-                      tr
-                        td.num
-                          | Q7
-                        td.align-left.question
-                          | タンドリーチキンスープカレーのスープ野菜セット、正しい組み合わせは？
-                        td.correct-answer
-                          | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-incorrect
-                          .choice
-                            | 2
-                      tr
-                        td.num
-                          | Q8
-                        td.align-left.question
-                          | オニオンレモンソース、どう仕込みますか？
-                        td.correct-answer
-                          | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-incorrect
-                          .choice
-                            | 2
-                      tr
-                        td.num
-                          | Q9
-                        td.align-left.question
-                          | ごぼうのミモザサラダ、ミモザってなに？
-                        td.correct-answer
-                          | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-correct
-                          .choice
-                            | 1
-                        td.answer
-                          .falsefood.icon-incorrect
-                          .choice
-                            | 2
-                      tr
-                        td.correct-answer-rate-text colspan="3"
-                          | 正答率
-                        td.correct-answer-rate
-                          | 100%
-                        td.correct-answer-rate
-                          | 100%
-                        td.correct-answer-rate
-                          | 80%
-                        td.correct-answer-rate
-                          | 70%
-                        td.correct-answer-rate
-                          | 10%
-            .l-quizzes
-              .l-quiz
-                .m-quiz.flex
-                  .m-quiz-content.question-choice-content
-                    .question-content
-                      .m-quiz-head.flex.align-items-center
-                        .m-quiz-icon.icon-quiz
-                        .m-quiz-title
-                          | 1
-                      .m-quiz-question-text
-                        | 毎年人気の手仕込ささみカツカレー。仕込む時のポイントは？
-                        iframe width="560" height="315" src="https://www.youtube.com/embed/G26YiqIt7xw" frameborder="0" allowfullscreen
-                    .choice-content
-                      .m-quiz-head.flex.align-items-center
-                        .m-quiz-icon.icon-choice
-                        .m-quiz-title
-                          | 選択肢
-                      ul.m-quiz-choices
-                        li.m-quiz-choice
-                          .m-quiz-choiced-label.icon-check
-                          .m-quiz-choice-content
-                            | 潰されないように丸くふっくら衣をつける
-                          .m-quiz-choice-correct
-                            | 正解
-                        li.m-quiz-choice
-                          .m-quiz-choice-label
-                          .m-quiz-choice-content
-                            | 大きく見えるように平べったく衣をつける
-                        li.m-quiz-choice
-                          .m-quiz-choice-label
-                          .m-quiz-choice-content
-                            | -
-                        li.m-quiz-choice
-                          .m-quiz-choice-label
-                          .m-quiz-choice-content
-                            | -
-                  .m-quiz-content.answer-content
-                    .m-quiz-answer-correct
-                      .m-quiz-answer-correct-icon.icon-correct
-                      .m-quiz-answer-correct-text
+        .l-container
+          .l-return
+            a.m-return href="./staff-results-index.html"
+              .m-return-icon.icon-return.inline-block.align-middle
+              .m-return-text.inline-block.align-middle
+                | 一覧へ戻る
+          .l-exam-info
+            .m-exam-header-title
+              | 2017.3月度新メニュークイズ
+            .m-exam-header-info
+              .m-exam-header-time-limit
+                span.m-exam-header-time-limit-title
+                  | 制限時間：
+                span.m-exam-header-time-limit-num
+                  | 15分
+              .m-exam-header-mode
+                span.m-exam-header-mode-title
+                  | モード：
+                span.m-exam-header-mode-text
+                  | テスト
+              .m-exam-header-category
+                span.m-exam-header-category-title
+                  | カテゴリ：
+                a.m-tag href=""
+                  | マニュアル
+          .l-insight.flex.align-items-center
+            .l-insight-date
+              .m-insight-date.align-center
+                | 17.02.27
+                br
+                | 13:00
+            .l-insight-correct
+              .m-insight-correct
+                #correct-progress
+                / .m-insight-correct-text
+                /   | 正答率
+            .l-insight-correction
+              .m-insight-correction-text.align-right
+                | 7/10
+              .m-insight-correction.flex.flex-wrap-wrap
+                .m-correction.correct
+                .m-correction.correct
+                .m-correction.correct
+                .m-correction.incorrect
+                .m-correction.correct
+                .m-correction.correct
+                .m-correction.incorrect
+                .m-correction.correct
+                .m-correction.correct
+                .m-correction.incorrect
+          .l-graph
+            .l-graph-inner
+              .m-graph-answer-num
+                | 合計：5回
+              .l-graph-y.flex.justify-content-space-between.flex-direction-column
+                .m-graph-y-scale.flex.align-items-flex-start.justify-content-flex-end
+                  | 100
+                .m-graph-y-scale.flex.align-items-center.justify-content-flex-end
+                  | 50
+                .m-graph-y-scale.flex.align-items-flex-end.justify-content-flex-end
+                  | 0
+              .l-graph-x.flex.justify-content-space-between
+                .m-graph-x-scale
+                  | 1回目
+                .m-graph-x-scale
+                  | 2回目
+                .m-graph-x-scale
+                  | 3回目
+                .m-graph-x-scale
+                  | 4回目
+                .m-graph-x-scale
+                  | 5回目
+              .l-graph-content
+                .l-graph-content-inner.flex
+                  .m-graph-content
+                    .m-graph-point style="bottom: 10%; margin-bottom: -25px;"
+                      .m-graph-point-icon.icon-pentagon
+                      .m-graph-point-num
+                        | 10%
+                  .m-graph-content
+                    .m-graph-point.active style="bottom: 70%; margin-bottom: -29px;"
+                      .m-graph-point-icon.icon-pentagon
+                      .m-graph-point-num
+                        | 70%
+                  .m-graph-content
+                    .m-graph-point style="bottom: 80%; margin-bottom: -29px;"
+                      .m-graph-point-icon.icon-pentagon
+                      .m-graph-point-num
+                        | 80%
+                  .m-graph-content
+                    .m-graph-point style="bottom: 100%; margin-bottom: -29px;"
+                      .m-graph-point-icon.icon-pentagon
+                      .m-graph-point-num
+                        | 100%
+                  .m-graph-content
+                    .m-graph-point style="bottom: 100%; margin-bottom: -29px;"
+                      .m-graph-point-icon.icon-pentagon
+                      .m-graph-point-num
+                        | 100%
+          .l-graph-detail
+            a.insight-detail-btn data-toggle="collapse" href="#collapse-insights" aria-expanded="false" aria-controls="collapse-insights"
+              | 詳細
+              i.fa.fa-angle-right
+            .insight-detail-content.collapse#collapse-insights
+              .l-table
+                table.m-table
+                  thead
+                    tr
+                      th.num
+                        | #
+                      th.question.align-left
+                        | 問題文
+                      th.correct-answer
                         | 正解
-                    .m-quiz-head.flex.align-items-center
-                      .m-quiz-icon.icon-answer
-                      .m-quiz-title
-                        | 解説
-                    .m-quiz-answer-text
-                      | 全てにささみカツを使っています！
-                      br
-                      | 手仕込ヒレささみは、ヒレカツ1枚・ささみカツ1本、
-                      br
-                      | 手仕込三昧は、ささみカツ1本・ヒレカツ1枚・とんかつ1枚、
-                      br
-                      | チキン三昧は、ささみカツ2本・フライドチキン・チキン煮込みです。
-                      img src="./img/answer1.png"
-              .l-quiz
-                .m-quiz.flex
-                  .m-quiz-content.question-choice-content
-                    .question-content
-                      .m-quiz-head.flex.align-items-center
-                        .m-quiz-icon.icon-quiz
-                        .m-quiz-title
+                      th.date
+                        | 17.03.03
+                      th.date
+                        | 17.03.02
+                      th.date
+                        | 17.03.01
+                      th.date
+                        | 17.02.27
+                      th.date
+                        | 17.02.25
+                  tbody
+                    tr
+                      td.num
+                        | Q1
+                      td.align-left.question
+                        | ささみカツの油調時間は？
+                      td.correct-answer
+                        | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-incorrect
+                        .choice
                           | 2
-                      .m-quiz-question-text
-                        | 毎年人気の手仕込ささみカツカレー。仕込む時のポイントは？
-                    .choice-content
-                      .m-quiz-head.flex.align-items-center
-                        .m-quiz-icon.icon-choice
-                        .m-quiz-title
-                          | 選択肢
-                      ul.m-quiz-choices
-                        li.m-quiz-choice
-                          .m-quiz-choice-label
-                          .m-quiz-choice-content
-                            | 潰されないように丸くふっくら衣をつける
-                          .m-quiz-choice-correct
-                            | 正解
-                        li.m-quiz-choice
-                          .m-quiz-choiced-label.icon-check
-                          .m-quiz-choice-content
-                            | 大きく見えるように平べったく衣をつける
-                        li.m-quiz-choice
-                          .m-quiz-choice-label
-                          .m-quiz-choice-content
-                            | -
-                        li.m-quiz-choice
-                          .m-quiz-choice-label
-                          .m-quiz-choice-content
-                            | -
-                  .m-quiz-content.answer-content
-                    .m-quiz-answer-incorrect
-                      .m-quiz-answer-incorrect-icon.icon-incorrect
-                      .m-quiz-answer-incorrect-text
-                        | 不正解
-                    .m-quiz-head.flex.align-items-center
-                      .m-quiz-icon.icon-answer
-                      .m-quiz-title
-                        | 解説
-                    .m-quiz-answer-text
-                      | 全てにささみカツを使っています！
-                      br
-                      | 手仕込ヒレささみは、ヒレカツ1枚・ささみカツ1本、
-                      br
-                      | 手仕込三昧は、ささみカツ1本・ヒレカツ1枚・とんかつ1枚、
-                      br
-                      | チキン三昧は、ささみカツ2本・フライドチキン・チキン煮込みです。
-                      img src="./img/answer1.png"
-              .l-quiz
-                .m-quiz.flex
-                  .m-quiz-content.question-choice-content
-                    .question-content
-                      .m-quiz-head.flex.align-items-center
-                        .m-quiz-icon.icon-quiz
-                        .m-quiz-title
-                          | 3
-                      .m-quiz-question-text
-                        | 毎年人気の手仕込ささみカツカレー。仕込む時のポイントは？
-                    .choice-content
-                      .m-quiz-head.flex.align-items-center
-                        .m-quiz-icon.icon-choice
-                        .m-quiz-title
-                          | 選択肢
-                      ul.m-quiz-choices
-                        li.m-quiz-choice
-                          .m-quiz-choice-label
-                          .m-quiz-choice-content
-                            | 潰されないように丸くふっくら衣をつける
-                        li.m-quiz-choice
-                          .m-quiz-choice-label
-                          .m-quiz-choice-content
-                            | 大きく見えるように平べったく衣をつける
-                        li.m-quiz-choice
-                          .m-quiz-choice-label
-                          .m-quiz-choice-content
-                            | -
-                        li.m-quiz-choice
-                          .m-quiz-choice-label
-                          .m-quiz-choice-content
-                            | -
-                  .m-quiz-content.answer-content
-                    .m-quiz-unanswered
-                      .m-quiz-unanswered-text
-                        | 未解答
-                    .m-quiz-head.flex.align-items-center
-                      .m-quiz-icon.icon-answer
-                      .m-quiz-title
-                        | 解説
-                    .m-quiz-answer-text
-                      | 全てにささみカツを使っています！
-                      br
-                      | 手仕込ヒレささみは、ヒレカツ1枚・ささみカツ1本、
-                      br
-                      | 手仕込三昧は、ささみカツ1本・ヒレカツ1枚・とんかつ1枚、
-                      br
-                      | チキン三昧は、ささみカツ2本・フライドチキン・チキン煮込みです。
-                      img src="./img/answer1.png"
+                    tr
+                      td.num
+                        | Q2
+                      td.align-left.question
+                        | 毎年人気のささみカツカレー。
+                        br
+                        | 仕込む時のポイントは？
+                      td.correct-answer
+                        | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-incorrect
+                        .choice
+                          | 2
+                    tr
+                      td.num
+                        | Q3
+                      td.align-left.question
+                        | チキン三昧カレーのトッピングの中身は？
+                      td.correct-answer
+                        | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-incorrect
+                        .choice
+                          | 2
+                    tr
+                      td.num
+                        | Q4
+                      td.align-left.question
+                        | ささみカツカレー、ハーフささみカツカレー以外にささみカツを使っているメニューは？
+                      td.correct-answer
+                        | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-incorrect
+                        .choice
+                          | 2
+                    tr
+                      td.num
+                        | Q5
+                      td.align-left.question
+                        | タンドリーチキンスープカレーのタンドリーチキンだけ単品で頼みたいとお客様にお願いされました。
+                        br
+                        | どう対応しますか？
+                      td.correct-answer
+                        | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-incorrect
+                        .choice
+                          | 2
+                    tr
+                      td.num
+                        | Q6
+                      td.align-left.question
+                        | グランドマザーカレーで使っている特製スパイス。
+                        br
+                        | ２月末でグラマ販売終了ですがどうしたらいいでしょうか？
+                      td.correct-answer
+                        | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-incorrect
+                        .choice
+                          | 2
+                    tr
+                      td.num
+                        | Q7
+                      td.align-left.question
+                        | タンドリーチキンスープカレーのスープ野菜セット、正しい組み合わせは？
+                      td.correct-answer
+                        | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-incorrect
+                        .choice
+                          | 2
+                    tr
+                      td.num
+                        | Q8
+                      td.align-left.question
+                        | オニオンレモンソース、どう仕込みますか？
+                      td.correct-answer
+                        | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-incorrect
+                        .choice
+                          | 2
+                    tr
+                      td.num
+                        | Q9
+                      td.align-left.question
+                        | ごぼうのミモザサラダ、ミモザってなに？
+                      td.correct-answer
+                        | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-correct
+                        .choice
+                          | 1
+                      td.answer
+                        .falsefood.icon-incorrect
+                        .choice
+                          | 2
+                    tr
+                      td.correct-answer-rate-text colspan="3"
+                        | 正答率
+                      td.correct-answer-rate
+                        | 100%
+                      td.correct-answer-rate
+                        | 100%
+                      td.correct-answer-rate
+                        | 80%
+                      td.correct-answer-rate
+                        | 70%
+                      td.correct-answer-rate
+                        | 10%
+          .l-quizzes
+            .l-quiz
+              .m-quiz.flex
+                .m-quiz-content
+                  .m-quiz-head.flex.align-items-center
+                    .m-quiz-icon.icon-quiz
+                    .m-quiz-title
+                      | 1
+                  .m-quiz-question-text
+                    | 毎年人気の手仕込ささみカツカレー。仕込む時のポイントは？
+                    iframe width="560" height="315" src="https://www.youtube.com/embed/G26YiqIt7xw" frameborder="0" allowfullscreen
+                .m-quiz-content
+                  .m-quiz-head.flex.align-items-center
+                    .m-quiz-icon.icon-choice
+                    .m-quiz-title
+                      | 選択肢
+                  ul.m-quiz-choices
+                    li.m-quiz-choice
+                      .m-quiz-choiced-label.icon-check
+                      .m-quiz-choice-content
+                        | 潰されないように丸くふっくら衣をつける
+                      .m-quiz-choice-correct
+                        | 正解
+                    li.m-quiz-choice
+                      .m-quiz-choice-label
+                      .m-quiz-choice-content
+                        | 大きく見えるように平べったく衣をつける
+                    li.m-quiz-choice
+                      .m-quiz-choice-label
+                      .m-quiz-choice-content
+                        | -
+                    li.m-quiz-choice
+                      .m-quiz-choice-label
+                      .m-quiz-choice-content
+                        | -
+                .m-quiz-content
+                  .m-quiz-answer-correct
+                    .m-quiz-answer-correct-icon.icon-correct
+                    .m-quiz-answer-correct-text
+                      | 正解
+                  .m-quiz-head.flex.align-items-center
+                    .m-quiz-icon.icon-answer
+                    .m-quiz-title
+                      | 解説
+                  .m-quiz-answer-text
+                    | 全てにささみカツを使っています！
+                    br
+                    | 手仕込ヒレささみは、ヒレカツ1枚・ささみカツ1本、
+                    br
+                    | 手仕込三昧は、ささみカツ1本・ヒレカツ1枚・とんかつ1枚、
+                    br
+                    | チキン三昧は、ささみカツ2本・フライドチキン・チキン煮込みです。
+                    img src="./img/answer1.png"
+            .l-quiz
+              .m-quiz.flex
+                .m-quiz-content
+                  .m-quiz-head.flex.align-items-center
+                    .m-quiz-icon.icon-quiz
+                    .m-quiz-title
+                      | 1
+                  .m-quiz-question-text
+                    | 毎年人気の手仕込ささみカツカレー。仕込む時のポイントは？
+                .m-quiz-content
+                  .m-quiz-head.flex.align-items-center
+                    .m-quiz-icon.icon-choice
+                    .m-quiz-title
+                      | 選択肢
+                  ul.m-quiz-choices
+                    li.m-quiz-choice
+                      .m-quiz-choice-label
+                      .m-quiz-choice-content
+                        | 潰されないように丸くふっくら衣をつける
+                      .m-quiz-choice-correct
+                        | 正解
+                    li.m-quiz-choice
+                      .m-quiz-choiced-label.icon-check
+                      .m-quiz-choice-content
+                        | 大きく見えるように平べったく衣をつける
+                    li.m-quiz-choice
+                      .m-quiz-choice-label
+                      .m-quiz-choice-content
+                        | -
+                    li.m-quiz-choice
+                      .m-quiz-choice-label
+                      .m-quiz-choice-content
+                        | -
+                .m-quiz-content
+                  .m-quiz-answer-incorrect
+                    .m-quiz-answer-incorrect-icon.icon-incorrect
+                    .m-quiz-answer-incorrect-text
+                      | 不正解
+                  .m-quiz-head.flex.align-items-center
+                    .m-quiz-icon.icon-answer
+                    .m-quiz-title
+                      | 解説
+                  .m-quiz-answer-text
+                    | 全てにささみカツを使っています！
+                    br
+                    | 手仕込ヒレささみは、ヒレカツ1枚・ささみカツ1本、
+                    br
+                    | 手仕込三昧は、ささみカツ1本・ヒレカツ1枚・とんかつ1枚、
+                    br
+                    | チキン三昧は、ささみカツ2本・フライドチキン・チキン煮込みです。
+                    img src="./img/answer1.png"
+            .l-quiz
+              .m-quiz.flex
+                .m-quiz-content
+                  .m-quiz-head.flex.align-items-center
+                    .m-quiz-icon.icon-quiz
+                    .m-quiz-title
+                      | 1
+                  .m-quiz-question-text
+                    | 毎年人気の手仕込ささみカツカレー。仕込む時のポイントは？
+                .m-quiz-content
+                  .m-quiz-head.flex.align-items-center
+                    .m-quiz-icon.icon-choice
+                    .m-quiz-title
+                      | 選択肢
+                  ul.m-quiz-choices
+                    li.m-quiz-choice
+                      .m-quiz-choice-label
+                      .m-quiz-choice-content
+                        | 潰されないように丸くふっくら衣をつける
+                      .m-quiz-choice-correct
+                        | 正解
+                    li.m-quiz-choice
+                      .m-quiz-choice-label
+                      .m-quiz-choice-content
+                        | 大きく見えるように平べったく衣をつける
+                    li.m-quiz-choice
+                      .m-quiz-choice-label
+                      .m-quiz-choice-content
+                        | -
+                    li.m-quiz-choice
+                      .m-quiz-choice-label
+                      .m-quiz-choice-content
+                        | -
+                .m-quiz-content
+                  .m-quiz-unanswered
+                    .m-quiz-unanswered-text
+                      | 未解答
+                  .m-quiz-head.flex.align-items-center
+                    .m-quiz-icon.icon-answer
+                    .m-quiz-title
+                      | 解説
+                  .m-quiz-answer-text
+                    | 全てにささみカツを使っています！
+                    br
+                    | 手仕込ヒレささみは、ヒレカツ1枚・ささみカツ1本、
+                    br
+                    | 手仕込三昧は、ささみカツ1本・ヒレカツ1枚・とんかつ1枚、
+                    br
+                    | チキン三昧は、ささみカツ2本・フライドチキン・チキン煮込みです。
+                    img src="./img/answer1.png"
 
 javascript:
   $('#correct-progress').radialIndicator({
