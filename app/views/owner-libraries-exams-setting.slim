@@ -110,9 +110,9 @@ html
                 input.m-form-radio type="radio" name="login_type" id="anonymous" checked=""
                 label.m-form-radio-label for="anonymous"
                   | 不要
-                input.m-form-radio type="radio" name="login_type" id="input"
-                label.m-form-radio-label for="input"
-                  | フォーム入力
+                input.m-form-radio type="radio" name="login_type" id="name"
+                label.m-form-radio-label for="name"
+                  | 名前
                 input.m-form-radio type="radio" name="login_type" id="tel"
                 label.m-form-radio-label for="tel"
                   | 電話番号
@@ -134,20 +134,6 @@ html
                 input.m-form-radio type="radio" name="login_type" id="slack"
                 label.m-form-radio-label for="slack"
                   | Slack
-            .l-form-group
-              .l-form-group-left
-                .m-form-group-label
-                  | 入力項目 *
-              .l-form-group-right
-                input.m-form-checkbox type="checkbox" name="input_type" id="input-name" checked=""
-                label.m-form-checkbox-label for="input-name"
-                  | 名前
-                input.m-form-checkbox type="checkbox" name="input_type" id="input-tel" checked=""
-                label.m-form-checkbox-label for="input-tel"
-                  | 電話番号
-                input.m-form-checkbox type="checkbox" name="input_type" id="input-email"
-                label.m-form-checkbox-label for="input-email"
-                  | メール
             .l-form-group
               .l-form-group-left
                 .m-form-group-label
@@ -222,19 +208,6 @@ html
                 textarea.m-form-textarea type="text" placeholder="コメントを入力"
                 .m-form-group-annotation
                   | 3000文字まで
-            .l-form-group
-              .l-form-group-left
-                .m-form-group-label
-                  | フロントページ
-              .l-form-group-right
-                .l-form-switch
-                  .m-form-switch
-                    input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="front_page" id="front-page-on"
-                    label.m-form-switch-radio-label for="front-page-on"
-                      | ON
-                    input.m-form-switch-radio.m-form-switch-radio-off type="radio" name="front_page" id="front-page-off" checked=""
-                    label.m-form-switch-radio-label for="front-page-off"
-                      | OFF
             .l-form-group
               .l-form-group-left
                 .m-form-group-label
