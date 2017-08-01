@@ -347,6 +347,71 @@
       .l-breadcrumb
         margin-bottom: 60px
 
+    &-copy
+      .copy-content
+        width: 540px
+        margin: 0 auto
+        border: 1px solid $color-gray
+
+        .copy-header
+          height: 70px
+          display: flex
+          align-items: center
+          justify-content: space-between
+          border-bottom: 1px solid $color-gray
+          padding: 0 15px
+
+          .btn-group
+            .m-btn
+              font-size: 12px
+
+              &:first-child
+                margin-right: 15px
+
+          .copied
+            font-size: 12px
+            color: $color-dark-gray
+
+        .user-lists
+          height: 400px
+          overflow: scroll
+
+          .user-list
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 15px
+            border-bottom: 1px solid $color-light-gray
+
+            &:last-child
+              border-bottom: none
+
+            .user-avatar
+              display: block
+              width: 40px
+              height: 40px
+              border-radius: 50%
+
+            .user-name
+              flex: 1
+              padding-left: 15px
+              padding-right: 10px
+              font-size: 13px
+
+            .copy-btn
+              font-size: 12px
+
+            .copied
+              display: flex
+              align-items: center
+
+              .copied-content
+                text-align: center
+                font-size: 12px
+                padding-left: 10px
+                color: $color-dark-gray
+
+
   &-exam-quizzes
 
     .m-quiz
