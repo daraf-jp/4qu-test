@@ -61,36 +61,77 @@
     .icon-incorrect
       color: $color-red
 
-    // &-scheduled
+    .plan-choice
+      display: flex
+      justify-content: space-between
+      margin-top: 35px
 
-    //   .m-table
-    //     thead
-    //       tr
-    //     tbody
-    //       tr
-    //         th, td
-    //           border-bottom-style: dashed
+      .plan
+        width: 220px
 
-    //         .payment-date
-    //           .this-month
-    //             font-size: 18px
-    //             font-weight: 500
+        .plan-box
 
-    //           .next-month
-    //             font-size: 14px
+          .title
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100%
+            height: 45px
+            color: #fff
+            font-size: 16px
+            font-weight: 500
 
-    //         .payment-price
-    //           .this-month
-    //             font-size: 24px
-    //             color: $color-red
-    //             font-weight: 600
-    //             margin-bottom: 10px
+          .detail
+            display: flex
+            flex-direction: column
+            justify-content: center
+            height: 100px
+            text-align: center
+            border: 1px solid
 
-    //           .next-month
-    //             font-size: 24px
-    //             color: $color-dark-gray
-    //             font-weight: 500
-    //             margin-bottom: 10px
+            .price-text
+              font-size: 24px
+              font-weight: 600
 
-    //           .m-btn
-    //             width: 250px
+              .unit
+                font-size: 16px
+                font-weight: 400
+                margin-left: 2px
+
+            .answer-text
+              font-size: 18px
+              font-weight: 500
+
+              .unit
+                font-size: 14px
+                font-weight: 400
+                margin-left: 2px
+
+            .supplement
+              font-size: 12px
+              margin-top: 4px
+
+          &.free
+            .title
+              background-color: $color-gray
+
+            .detail
+              border-color: $color-gray
+
+          &.start
+            .title
+              background-color: $color-link
+
+            .detail
+              border-color: $color-link
+
+          &.business
+            .title
+              background-color: $color-base
+
+            .detail
+              border-color: $color-base
+
+        .m-btn
+          width: 100%
+          margin-top: 15px
