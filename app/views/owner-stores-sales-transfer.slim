@@ -1,0 +1,106 @@
+doctype html
+html
+  include _head
+  body.owner.stores.stores-sales.stores-sales-transfer
+    .l-wrapper
+      include _owner_header
+      .l-main
+        .l-breadcrumb.mobile-none
+          a.m-breadcrumb href=""
+            | ストア
+          span.m-breadcrumb-arrow
+            | >
+          span.m-breadcrumb.active
+            | 売上管理
+        include _owner_stores_subheader
+        .l-container.flex.justify-content-space-between
+          .l-side-content.mobile-none
+            .m-side-head
+              | 売上管理
+            ul.m-side-nav
+              li
+                a href="./owner-stores-sales-index.html"
+                  | 売上
+              li.active
+                a href="./owner-stores-sales-transfer.html"
+                  | 送金
+              li
+                a href="./owner-stores-sales-exams.html"
+                  | 販売中のテスト
+              li
+                a href="./owner-stores-sales-customers.html"
+                  | 顧客・購入者
+          .l-main-content
+            .applicable-amount.flex.align-items-center
+              .text
+                | 申請可能額
+              .amount
+                | ¥15,000
+            form.application-form
+              input.m-form-control.m-form-group-control type="number" placeholder="数値を入力"
+              a.m-btn.m-btn-blue href=""
+                | 送金申請
+            .l-table.application-history
+              table.m-table
+                thead
+                  tr
+                    th
+                      | 申請日
+                    th
+                      | ID
+                    th
+                      | 送金
+                    th
+                      | 送金手数料
+                    th
+                      | PDF
+                    th
+                      | ステータス
+                tbody
+                  tr
+                    td.w15
+                      | 17/06/04
+                    td.w15
+                      | 219HE0123
+                    td.w20
+                      | ¥1,500
+                    td.w20
+                      | ¥400
+                    td.w15
+                      a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                        | 明細書
+                    td.w15
+                      .status.approval-pending
+                        | 承認待ち
+                  tr
+                    td.w15
+                      | 17/06/04
+                    td.w15
+                      | 219HE0123
+                    td.w20
+                      | ¥1,500
+                    td.w20
+                      | ¥400
+                    td.w15
+                      a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                        | 明細書
+                    td.w15
+                      .status.pending-transfer
+                        | 振込待ち
+                        br
+                        | （17.07.27予定）
+                  tr
+                    td.w15
+                      | 17/06/04
+                    td.w15
+                      | 219HE0123
+                    td.w20
+                      | ¥1,500
+                    td.w20
+                      | ¥400
+                    td.w15
+                      a.m-btn.m-btn-gray-transparent.pdf-btn href=""
+                        | 明細書
+                    td.w15
+                      .status.transfer-completed
+                        | 振込完了
