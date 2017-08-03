@@ -1,0 +1,111 @@
+doctype html
+html
+  include _head
+  body.staff.teams.teams-index
+    .l-wrapper
+      include _staff_header
+      include _staff_exams_subheader
+      .l-main
+        .l-container
+          .l-middle-content
+            .m-head
+              a.m-head-return href="./staff-profiles-index.html"
+                .m-head-icon.icon-return
+                .m-head-text
+                  | 一覧へ戻る
+              .m-head-title
+                | チーム
+            .team-lists
+              ul.m-list
+                li.m-list-head
+                  | オーナー招待
+                li
+                  form.invitation-form.flex.align-items-center.justify-content-space-between
+                    input.m-form-control type="text" placeholder="メールアドレスを入力"
+                    a.m-btn.m-btn-blue href=""
+                      | 招待
+                li.m-list-item
+                  .invitation
+                    .email-status
+                      .email
+                        | teranishi@daraf.co.jp
+                      .status
+                        | サインアップ済み
+                    .edit
+                      a.m-btn.m-btn-gray-transparent href=""
+                        | 削除
+                li.m-list-item
+                  .invitation
+                    .email-status
+                      .email
+                        | saiwaki@daraf.co.jp
+                      .status
+                        | 招待中
+                    .edit
+                      a.m-btn.m-btn-gray-transparent href=""
+                        | 削除
+              ul.m-list
+                li.m-list-head
+                  | 保留中
+                li.m-list-item
+                  .user
+                    .avatar
+                      img src="./img/default-avatar.png"
+                    .info
+                      .name
+                        | JR飯田橋駅西口店
+                      .email
+                        | iidabashi@gmail.com
+                      .affiliation-role
+                        span.affiliation
+                          | 株式会社スカイスクレイパー
+                        | ・
+                        span.role
+                          | マネージャー
+                    .edit
+                      a.m-btn.m-btn-blue-transparent href=""
+                        | 許可
+                      a.m-btn.m-btn-red-transparent href=""
+                        | 拒否
+              ul.m-list
+                li.m-list-head
+                  | 許可したチーム
+                li.m-list-item
+                  .user
+                    .avatar
+                      img src="./img/default-avatar.png"
+                    .info
+                      .name
+                        | JR水道橋駅東口店
+                      .email
+                        | suidoubashi@gmail.com
+                      .affiliation-role
+                        span.affiliation
+                          | 株式会社吉野家
+                        | ・
+                        span.role
+                          | マネージャー
+                    .edit
+                      a.m-btn.m-btn-gray-transparent href=""
+                        | 削除
+              ul.m-list
+                li.m-list-head
+                  | 拒否したチーム
+                li.m-list-item
+                  .user
+                    .avatar
+                      img src="./img/default-avatar.png"
+                    .info
+                      .name
+                        | 秋葉原店
+                      .email
+                        | akihabara@gmail.com
+                      .affiliation-role
+                        span.affiliation
+                          | 株式会社すき屋
+                        | ・
+                        span.role
+                          | マネージャー
+                    .edit
+                      a.m-btn.m-btn-blue-transparent href=""
+                        | 許可

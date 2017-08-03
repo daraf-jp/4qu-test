@@ -1,75 +1,162 @@
-.teams
+.owner
+  &.teams
+    &-index
+      .l-breadcrumb
+        margin-bottom: 60px
 
-  &-index
-    .l-breadcrumb
-      margin-bottom: 60px
+      .icon
+        font-size: 25px
 
-    .icon
-      font-size: 25px
+        &-line
+          color: $color-line
 
-      &-line
-        color: $color-line
+        &-apple
+          color: $color-apple
 
-      &-apple
-        color: $color-apple
+        &-android
+          color: $color-android
 
-      &-android
-        color: $color-android
+      .avatar
+        width: 45px
+        height: 45px
+        display: block
+        margin: 0 auto
+        border-radius: 50%
 
-    .avatar
-      width: 45px
-      height: 45px
-      display: block
-      margin: 0 auto
-      border-radius: 50%
+    &-show
+      .user
+        padding: 30px 0
+        border-bottom: 1px solid $color-gray
+        margin-bottom: 30px
 
-  &-show
-    .user
-      padding: 30px 0
-      border-bottom: 1px solid $color-gray
-      margin-bottom: 30px
+        .l-container
+          display: flex
+
+          .avatar
+            img
+              display: block
+              width: 120px
+              height: 120px
+              border-radius: 50%
+
+          .info
+            padding-top: 10px
+            padding-left: 20px
+
+            .info-content
+              display: flex
+              align-items: center
+
+              .name
+                font-size: 22px
+                margin-bottom: 20px
+                margin-right: 30px
+                font-weight: 500
+
+              .edit-btn
+                width: 120px
+                margin-bottom: 20px
+
+              .text
+                margin-bottom: 12px
+                margin-right: 20px
+
+                strong
+                  font-weight: 500
+
+    &-users
+      &-new
+        .l-breadcrumb
+          margin-bottom: 60px
+
+    &-staffs
+      &-new
+        .l-breadcrumb
+          margin-bottom: 60px
+
+.staff
+  &.teams
+
+    .l-subheader
+      margin-bottom: 0
+
+    .l-wrapper
+      height: 100%
+
+    .l-main
+      height: 100%
+      margin-top: -155px
+      padding-top: 155px
+      padding-bottom: 0
 
       .l-container
+        height: 100%
+
+        .l-middle-content
+          border-left: 1px solid $color-gray
+          border-right: 1px solid $color-gray
+          min-height: 100%
+
+    &-index
+      .invitation-form
+        padding: 30px 20px 35px
+        border-bottom: 1px solid $color-light-gray
+
+        input
+          width: 500px
+          padding: 6px 0
+
+        .m-btn
+          font-size: 13px
+          width: 120px
+
+      .invitation
         display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px
+
+        .email-status
+          .status
+            font-size: 12px
+            color: $color-dark-gray
+            margin-top: 4px
+
+        .edit
+          .m-btn
+            font-size: 12px
+
+      .user
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 20px
 
         .avatar
           img
+            width: 50px
+            height: 50px
             display: block
-            width: 120px
-            height: 120px
             border-radius: 50%
 
         .info
-          padding-top: 10px
-          padding-left: 20px
+          flex: 1
+          padding: 0 15px
 
-          .info-content
-            display: flex
-            align-items: center
+          .name
+            font-size: 16px
 
-            .name
-              font-size: 22px
-              margin-bottom: 20px
-              margin-right: 30px
-              font-weight: 500
+          .email
+            font-size: 12px
+            margin-top: 4px
 
-            .edit-btn
-              width: 120px
-              margin-bottom: 20px
+          .affiliation-role
+            font-size: 12px
+            margin-top: 4px
 
-            .text
-              margin-bottom: 12px
-              margin-right: 20px
+        .edit
+          .m-btn
+            font-size: 12px
 
-              strong
-                font-weight: 500
-
-  &-users
-    &-new
-      .l-breadcrumb
-        margin-bottom: 60px
-
-  &-staffs
-    &-new
-      .l-breadcrumb
-        margin-bottom: 60px
+            & + .m-btn
+              margin-left: 10px
