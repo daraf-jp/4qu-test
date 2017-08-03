@@ -1,7 +1,7 @@
 doctype html
 html
   include _head
-  body.staff.profiles.profiles-user
+  body.staff.staffs.staffs-edit
     .l-wrapper
       include _staff_header
       include _staff_exams_subheader
@@ -16,6 +16,8 @@ html
               .m-head-title
                 | プロフィール
             form
+              .head
+                | 基本情報
               .l-form-group
                 .l-form-group-left
                   .m-form-group-label
@@ -48,6 +50,8 @@ html
                     | 住所
                 .l-form-group-right
                   input.m-form-control.m-form-group-control type="text" placeholder="住所を入力"
+              .head
+                | 職場情報
               .l-form-group
                 .l-form-group-left
                   .m-form-group-label
@@ -57,7 +61,7 @@ html
               .l-form-group
                 .l-form-group-left
                   .m-form-group-label
-                    | 住所
+                    | 所在地
                 .l-form-group-right
                   input.m-form-control.m-form-group-control type="text" placeholder="所在地を入力"
               .l-form-group
@@ -66,6 +70,8 @@ html
                     | 業務内容
                 .l-form-group-right
                   textarea.m-form-textarea type="text" placeholder="業務内容を入力"
+              .head
+                | 学歴・経歴・家族
               .l-form-group
                 .l-form-group-left
                   .m-form-group-label
