@@ -1,0 +1,60 @@
+doctype html
+html
+  include _head
+  body.staff.staffs.staffs-setting
+    .l-wrapper
+      include _staff_header
+      include _staff_exams_subheader
+      .l-main
+        .l-container
+          .l-middle-content
+            .m-head
+              a.m-head-return href="./staff-profiles-index.html"
+                .m-head-icon.icon-return
+                .m-head-text
+                  | 一覧へ戻る
+              .m-head-title
+                | メール・パスワード
+            form
+              .head
+                | メールアドレス
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | メールアドレス
+                .l-form-group-right
+                  input.m-form-control.m-form-group-control type="text" placeholder="メールアドレスを入力"
+                  .m-form-group-annotation
+                    | 現在のメールアドレス：teranishi@daraf.co.jp
+              .l-form-submit
+                a.m-btn.m-btn-blue-transparent.m-form-submit href=""
+                  | 更新する
+              .head
+                | パスワード
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | 現在のパスワード
+                .l-form-group-right
+                  input.m-form-control.m-form-group-control type="text" placeholder="現在のパスワードを入力"
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | 新しいパスワード
+                .l-form-group-right
+                  input.m-form-control.m-form-group-control type="text" placeholder="新しいパスワードを入力"
+                  .m-form-group-annotation
+                    | 英数字6文字以上32文字以下
+              .l-form-group
+                .l-form-group-left
+                  .m-form-group-label
+                    | 新しいパスワード
+                    br
+                    | (確認)
+                .l-form-group-right
+                  input.m-form-control.m-form-group-control type="text" placeholder="新しいパスワード(確認)を入力"
+                  .m-form-group-annotation
+                    | 英数字6文字以上32文字以下
+              .l-form-submit
+                a.m-btn.m-btn-blue-transparent.m-form-submit href=""
+                  | 更新する
