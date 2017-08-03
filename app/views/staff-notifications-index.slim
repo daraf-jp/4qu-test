@@ -1,0 +1,89 @@
+doctype html
+html
+  include _head
+  body.staff.notifications.notifications-index
+    .l-wrapper
+      include _staff_header
+      include _staff_exams_subheader
+      .l-main
+        .l-container.flex.justify-content-space-between
+          .reception-lists
+            .m-btn-segment
+              a.m-btn-segment-control.active.w20 href=""
+                | 全て
+              a.m-btn-segment-control.w20 href=""
+                | 運営
+              a.m-btn-segment-control.w20 href=""
+                | システム
+              a.m-btn-segment-control.w20 href=""
+                | スタッフ
+              a.m-btn-segment-control.w20 href=""
+                | ユーザー
+            .l-search
+              .m-search
+                form.m-form.m-search-form
+                  input.m-form-control.m-form-search.m-form-search-m placeholder="検索" type="text"
+            .reception-list
+              a.reception-link.active href=""
+                .status
+                  .icon
+                .avatar
+                  img src="./img/default-avatar.png"
+                .detail
+                  .detail-header
+                    .name
+                      | 西牧大輔
+                    .date
+                      | 17.02.27 13:00
+                  .detail-body
+                    .detail-content
+                      .title
+                        | 衛生テストの実施
+                      .text
+                        | 「衛生テスト2016.10月」の実施をお願いします。100点目差して20日までに実施お願いします。
+              a.reception-link href=""
+                .status
+                .avatar
+                  img src="./img/default-avatar.png"
+                .detail
+                  .detail-header
+                    .name
+                      | 寺西勁人
+                    .date
+                      | 17.02.27 13:00
+                  .detail-body
+                    .detail-content
+                      .title
+                        | 「衛生テスト2016.11月」の付与
+                      .text
+                        | 寺西勁人が「衛生テスト2016.11月」をあなたに付与しました。
+              a.reception-link href=""
+                .status
+                .avatar
+                  img src="./img/default-avatar.png"
+                .detail
+                  .detail-header
+                    .name
+                      | 運営
+                    .date
+                      | 17.02.27 13:00
+                  .detail-body
+                    .detail-content
+                      .title
+                        | ミッションにチャレンジしよう！
+                      .text
+                        | ミッションをクリアしてポイントをゲット！
+          .reception-content
+            .detail
+              .detail-header
+                .date
+                  | 17.02.27 13:00
+                .title
+                  | 衛生テストの実施
+                .sender
+                  img.avatar src="./img/default-avatar.png"
+                  .name
+                    | 西牧大輔
+              .detail-body
+                .text
+                  | 「衛生テスト2016.10月」の実施をお願いします。100点目差して20日までに実施お願いします。
