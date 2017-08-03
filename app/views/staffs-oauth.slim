@@ -1,0 +1,76 @@
+doctype html
+html
+  include _head
+  body.staff.staffs.staffs-oauth
+    .l-wrapper
+      include _staff_header
+      include _staff_exams_subheader
+      .l-main
+        .l-container
+          .l-middle-content
+            .m-head
+              a.m-head-return href="./staff-profiles-index.html"
+                .m-head-icon.icon-return
+                .m-head-text
+                  | 一覧へ戻る
+              .m-head-title
+                | 外部連携
+            .oauth-list
+              ul.m-list
+                li.m-list-head
+                  | LINE
+                li.m-list-item
+                  .oauth-text
+                    | 連携すると、フォークのログイン認証時にLINEアカウントがご利用になれます。
+                  a.m-btn.oauth-btn.line
+                    .icon.icon-line
+                    .text
+                      | LINEアカウントと連携する
+                li.m-list-item
+                  .account
+                    .avatar
+                      img src="./img/default-avatar.png"
+                    .info
+                      .name
+                        | 寺西 勁人
+                      .email
+                        | keito.teranishi@gmail.com
+                    .edit
+                      a.m-btn.m-btn-gray-transparent href=""
+                        | 解除
+                li.m-list-head
+                  | Facebook
+                li.m-list-item
+                  .oauth-text
+                    | 連携すると、フォークのログイン認証時にFacebookアカウントがご利用になれます。
+                  a.m-btn.oauth-btn.facebook
+                    .icon.icon-facebook
+                    .text
+                      | Facebookアカウントと連携する
+                li.m-list-head
+                  | Twitter
+                li.m-list-item
+                  .oauth-text
+                    | 連携すると、フォークのログイン認証時にTwitterアカウントがご利用になれます。
+                  a.m-btn.oauth-btn.twitter
+                    .icon.icon-twitter
+                    .text
+                      | Twitterアカウントと連携する
+                li.m-list-head
+                  | Google
+                li.m-list-item
+                  .oauth-text
+                    | 連携すると、フォークのログイン認証時にGoogleアカウントがご利用になれます。
+                  a.m-btn.oauth-btn.google
+                    .icon.icon-google
+                    .text
+                      | Googleアカウントと連携する
+                li.m-list-head
+                  | Slack
+                li.m-list-item
+                  .oauth-text
+                    | 連携すると、フォークのログイン認証時にSlackアカウントがご利用になれます。
+                  a.m-btn.oauth-btn.slack
+                    .icon.icon-slack
+                    .text
+                      | Slackアカウントと連携する

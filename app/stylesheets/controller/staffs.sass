@@ -1,40 +1,102 @@
 .staffs
-  &-edit
-    .l-wrapper
-      height: 100%
+  .l-wrapper
+    height: 100%
 
-      .l-subheader
+    .l-subheader
+      margin-bottom: 0
+
+    .l-main
+      height: 100%
+      margin-top: -155px
+      padding-top: 155px
+      padding-bottom: 0
+
+      .l-container
+        height: 100%
+
+        .l-middle-content
+          border-left: 1px solid $color-gray
+          border-right: 1px solid $color-gray
+          min-height: 100%
+  &-edit
+    form
+      padding-bottom: 40px
+
+      .head
+        background-color: #f1f1f1
+        padding: 8px 20px 8px
+        color: $color-dark-gray
+        font-size: 12px
+        margin-bottom: 25px
+
+      .l-form-group
+        padding: 0 20px
+
+        .l-form-group-left
+          width: 150px
+
+      .l-form-submit
         margin-bottom: 0
 
-      .l-main
-        height: 100%
-        margin-top: -155px
-        padding-top: 155px
-        padding-bottom: 0
+  &-oauth
+    .m-list-item
+      padding: 20px
 
-        .l-container
-          height: 100%
+    .account
+      display: flex
+      align-items: center
 
-          .l-middle-content
-            border-left: 1px solid $color-gray
-            border-right: 1px solid $color-gray
-            min-height: 100%
+      .avatar
+        img
+          width: 50px
+          height: 50px
+          border-radius: 50%
+          display: block
 
-            form
-              padding-bottom: 40px
+      .info
+        padding: 0 15px
+        flex: 1
 
-              .head
-                background-color: #f1f1f1
-                padding: 8px 20px 8px
-                color: $color-dark-gray
-                font-size: 12px
-                margin-bottom: 25px
+        .name
+          font-size: 16px
 
-              .l-form-group
-                padding: 0 20px
+        .email
+          font-size: 12px
+          margin-top: 4px
 
-                .l-form-group-left
-                  width: 150px
+      .edit
+        .m-btn
+          font-size: 12px
 
-              .l-form-submit
-                margin-bottom: 0
+    .oauth-text
+      margin-bottom: 10px
+
+    .oauth-btn
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 280px
+      height: 40px
+      color: #fff
+
+      &:hover
+        box-shadow: 0 3px 1px rgba($color-text, 0.3)
+
+      .icon
+        font-size: 20px
+        margin-right: 4px
+
+      &.line
+        background-color: $color-line
+
+      &.facebook
+        background-color: $color-facebook
+
+      &.twitter
+        background-color: $color-twitter
+
+      &.google
+        background-color: $color-google
+
+      &.slack
+        background-color: $color-slack
