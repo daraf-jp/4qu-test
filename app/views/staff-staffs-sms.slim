@@ -5,3 +5,14 @@ html
     .l-wrapper
       include _staff_header
       .l-main
+        .sms-content
+          .title
+            | SMS認証
+          form
+            input.m-form-control type="tel" placeholder="電話番号を入力"
+            .text
+              | 上記の入力した番号にSMSで認証番号を送ります。
+            a.m-btn.m-btn-blue.submit-btn href="./staff-staffs-passcode.html"
+              | 送信
+            a.m-btn.m-btn-gray-transparent.cancel-btn href="./staff-profiles-index.html"
+              | キャンセル

@@ -1,7 +1,16 @@
 doctype html
 html
   include _head
-  body.staff.staffs.staffs-sms
+  body.staff.staffs.staffs-passcode
     .l-wrapper
       include _staff_header
       .l-main
+        .sms-content
+          .title
+            | SMSパスコード
+          form
+            .text
+              | SMSにてパスコードを送信しました。受け取ったパスコードを入力してください。
+            input.m-form-control type="password" placeholder="パスコードを入力"
+            a.m-btn.m-btn-blue.submit-btn href="./staff-profiles-index.html"
+              | 認証
