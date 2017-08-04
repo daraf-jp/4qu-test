@@ -1,0 +1,88 @@
+doctype html
+html
+  include _head
+  body.staff.missions.missions-index
+    .l-wrapper
+      include _staff_header
+      include _staff_exams_subheader
+      .l-main
+        .l-container
+          .l-middle-content
+            .m-head
+              a.m-head-return href="./staff-profiles-index.html"
+                .m-head-icon.icon-return
+                .m-head-text
+                  | 一覧へ戻る
+              .m-head-title
+                | ミッション
+            .pickup-content-caroucel
+              section.slider
+                .slider-item
+                  a.slider-link(style="background-image: url('./img/exam-eyecatch3.jpg');")
+                .slider-item
+                  a.slider-link(style="background-image: url('./img/exam-eyecatch4.jpg');")
+                .slider-item
+                  a.slider-link(style="background-image: url('./img/exam-eyecatch5.jpg');")
+                .slider-item
+                  a.slider-link
+            ul.mission-lists
+              li.mission-list
+                a.mission-link href=""
+                  .image
+                    img src="./img/mission-image1.png"
+                  .info
+                    .title
+                      | 「ネコの基礎知識」で100点を取る！
+                    .category
+                      | テストに挑戦
+                    .duration
+                      | 期間：17.07.01 10:00 ~ 17.07.31 24:00
+                  .compensation
+                    .icon.icon-point
+                    .point
+                      | 5
+                  .new
+              li.mission-list
+                a.mission-link href=""
+                  .image
+                    img src="./img/mission-image1.png"
+                  .info
+                    .title
+                      | あなたの職場の掃除のやり方動画を撮影
+                    .category
+                      | コンテンツの作成
+                    .duration
+                      | 期間：17.07.01 10:00 ~ 17.07.31 24:00
+                  .compensation
+                    .icon.icon-point
+                    .point
+                      | 1000
+              li.mission-list
+                a.mission-link href=""
+                  .image
+                    img src="./img/mission-image1.png"
+                  .info
+                    .title
+                      | SMSでログインしよう！
+                    .category
+                      | プロフィールを入力
+                    .duration
+                      | 期間：17.07.01 10:00 ~
+                  .compensation
+                    .icon.icon-point
+                    .point
+                      | 100
+
+javascript:
+  $(function() {
+    $('.slider').slick({
+      dots: true,
+      infinite: true,
+      centerMode: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      mobileFirst: true,
+      variableWidth: true,
+    });
+  });
