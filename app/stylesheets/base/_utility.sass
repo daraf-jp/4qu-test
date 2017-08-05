@@ -129,14 +129,26 @@
     width: $width-p
 
 // tablet
-.tablet
+.tablet,
+.tablet-inline,
+.tablet-block,
+.tablet-inline-block,
+.tablet-table,
+.tablet-table-cell,
+.tablet-flex
   display: none !important
 
 // mobile
-.mobile
+.mobile,
+.mobile-inline,
+.mobile-block,
+.mobile-inline-block,
+.mobile-table,
+.mobile-table-cell,
+.mobile-flex
   display: none !important
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 1100px)
   .tablet
     display: inherit !important
   .tablet-inline
@@ -154,7 +166,7 @@
   .tablet-none
     display: none !important
 
-@media only screen and (max-width: 414px)
+@media only screen and (max-width: 768px)
   .mobile
     display: inherit !important
   .mobile-inline

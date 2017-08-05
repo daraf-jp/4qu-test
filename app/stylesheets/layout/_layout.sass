@@ -456,15 +456,9 @@ $footer-height: 250px
   // container
   .l-container
     width: 100%
-    padding: 0 20px
 
 // スマホ用のスタイル
-@media only screen and (max-width: 414px)
-
-  // container
-  .l-container
-    width: 100%
-    padding: 0 20px
+@media only screen and (max-width: 768px)
 
   // header
   .staff
@@ -501,41 +495,26 @@ $footer-height: 250px
   // subheader
   .l-subheader
     height: 60px
+    margin-bottom: 45px
+
     li
       height: 60px
+
       a
         .icon
           font-size: 25px
+
         .title
           font-size: 10px
           margin-top: 2px
-    &-owner-exams
-      margin-bottom: 50px
-    &-staff-exams
-      margin-bottom: 50px
 
   // main
-  .l-main-content
-    width: 100%
-    float: none
-
-  // exams
-  .l-exams
-    &-embed
-      margin-top: 0
-
-  .l-exam
-    &-embed
-      margin-right: 0
+  .l-main
+    padding-bottom: 135px
 
   // search
   .l-search
     display: flex
     align-items: flex-end
-    margin-bottom: 45px
     &-m
       width: 100%
-
-  // breadcrumb
-  .l-breadcrumb
-    padding: 0 20px

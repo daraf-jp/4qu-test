@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?8t9s0n');
-  src:  url('fonts/icomoon.eot?8t9s0n#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?8t9s0n') format('truetype'),
-    url('fonts/icomoon.woff?8t9s0n') format('woff'),
-    url('fonts/icomoon.svg?8t9s0n#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?suctnd');
+  src:  url('fonts/icomoon.eot?suctnd#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?suctnd') format('truetype'),
+    url('fonts/icomoon.woff?suctnd') format('woff'),
+    url('fonts/icomoon.svg?suctnd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,9 @@
 
 .icon-codebot-icon:before {
   content: "\e928";
+}
+.icon-stopwatch:before {
+  content: "\e943";
 }
 .icon-smile:before {
   content: "\e939";

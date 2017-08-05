@@ -4,6 +4,99 @@
 
     &-index
 
+      .exam-lists
+        width: 100%
+        border-top: 1px solid $color-light-gray
+
+        .exam-list
+          padding: 15px 20px 25px
+          border-bottom: 1px solid $color-light-gray
+
+          .date
+            color: $color-dark-gray
+            font-size: 13px
+            margin-bottom: 5px
+
+          .details
+            display: flex
+            align-items: center
+            justify-content: space-between
+
+            &-left
+              flex: 1
+              padding-right: 10px
+
+              .title
+                display: flex
+                align-items: center
+                font-size: 18px
+                font-weight: 400
+
+                .mode-icon
+                  font-size: 20px
+                  margin-right: 5px
+
+              .info
+                display: flex
+                margin-top: 15px
+
+                .limit-time
+                  display: flex
+                  align-items: center
+                  margin-right: 15px
+
+                  .icon
+                    margin-right: 4px
+                    font-size: 18px
+
+                  .time
+                    font-weight: 500
+                    font-size: 18px
+                    margin-right: 2px
+                    line-height: 18px
+
+                  .unit
+                    font-size: 12px
+                    color: $color-dark-gray
+
+
+                .questions
+                  display: flex
+                  align-items: center
+
+                  .icon
+                    margin-right: 4px
+                    font-size: 16px
+
+                  .num
+                    font-weight: 500
+                    font-size: 18px
+                    margin-right: 2px
+                    line-height: 18px
+
+                  .text
+                    font-size: 12px
+                    color: $color-dark-gray
+
+            &-right
+              .answer
+                .text
+                  font-size: 12px
+                  text-align: center
+                  margin-bottom: 5px
+
+                a
+                  font-size: 16px
+                  font-weight: 500
+                  padding: 2px 12px
+                  border: 1px solid $color-link
+                  display: flex
+                  border-radius: 16px
+
+                  &:hover
+                    background-color: $color-link
+                    color: #fff
+
     &-insights
       &-index
         .l-insight-head
@@ -683,11 +776,7 @@
 
   .libraries
     &-exams
-
       &-index
-        .l-side-content
-          display: none
-
         .l-main-content
           width: 768px
           margin: 0 auto
@@ -715,3 +804,13 @@
         .l-main-content
           width: 768px
           margin: 0 auto
+
+// モバイル用のスタイル
+@media only screen and (max-width: 768px)
+
+  .libraries
+    &-exams
+      &-index
+        .l-search-head
+          margin-bottom: 35px
+          padding: 0 20px
