@@ -5,7 +5,7 @@ html
     .l-wrapper
       include _owner_header
       .l-main
-        .l-breadcrumb.mobile-none
+        .l-breadcrumb
           a.m-breadcrumb href=""
             | ライブラリ
           span.m-breadcrumb-arrow
@@ -14,7 +14,7 @@ html
             | クイズ
         include _owner_exams_subheader
         .l-container.flex.justify-content-space-between
-          .l-side-content.mobile-none
+          .l-side-content.tablet-none
             .m-side-head
               | 自分
             ul.m-side-nav
@@ -64,16 +64,16 @@ html
                 a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
                   .icon-sort-list
               .l-new-btn.flex
-                a.m-btn.m-btn-blue.m-btn-new.mobile-none href="./owner-libraries-quizzes-new.html"
+                a.m-btn.m-btn-blue.m-btn-new href="./owner-libraries-quizzes-new.html"
                   | + 新規クイズ作成
                 a.m-btn.m-btn-gray-transparent.import-btn href="./owner-libraries-quizzes-import.html"
                   | クイズインポート
             .l-quizzes.flex.justify-content-space-between
-              .l-table
-                table.m-table.mobile-none
+              .l-table.quizzes-index-table
+                table.m-table
                   tbody
                     tr
-                      td.align-left.w75
+                      td.align-left.w75.quiz-details
                         .date
                           | 17.02.27 13:00
                         a href=""
@@ -88,13 +88,13 @@ html
                             img.avatar src="./img/default-avatar.png"
                             .text
                               | 寺西 勁人
-                      td.w25
+                      td.w25.adoption-test
                         .adoption-text
                           | 採用テスト数
                         .adoption-num
                           | 3
                     tr
-                      td.align-left.w75
+                      td.align-left.w75.quiz-details
                         .date
                           | 17.02.27 13:00
                         a href=""
@@ -109,13 +109,13 @@ html
                             img.avatar src="./img/default-avatar.png"
                             .text
                               | 寺西 勁人
-                      td.w25
+                      td.w25.adoption-test
                         .adoption-text
                           | 採用テスト数
                         .adoption-num
                           | 3
                     tr
-                      td.align-left.w75
+                      td.align-left.w75.quiz-details
                         .date
                           | 17.02.27 13:00
                         a href=""
@@ -130,13 +130,13 @@ html
                             img.avatar src="./img/default-avatar.png"
                             .text
                               | 寺西 勁人
-                      td.w25
+                      td.w25.adoption-test
                         .adoption-text
                           | 採用テスト数
                         .adoption-num
                           | 3
                     tr
-                      td.align-left.w75
+                      td.align-left.w75.quiz-details
                         .date
                           | 17.02.27 13:00
                         a href=""
@@ -151,12 +151,12 @@ html
                             img.avatar src="./img/default-avatar.png"
                             .text
                               | 寺西 勁人
-                      td.w25
+                      td.w25.adoption-test
                         .adoption-text
                           | 採用テスト数
                         .adoption-num
                           | 3
-              .l-quiz
+              .l-quiz.quizzes-show-content
                 .m-quiz.flex
                   .m-quiz-content.quiz-content
                     .edit.flex.justify-content-flex-end

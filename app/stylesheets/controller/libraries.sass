@@ -9,7 +9,7 @@
         border-top: 1px solid $color-light-gray
 
         .exam-list
-          padding: 15px 20px 25px
+          padding: 20px
           border-bottom: 1px solid $color-light-gray
 
           .date
@@ -30,7 +30,6 @@
                 display: flex
                 align-items: center
                 font-size: 18px
-                font-weight: 400
 
                 .mode-icon
                   font-size: 20px
@@ -50,8 +49,8 @@
                     font-size: 18px
 
                   .time
-                    font-weight: 500
-                    font-size: 18px
+                    font-weight: 400
+                    font-size: 16px
                     margin-right: 2px
                     line-height: 18px
 
@@ -69,8 +68,8 @@
                     font-size: 16px
 
                   .num
-                    font-weight: 500
-                    font-size: 18px
+                    font-weight: 400
+                    font-size: 16px
                     margin-right: 2px
                     line-height: 18px
 
@@ -87,7 +86,6 @@
 
                 a
                   font-size: 16px
-                  font-weight: 500
                   padding: 2px 12px
                   border: 1px solid $color-link
                   display: flex
@@ -781,6 +779,10 @@
           width: 768px
           margin: 0 auto
 
+          .l-new-btn
+            .m-btn
+              width: auto
+
       &-new
         .l-exam-setting
           width: 768px
@@ -788,19 +790,27 @@
     &-quizzes
 
       &-index
-        .l-side-content
-          display: none
-
         .l-main-content
           width: 768px
           margin: 0 auto
 
+          .l-new-btn
+            .m-btn
+              width: auto
+
+          .quizzes-index-table
+            padding-right: 20px
+
+            .quiz-details
+              width: 100%
+              padding: 18px 0
+
+            .adoption-test
+              display: none
+
     &-assets
 
       &-index
-        .l-side-content
-          display: none
-
         .l-main-content
           width: 768px
           margin: 0 auto
@@ -814,3 +824,37 @@
         .l-search-head
           margin-bottom: 35px
           padding: 0 20px
+
+        .l-new-btn
+          display: none
+
+    &-quizzes
+      &-index
+        .l-main-content
+          .l-search-head
+            margin-bottom: 35px
+            padding: 0 20px
+
+            .l-search
+              width: 100%
+
+          .l-new-btn
+            display: none
+
+          .quizzes-index-table
+            width: 100%
+            padding-right: 0
+            border-top: 1px solid $color-light-gray
+
+            .quiz-details
+              border-color: $color-light-gray
+              padding: 20px
+
+              .date
+                font-size: 13px
+
+              a
+                font-size: 14px
+
+          .quizzes-show-content
+            display: none

@@ -5,7 +5,7 @@ html
     .l-wrapper
       include _owner_header
       .l-main
-        .l-breadcrumb.mobile-none
+        .l-breadcrumb
           a.m-breadcrumb href=""
             | ライブラリ
           span.m-breadcrumb-arrow
@@ -64,7 +64,7 @@ html
                 a.m-btn.m-btn-blue-transparent.m-btn-sort-list.mobile href=""
                   .icon-sort-list
               .l-new-btn
-                a.m-btn.m-btn-blue.m-btn-new.mobile-none href="./owner-libraries-exams-new.html"
+                a.m-btn.m-btn-blue.m-btn-new href="./owner-libraries-exams-new.html"
                   | + 新規テスト作成
             .l-table.mobile-none
               table.m-table
@@ -148,12 +148,14 @@ html
                     td.w15
                       a.m-tag href=""
                         | マニュアル
+
+            / モバイル
             ul.exam-lists.mobile
               li.exam-list
-                .date
-                  | 17.07.20
                 .details
                   .details-left
+                    .date
+                      | 17.07.20 13:00
                     .title
                       .icon-dictionary.mode-icon
                       a href="./owner-libraries-exams-show.html"
@@ -178,10 +180,10 @@ html
                       a href="./owner-libraries-exams-insights-index.html"
                         | 168
               li.exam-list
-                .date
-                  | 17.07.20
                 .details
                   .details-left
+                    .date
+                      | 17.07.20 13:00
                     .title
                       .icon-checklist.mode-icon
                       a href="./owner-libraries-exams-show.html"
@@ -206,10 +208,10 @@ html
                       a href="./owner-libraries-exams-insights-check.html"
                         | 168
               li.exam-list
-                .date
-                  | 17.07.20
                 .details
                   .details-left
+                    .date
+                      | 17.07.20 13:00
                     .title
                       .icon-smile.mode-icon
                       a href="./owner-libraries-exams-show.html"
