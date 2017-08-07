@@ -795,6 +795,20 @@
         .l-container
           padding: 0 20px
 
+      &-insights
+        &-index
+          .l-main-content
+            width: 100%
+
+          .l-tab
+            padding: 0 20px
+
+          .l-insight-head
+            padding: 0 20px
+
+          .l-table
+            padding: 0 20px
+
     &-quizzes
 
       &-index
@@ -909,7 +923,7 @@
       &-setting
 
         .l-exam-setting
-          padding: 45px 20px 0
+          padding: 0px 20px 0
           width: 100%
 
           .l-form-group-left
@@ -930,6 +944,75 @@
           .l-form-submit
             .m-btn
               width: 100%
+
+      &-insights
+        &-index
+          .csv-btn-group
+            display: none
+
+          .l-insight-head
+            margin-bottom: 35px
+
+            .m-btn-segment
+              width: 100%
+
+              &-control
+                width: 50%
+
+          .l-table
+            display: none
+
+          .insight-lists
+            border-top: 1px solid $color-light-gray
+
+            .insight-list
+              border-bottom: 1px solid $color-light-gray
+
+              .insight-link
+                display: block
+                padding: 20px
+                color: $color-text
+
+                .details
+                  display: flex
+                  align-items: center
+
+                  .details-left
+                    padding-right: 20px
+
+                    .m-insight-correct
+                      padding: 0
+
+                  .details-right
+                    flex: 1
+
+                    .date
+                      font-size: 13px
+                      color: $color-dark-gray
+                      margin-bottom: 5px
+                      text-align: right
+
+                    .user-info
+                      .name
+                        font-size: 16px
+
+                      .tel
+                        font-size: 13px
+                        margin-top: 2px
+
+                    .l-correction
+                      width: 100%
+                      margin: 10px 0 0 0
+
+                    .repetition
+                      display: flex
+                      align-items: center
+                      justify-content: flex-end
+                      margin-top: 5px
+
+                      .icon
+                        margin-right: 4px
+                        font-size: 16px
 
     &-quizzes
       &-index
