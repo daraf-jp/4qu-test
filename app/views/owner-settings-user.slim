@@ -23,6 +23,8 @@ html
                   .m-form-group-label
                     | 名前
                 .l-form-group-right
+                  .m-form-group-mobile-label.mobile
+                    | 名前
                   input.m-form-control.m-form-group-control type="text" placeholder="名前を入力"
                   .m-form-group-annotation
                     | 4文字〜20文字
@@ -31,29 +33,31 @@ html
                   .m-form-group-label
                     | メールアドレス
                 .l-form-group-right
+                  .m-form-group-mobile-label.mobile
+                    | メールアドレス
                   input.m-form-control.m-form-group-control type="text" placeholder="メールアドレスを入力"
               .l-form-group
                 .l-form-group-left
                   .m-form-group-label
                     | アイコン
-                .l-form-group-right.flex.align-items-center
-                  .m-form-upload-image
-                    img src="./img/default-avatar.png" width="70" height="70"
+                .l-form-group-right
+                  .m-form-group-mobile-label.mobile
+                    | アイコン
                   .m-form-upload
-                    input type="file"
-                    a.m-form-upload-btn.m-btn.m-btn-gray-transparent href="/"
-                      | ファイルを選択
+                    .m-form-upload-image
+                      img src="./img/default-avatar.png" width="70" height="70"
+                    .m-form-upload-file
+                      input type="file"
+                      a.m-form-upload-btn.m-btn.m-btn-gray-transparent href="/"
+                        | ファイルを選択
               .l-form-group
                 .l-form-group-left
                   .m-form-group-label
                     | 権限
                 .l-form-group-right
+                  .m-form-group-mobile-label.mobile
+                    | 権限
                   input.m-form-control.m-form-select.m-form-group-control type="text" placeholder="権限を選択"
-              .l-form-group
-                .l-form-group-left
-                  .m-form-group-label
-                    | ステータス
-                .l-form-group-right
               .l-form-submit
                 a.m-btn.m-btn-blue-transparent.m-form-submit href=""
                   | 更新する
@@ -65,6 +69,8 @@ html
                   .m-form-group-label
                     | email
                 .l-form-group-right
+                  .m-form-group-mobile-label.mobile
+                    | email
                   .l-form-switch
                     .m-form-switch
                       input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="email" id="email-on" checked=""
@@ -78,6 +84,8 @@ html
                   .m-form-group-label
                     | iPhone
                 .l-form-group-right
+                  .m-form-group-mobile-label.mobile
+                    | iPhone
                   .l-form-switch
                     .m-form-switch
                       input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="iphone" id="iphone-on" checked=""
@@ -91,6 +99,8 @@ html
                   .m-form-group-label
                     | Android
                 .l-form-group-right
+                  .m-form-group-mobile-label.mobile
+                    | Android
                   .l-form-switch
                     .m-form-switch
                       input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="android" id="android-on" checked=""
@@ -104,6 +114,8 @@ html
                   .m-form-group-label
                     | LINE
                 .l-form-group-right
+                  .m-form-group-mobile-label.mobile
+                    | LINE
                   .l-form-switch
                     .m-form-switch
                       input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="line" id="line-on" checked=""
@@ -117,6 +129,8 @@ html
                   .m-form-group-label
                     | Slack
                 .l-form-group-right
+                  .m-form-group-mobile-label.mobile
+                    | Slack
                   .l-form-switch
                     .m-form-switch
                       input.m-form-switch-radio.m-form-switch-radio-on type="radio" name="slack" id="slack-on" checked=""
@@ -136,12 +150,16 @@ html
                   .m-form-group-label
                     | 現在のパスワード
                 .l-form-group-right
+                  .m-form-group-mobile-label.mobile
+                    | 現在のパスワード
                   input.m-form-control.m-form-group-control type="text" placeholder="現在のパスワードを入力"
               .l-form-group
                 .l-form-group-left
                   .m-form-group-label
                     | 新しいパスワード
                 .l-form-group-right
+                  .m-form-group-mobile-label.mobile
+                    | 新しいパスワード
                   input.m-form-control.m-form-group-control type="text" placeholder="新しいパスワードを入力"
                   .m-form-group-annotation
                     | 英数字6文字以上32文字以下
@@ -150,6 +168,8 @@ html
                   .m-form-group-label
                     | 新しいパスワード(確認)
                 .l-form-group-right
+                  .m-form-group-mobile-label.mobile
+                    | 新しいパスワード(確認)
                   input.m-form-control.m-form-group-control type="text" placeholder="新しいパスワード(確認)を入力"
                   .m-form-group-annotation
                     | 英数字6文字以上32文字以下
