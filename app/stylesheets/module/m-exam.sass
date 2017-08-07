@@ -7,10 +7,12 @@
     background: -webkit-linear-gradient(top,  #47bebf 0%,#4781bf 100%) /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #47bebf 0%,#4781bf 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#47bebf', endColorstr='#4781bf',GradientType=0 ) /* IE6-9 */
+
   &-embed
     width: 100%
     height: 100%
     padding: 20px
+
   &-eyecatch
     width: 100%
     height: 150px
@@ -19,14 +21,16 @@
     background-repeat: no-repeat
     background-size: cover
     border-radius: 10px 10px 0 0
-  &-eyecatch-back
-    width: 100%
-    height: 100%
-    background: rgba(#333, 0) /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(#333, 0) 50%, rgba(#333, 0.4) 100%) /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(#333, 0) 50%,rgba(#333, 0.4) 100%) /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(#333, 0) 50%,rgba(#333, 0.4) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(#333, 0)', endColorstr='rgba(#333, 0)',GradientType=0 ) /* IE6-9 */
+
+    &-back
+      width: 100%
+      height: 100%
+      background: rgba(#333, 0) /* Old browsers */
+      background: -moz-linear-gradient(top,  rgba(#333, 0) 50%, rgba(#333, 0.4) 100%) /* FF3.6-15 */
+      background: -webkit-linear-gradient(top,  rgba(#333, 0) 50%,rgba(#333, 0.4) 100%) /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom,  rgba(#333, 0) 50%,rgba(#333, 0.4) 100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(#333, 0)', endColorstr='rgba(#333, 0)',GradientType=0 ) /* IE6-9 */
+
   &-answers
     background-color: rgba(#fff, 0.95)
     min-width: 115px
@@ -37,46 +41,61 @@
     position: absolute
     left: 0
     bottom: 15px
-  &-answers-num
-    font-weight: 500
-    font-size: 14px
+
+    &-num
+      font-weight: 500
+      font-size: 14px
+
   &-info
     padding: 15px 20px
+
   &-industry
     font-size: 13px
     display: inline-block
     margin-right: 15px
     color: $color-dark-gray
+
   &-author
     font-size: 13px
     display: inline-block
+
   &-title
     font-size: 20px
     font-weight: 500
     margin: 10px 0 15px 0
+
   &-start-comment
     padding: 15px 0
+
   &-questions
     width: 50%
     text-align: center
     border-right: 1px solid $color-gray
-  &-questions-title
-    font-size: 12px
-    color: $color-dark-gray
-  &-questions-num
-    font-size: 26px
-    font-weight: 500
-  &-time-limit
-    width: 50%
-    text-align: center
-  &-time-limit-title
-    font-size: 12px
-    color: $color-dark-gray
-  &-time-limit-num
-    font-size: 26px
-    font-weight: 500
-  &-time-limit-unit
-    font-size: 13px
+
+    &-title
+      font-size: 12px
+      color: $color-dark-gray
+
+    &-num
+      font-size: 26px
+      font-weight: 500
+
+  &-time
+    &-limit
+      width: 50%
+      text-align: center
+
+      &-title
+        font-size: 12px
+        color: $color-dark-gray
+
+      &-num
+        font-size: 26px
+        font-weight: 500
+
+      &-unit
+        font-size: 13px
+
   &-start-btn
     width: 90px
     height: 90px
@@ -94,65 +113,151 @@
     left: 50%
     margin-left: -45px
     bottom: 50px
+
     .icon-share-fill
       display: table-cell
       vertical-align: middle
       padding-left: 4px
+
     &:hover
       color: #fff
       box-shadow: 0 4px 1px rgba($color-text, 0.3)
-  &-header-title
-    font-size: 23px
-    font-weight: 500
-  &-header-nav
-    height: 110px
-    display: flex
-    align-items: center
-    li
-      height: 110px
+
+  &-header
+    &-title
+      font-size: 23px
+      font-weight: 500
+
+    &-nav
+      height: 100%
+      min-height: 110px
       display: flex
       align-items: center
-      position: relative
-      a
-        text-align: center
-        display: block
-        width: 100px
-        color: $color-dark-gray
-        margin-top: 15px
-        &:after
-          -webkit-transition: all 0.3s
-          transition: all 0.3s
-          content: ""
-          width: 100px
-          height: 4px
-          background-color: transparent
-          left: 0
-          bottom: 0
-          position: absolute
-        &:hover
-          color: $color-link
-          &:after
-            background-color: $color-link
-      &.active
+
+      li
+        height: 110px
+        display: flex
+        align-items: center
+        position: relative
+
         a
-          color: $color-link
+          text-align: center
+          display: block
+          width: 100px
+          color: $color-dark-gray
+          margin-top: 15px
+
           &:after
-            background-color: $color-link
-  &-header-nav-icon
-    font-size: 32px
-  &-header-nav-title
-    font-size: 12px
-    margin-top: 6px
-  &-header-info
-    display: flex
-    align-items: baseline
-    margin-top: 15px
-  &-header-time-limit
-    margin-right: 25px
-  &-header-mode
-    margin-right: 25px
-  &-header-category-title
-    margin-right: 4px
+            -webkit-transition: all 0.3s
+            transition: all 0.3s
+            content: ""
+            width: 100px
+            height: 4px
+            background-color: transparent
+            left: 0
+            bottom: 0
+            position: absolute
+
+          &:hover
+            color: $color-link
+
+            &:after
+              background-color: $color-link
+
+        &.active
+          a
+            color: $color-link
+
+            &:after
+              background-color: $color-link
+
+      &-icon
+        font-size: 32px
+
+      &-title
+        font-size: 12px
+        margin-top: 6px
+
+    &-info
+      display: flex
+      align-items: baseline
+      margin-top: 15px
+
+    &-time-limit
+      margin-right: 25px
+
+    &-mode
+      margin-right: 25px
+
+    &-category-title
+      margin-right: 4px
+
+// タブレット用のスタイル
+@media only screen and (max-width: 1100px)
+  .m-exam
+    &-header
+      &-nav
+        li
+          a
+            width: 85px
+
+            &:after
+              width: 85px
+
+      &-info
+        display: block
+
+      &-time-limit
+        margin-right: 20px
+        margin-bottom: 5px
+        display: inline-block
+
+      &-mode
+        margin-right: 20px
+        margin-bottom: 5px
+        display: inline-block
+
+      &-category
+        margin-bottom: 5px
+        display: inline-block
+
+// モバイル用のスタイル
+@media only screen and (max-width: 768px)
+  .m-exam
+    &-header
+      &-title
+        font-size: 20px
+
+      &-info
+        margin-top: 10px
+
+      &-nav
+        justify-content: space-between
+        height: 65px
+        min-height: 65px
+
+        li
+          width: 20%
+          height: 65px
+
+          a
+            width: 100%
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin-top: 0
+
+            &:after
+              width: 100%
+
+        &-icon
+          font-size: 25px
+
+        &-title
+          font-size: 10px
+          margin-top: 2px
 
 // スマホ用のスタイル
 @media only screen and (max-width: 414px)

@@ -117,16 +117,23 @@
     margin-top: 12px
     font-size: 12px
 
-  &-radio, &-switch-radio
+  &-radio
+    display: flex
+    flex-wrap: wrap
+
+  &-radio-input, &-switch-radio
     display: none
+
+  &-radio-item
+    margin-right: 40px
 
   &-radio-label
     display: inline-block
     position: relative
     cursor: pointer
     padding: 10px 0 10px 34px
-    margin-right: 40px
     font-size: 14px
+
     &:before
       position: absolute
       content: ""
@@ -140,6 +147,7 @@
       left: 0
       margin-top: -12px
       transition: all 0.3s
+
     &:after
       position: absolute
       content: ""
@@ -153,10 +161,11 @@
       margin-top: -5px
       transition: all 0.3s
 
-  &-radio
+  &-radio-input
     &:checked
       &+ .m-form-radio-label:before
         border-color: $color-link
+
       &+ .m-form-radio-label:after
         background-color: $color-link
 

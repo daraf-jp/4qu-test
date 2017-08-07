@@ -3,7 +3,6 @@
   &-exams
 
     &-index
-
       .exam-lists
         width: 100%
         border-top: 1px solid $color-light-gray
@@ -502,6 +501,7 @@
                 padding-left: 10px
                 color: $color-dark-gray
 
+    &-show
 
   &-exam-quizzes
 
@@ -787,6 +787,14 @@
         .l-exam-setting
           width: 768px
 
+      &-setting
+        .l-exam-setting
+          width: 768px
+
+      &-show
+        .l-container
+          padding: 0 20px
+
     &-quizzes
 
       &-index
@@ -815,6 +823,31 @@
           width: 768px
           margin: 0 auto
 
+          .l-new-btn
+            .m-btn
+              width: 100%
+
+          .l-assets-content
+            .items
+              .item
+                width: 25%
+                margin: 0
+                padding-top: 20px
+
+                &:nth-child(4n-3)
+                  padding-right: 15px
+
+                &:nth-child(4n-2)
+                  padding-left: 5px
+                  padding-right: 10px
+
+                &:nth-child(4n-1)
+                  padding-left: 10px
+                  padding-right: 5px
+
+                &:nth-child(4n)
+                  padding-left: 15px
+
 // モバイル用のスタイル
 @media only screen and (max-width: 768px)
 
@@ -827,6 +860,76 @@
 
         .l-new-btn
           display: none
+
+      &-show
+        .question-content
+          width: 100%
+          border-right: none
+
+          .m-quiz-question-text
+            padding-bottom: 0
+
+          .choice-content
+            margin-top: 15px
+
+          .answer-content
+            margin-top: 15px
+
+        .choice-content
+          display: none
+
+        .answer-content
+          display: none
+
+      &-new
+
+        .l-exam-setting
+          padding: 45px 20px 0
+          width: 100%
+
+          .l-form-group-left
+            display: none
+
+          .mobile-label
+            font-size: 12px
+            color: $color-dark-gray
+            margin-bottom: 5px
+
+          .m-form-control-half
+            width: 100%
+
+          .m-form-radio-item
+            width: 50%
+            margin-right: 0
+
+          .l-form-submit
+            .m-btn
+              width: 100%
+
+      &-setting
+
+        .l-exam-setting
+          padding: 45px 20px 0
+          width: 100%
+
+          .l-form-group-left
+            display: none
+
+          .mobile-label
+            font-size: 12px
+            color: $color-dark-gray
+            margin-bottom: 5px
+
+          .m-form-control-half
+            width: 100%
+
+          .m-form-radio-item
+            width: 50%
+            margin-right: 0
+
+          .l-form-submit
+            .m-btn
+              width: 100%
 
     &-quizzes
       &-index
@@ -858,3 +961,39 @@
 
           .quizzes-show-content
             display: none
+
+    &-assets
+      &-index
+        .l-main-content
+          .l-search-head
+            margin-bottom: 35px
+            padding: 0 20px
+
+          .m-draganddrop
+            display: none
+
+          .l-assets-content
+            .sort-content
+              display: none
+
+            .items
+              padding: 0 5px
+
+              .item
+                width: 50%
+
+                &:nth-child(4n-3)
+                  padding: 20px 5px 0
+
+                &:nth-child(4n-2)
+                  padding: 20px 5px 0
+
+                &:nth-child(4n-1)
+                  padding: 20px 5px 0
+
+                &:nth-child(4n)
+                  padding: 20px 5px 0
+
+                .file-info
+                  .name
+                    font-size: 12px

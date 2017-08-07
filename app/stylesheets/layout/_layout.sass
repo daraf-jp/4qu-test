@@ -311,6 +311,7 @@ $footer-height: 250px
     justify-content: space-around
     margin-top: -52px
 
+// exam
 .l-exam
   &-embed
     width: 375px
@@ -320,15 +321,22 @@ $footer-height: 250px
 
   &-header
     width: 100%
-    height: 110px
+    height: 100%
+    min-height: 110px
     padding: 0 30px
     margin-bottom: 40px
     display: flex
-    align-items: center
+    align-items: flex-end
     box-shadow: 0 1px 0 rgba($color-text, 0.2)
 
     &-left
       flex: 1
+      display: flex
+      height: 100%
+      min-height: 110px
+      flex-direction: column
+      justify-content: center
+      padding: 10px 10px 10px 0
 
   &-setting
     width: 900px
@@ -465,6 +473,7 @@ $footer-height: 250px
     .l-header
       height: 65px
       padding: 0 15px
+
       .l-header-left
         .m-btn-group
           .m-btn
@@ -479,6 +488,7 @@ $footer-height: 250px
           li
             &:nth-child(1)
               padding-right: 25px
+
             &:nth-child(2)
               padding-right: 0
   .owner
@@ -494,11 +504,11 @@ $footer-height: 250px
 
   // subheader
   .l-subheader
-    height: 60px
+    height: 65px
     margin-bottom: 45px
 
     li
-      height: 60px
+      height: 65px
 
       a
         .icon
@@ -523,3 +533,17 @@ $footer-height: 250px
 
     &-m
       width: 100%
+
+  // exam
+  .l-exam
+    &-header
+      padding: 0
+      display: block
+
+      &-left
+        padding-right: 0
+        padding: 20px 20px 15px 20px
+        box-shadow: 0 1px 0 rgba($color-text, 0.2)
+        min-height: auto
+
+      &-right
