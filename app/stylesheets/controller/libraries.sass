@@ -797,21 +797,25 @@
 
       &-insights
         &-index
-          .l-main-content
-            width: 100%
-
           .l-tab
             padding: 0 20px
 
-          .l-insight-head
-            padding: 0 20px
+          .l-main-content
+            width: 100%
 
-          .l-table
-            padding: 0 20px
+            .l-insight-head
+              padding: 0 20px
 
         &-show
           .l-container
             padding: 0 20px
+
+        &-quiz
+          .l-container
+            padding: 0 20px
+
+          .l-main-content
+            width: 100%
 
     &-quizzes
 
@@ -1099,6 +1103,24 @@
 
           .answer-content
             display: none
+
+        &-quiz
+          .l-main-content
+            .question-content
+              width: 100%
+              border-right: none
+
+              .m-quiz-question-text
+                padding-bottom: 0
+
+              .mobile-insight-content
+                margin-top: 15px
+
+                .m-quiz-choices
+                  margin-bottom: 15px
+
+            .insight-content
+              display: none
 
       &-copy
         .copy-content
