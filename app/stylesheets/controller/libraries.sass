@@ -870,6 +870,21 @@
                 &:nth-child(4n)
                   padding-left: 15px
 
+    &-exam-quizzes
+      &-edit
+        .l-container
+          padding: 0 20px
+
+          .exam-quizzes-list-content
+            width: 40%
+
+          .exam-quizzes-edit-content
+            width: 60%
+            border-right: none
+
+          .exam-quizzes-assets-content
+              display: none
+
 // モバイル用のスタイル
 @media only screen and (max-width: 768px)
 
@@ -1210,3 +1225,13 @@
                 .file-info
                   .name
                     font-size: 12px
+
+    &-exam-quizzes
+      &-edit
+        .l-container
+          .exam-quizzes-list-content
+            width: 100%
+            border-right: none
+
+          .exam-quizzes-edit-content
+            display: none
