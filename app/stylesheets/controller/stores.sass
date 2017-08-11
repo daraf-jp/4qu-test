@@ -43,6 +43,99 @@
   &-history
 
     &-index
+      .history-tablet-table
+        .exam-about
+          display: flex
+
+          .image
+            width: 40px
+            height: 40px
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+
+          .info
+            padding-left: 5px
+
+            .author
+              font-size: 12px
+              color: $color-dark-gray
+              margin-top: 2px
+
+      .history-mobile-table
+        td
+          padding: 20px
+          border-top: 1px solid $color-light-gray
+          border-bottom: 1px solid $color-light-gray
+
+          .purchasing-info
+            .buyer-date
+              display: flex
+              justify-content: space-between
+              font-size: 12px
+              color: $color-dark-gray
+              margin-bottom: 10px
+
+            .exam-about
+              display: flex
+              justify-content: space-between
+
+              .image
+                width: 60px
+                height: 60px
+                background-size: cover
+                background-position: center
+                background-repeat: no-repeat
+
+              .info
+                flex: 1
+                text-align: left
+                padding-left: 10px
+                padding-right: 5px
+
+                .title
+                  font-size: 16px
+                  font-weight: 500
+
+                .author
+                  font-size: 12px
+                  color: $color-dark-gray
+                  margin-top: 2px
+
+                .price
+                  font-size: 14px
+                  color: $color-red
+                  font-weight: 500
+                  margin-top: 5px
+
+            .status
+              display: flex
+              align-items: center
+
+              .inner
+                width: 60px
+                height: 60px
+                border: 1px solid
+                border-radius: 50%
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+
+              &.rental
+                .text
+                  font-size: 11px
+
+                .period
+                  font-size: 14px
+                  font-weight: 500
+
+              &.purchased
+                color: $color-gray
+
+                .text
+                  font-size: 11px
+
 
   &-sales
 
@@ -203,6 +296,15 @@
           width: 768px
           margin: 0 auto
 
+    &-history
+      &-index
+        .l-container
+          width: 768px
+          margin: 0 auto
+
+          .history-table
+            display: none
+
 // タブレット用のスタイル
 @media only screen and (max-width: 768px)
   .stores
@@ -228,3 +330,14 @@
       &-index
         .l-main-content
           padding: 0 20px
+
+    &-history
+      &-index
+        .l-container
+          width: 100%
+
+          .l-search-head
+            padding: 0 20px
+
+          .history-tablet-table
+            display: none
