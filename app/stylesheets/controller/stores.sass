@@ -298,6 +298,16 @@
           .history-table
             display: none
 
+    &-sales
+      &-index
+        .sales-boxes
+          .sales-box
+            width: 33.333%
+            margin-right: 10px
+
+            &:last-child
+              margin-right: 0
+
 // タブレット用のスタイル
 @media only screen and (max-width: 768px)
   .stores
@@ -412,3 +422,113 @@
 
                 &.follow-request
                   display: none
+
+    &-sales
+      &-index
+        .sales-boxes
+          padding: 0 20px
+          display: block
+
+          .sales-box
+            width: 100%
+            margin-bottom: 15px
+
+            &:last-child
+              margin-bottom: 0
+
+        .l-sales-graph
+          padding: 0 20px
+          overflow-x: scroll
+
+        .m-table-head
+          padding: 0 20px
+
+      &-transfer
+        .applicable-amount
+          width: 100%
+          padding: 0 20px
+
+          .amount
+            width: 100%
+
+        .application-form
+          padding: 35px 20px 45px
+          width: 100%
+
+          .m-form-control
+            width: 100%
+            margin-right: 15px
+
+        .application-history
+          th
+
+      &-exams
+        .l-search-head
+          padding: 0 20px
+
+        .sales-exams-table
+          display: none
+
+        .mobile-sales-exams-lists
+          border-top: 1px solid $color-light-gray
+
+          .sales-list
+            padding: 20px
+            border-bottom: 1px solid $color-light-gray
+
+            .date
+              color: $color-dark-gray
+              font-size: 13px
+              margin-bottom: 5px
+
+            .details
+              display: flex
+
+              .details-left
+                .image
+                  width: 60px
+                  height: 60px
+                  background-position: center
+                  background-size: cover
+                  background-repeat: no-repeat
+
+              .details-right
+                padding-left: 15px
+                flex: 1
+
+                .title
+                  display: flex
+                  align-items: center
+                  font-size: 18px
+
+                  .mode-icon
+                    font-size: 20px
+                    margin-right: 5px
+
+                .info
+                  display: flex
+                  margin-top: 15px
+
+                  .questions
+                    display: flex
+                    align-items: center
+
+                    .icon
+                      font-size: 16px
+                      margin-right: 4px
+
+                    .num
+                      font-size: 16px
+                      font-weight: 400
+                      margin-right: 2px
+                      line-height: 18px
+
+                    .text
+                      font-size: 12px
+                      color: $color-dark-gray
+
+                  .price
+                    font-size: 16px
+                    font-weight: 500
+                    margin-left: 15px
+                    color: $color-red
