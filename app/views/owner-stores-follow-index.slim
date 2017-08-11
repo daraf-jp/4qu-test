@@ -36,9 +36,9 @@ html
                       | フォローリクエスト
                 tbody
                   tr
-                    td.w10.align-top
+                    td.w10.align-top.company-avatar
                       img.m-store-company-avatar src="./img/yahoo.png"
-                    td.w60.align-left
+                    td.w60.align-left.company-info
                       .m-store-company-name
                         | YAHOO!
                       .m-store-company-info
@@ -52,10 +52,15 @@ html
                           | URL：https://www.yahoo.co.jp/
                       .m-store-company-description
                         | Yahoo公式アカウント
-                    td.w15
+                      .m-store-company-btn-group-mobile.mobile-flex
+                        a.m-btn.m-btn-blue-transparent.m-store-company-btn-mobile href=""
+                          | 許可する
+                        a.m-btn.m-btn-gray-transparent.m-store-company-btn-mobile href=""
+                          | 拒否する
+                    td.w15.permission
                       a.m-btn.m-btn-blue-transparent.m-store-company-btn href=""
                         | 許可する
-                    td.w15
+                    td.w15.rejection
                       a.m-btn.m-btn-gray-transparent.m-store-company-btn href=""
                         | 拒否する
               table.m-table.m-store-company-table
@@ -65,9 +70,9 @@ html
                       | フォロー企業
                 tbody
                   tr
-                    td.w10.align-top
+                    td.w10.align-top.company-avatar
                       img.m-store-company-avatar src="./img/yoshinoya.png"
-                    td.w75.align-left
+                    td.w75.align-left.company-info
                       .m-store-company-name
                         | 吉野家
                       .m-store-company-info
@@ -81,13 +86,13 @@ html
                           | URL：https://www.yoshinoya.com/
                       .m-store-company-description
                         | (株)吉野家が運営する公式アカウントです。日常で感じたことや、吉野家のお得な情報をつぶやきます。 なお、店舗や商品に関するお問い合わせは、お問い合わせフォームhttps://customer.yoshinoya.com/contact/index  よりご連絡ください。
-                    td.w15
+                    td.w15.following
                       .m-store-company-following
                         | フォロー中
                   tr
-                    td.w10.align-top
+                    td.w10.align-top.company-avatar
                       img.m-store-company-avatar src="./img/cocoichi.png"
-                    td.w75.align-left
+                    td.w75.align-left.company-info
                       .m-store-company-name
                         | CoCo壱番屋
                       .m-store-company-info
@@ -101,6 +106,6 @@ html
                           | URL：http://www.ichibanya.co.jp/comp/
                       .m-store-company-description
                         | 株式会社壱番屋は、カレーハウスCoCo壱番屋を運営する日本のカレー専門店チェーンです。
-                    td.w15
+                    td.w15.following
                       .m-store-company-following
                         | フォロー中
