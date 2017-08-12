@@ -5,53 +5,148 @@ html
     .l-wrapper
       include _staff_header
       include _staff_exams_subheader
-      .l-container.flex.justify-content-space-between
-        .l-side-content
-          .m-side-head
-            | 種類
-          ul.m-side-nav
-            li.active
-              a href=""
-                | 公開テスト
-            li
-              a href=""
-                | JR飯田橋駅西口店
-            li
-              a href=""
-                | 自分で作成
-        .l-main-content
-          .l-table
-            table.m-table
-              thead
-                tr
-                  th
-                    | 日付
-                    span.icon-sort-down.m-table-sort
-                  th.align-left
-                    | テスト名
-                  th
-                    | 解答回数
-                  th.align-left
-                    | 結果
-              tbody
-                tr
-                  td.w10
-                    | 17.02.27
-                    br
-                    | 13:00
-                  td.w35.align-left
-                    a href="./staff-results-show.html"
-                      | 3月新メニューテスト
-                  td.w15
-                    | 2回目
-                  td
-                    .correction-content.flex.align-items-center
-                      .m-correct.high
-                        span.m-correct-num
-                          | 70.0
-                        | %
-                        br
-                        |  (7/10)
+      .l-main
+        .l-container.flex.justify-content-space-between
+          .l-side-content
+            .m-side-head
+              | 種類
+            ul.m-side-nav
+              li.active
+                a href=""
+                  | 公開テスト
+              li
+                a href=""
+                  | JR飯田橋駅西口店
+              li
+                a href=""
+                  | 自分で作成
+          .l-main-content
+            .l-table.result-table
+              table.m-table
+                thead
+                  tr
+                    th
+                      | 日付
+                      span.icon-sort-down.m-table-sort
+                    th.align-left
+                      | テスト名
+                    th
+                      | 解答回数
+                    th.align-left
+                      | 結果
+                tbody
+                  tr
+                    td.w10
+                      | 17.02.27
+                      br
+                      | 13:00
+                    td.w35.align-left
+                      a href="./staff-results-show.html"
+                        | 3月新メニューテスト
+                    td.w15
+                      | 2回目
+                    td
+                      .correction-content.flex.align-items-center
+                        .m-correct.high
+                          span.m-correct-num
+                            | 70.0
+                          | %
+                          br
+                          |  (7/10)
+                        .l-correction.flex.flex-wrap-wrap
+                          .m-correction.correct
+                          .m-correction.correct
+                          .m-correction.correct
+                          .m-correction.incorrect
+                          .m-correction.correct
+                          .m-correction.correct
+                          .m-correction.incorrect
+                          .m-correction.correct
+                          .m-correction.correct
+                          .m-correction.incorrect
+                  tr
+                    td.w10
+                      | 17.02.27
+                      br
+                      | 13:00
+                    td.w35.align-left
+                      a href="./staff-results-check-show.html"
+                        | 開店準備チェックシート(8月)
+                    td.w15
+                      | 2回目
+                    td
+                      .check-content.flex.align-items-center
+                        .m-correct.high
+                          span.m-correct-num
+                            | 90.0
+                          | %
+                          br
+                          |  (9/10)
+                        .l-check.flex.flex-wrap-wrap
+                          .m-check
+                            .m-check-icon.icon-check
+                          .m-check
+                            .m-check-icon.icon-check
+                          .m-check
+                            .m-check-icon.icon-check
+                          .m-check
+                            .m-check-icon.icon-check
+                          .m-check
+                            .m-check-icon.icon-check
+                          .m-check
+                            .m-check-icon.icon-check
+                          .m-check
+                            .m-check-icon.icon-check
+                          .m-check
+                            .m-check-icon.icon-check
+                          .m-check
+                            .m-check-icon.icon-check
+                          .m-check
+                            .m-check-unanswered
+                  tr
+                    td.w10
+                      | 17.02.27
+                      br
+                      | 13:00
+                    td.w35.align-left
+                      a href="./staff-results-questionnaire-show.html"
+                        | 満足度アンケート
+                    td.w15
+                      | 2回目
+                    td
+                      .l-answer.flex.flex-wrap-wrap
+                        .m-answer.first
+                          | 1
+                        .m-answer.second
+                          | 2
+                        .m-answer.third
+                          | 3
+                        .m-answer.fourth
+                          | 4
+                        .m-answer.unanswered
+                          | 未
+                        .m-answer.first
+                          | 1
+                        .m-answer.second
+                          | 2
+                        .m-answer.third
+                          | 3
+                        .m-answer.fourth
+                          | 4
+                        .m-answer.unanswered
+                          | 未
+            ul.mobile-result-lists.mobile
+              li.result-list.learning-mode
+                a.result-link href="./staff-results-show.html"
+                  .details
+                    .details-left
+                      .m-insight-correct
+                        #correct-progress1
+                    .details-right
+                      .date
+                        | 17.07.20 13:00
+                      .exam-title
+                        | 3月新メニューテスト
                       .l-correction.flex.flex-wrap-wrap
                         .m-correction.correct
                         .m-correction.correct
@@ -63,24 +158,21 @@ html
                         .m-correction.correct
                         .m-correction.correct
                         .m-correction.incorrect
-                tr
-                  td.w10
-                    | 17.02.27
-                    br
-                    | 13:00
-                  td.w35.align-left
-                    a href="./staff-results-check-show.html"
-                      | 開店準備チェックシート(8月)
-                  td.w15
-                    | 2回目
-                  td
-                    .check-content.flex.align-items-center
-                      .m-correct.high
-                        span.m-correct-num
-                          | 90.0
-                        | %
-                        br
-                        |  (9/10)
+                      .repetition
+                        .icon.icon-repetition
+                        .num
+                          | 2回目
+              li.result-list.checklist
+                a.result-link href="./staff-results-check-show.html"
+                  .details
+                    .details-left
+                      .m-insight-correct
+                        #correct-progress2
+                    .details-right
+                      .date
+                        | 17.07.20 13:00
+                      .exam-title
+                        | 開店準備チェックシート(8月)
                       .l-check.flex.flex-wrap-wrap
                         .m-check
                           .m-check-icon.icon-check
@@ -102,35 +194,59 @@ html
                           .m-check-icon.icon-check
                         .m-check
                           .m-check-unanswered
-                tr
-                  td.w10
-                    | 17.02.27
-                    br
-                    | 13:00
-                  td.w35.align-left
-                    a href="./staff-results-questionnaire-show.html"
-                      | 満足度アンケート
-                  td.w15
-                    | 2回目
-                  td
-                    .l-answer.flex.flex-wrap-wrap
-                      .m-answer.first
-                        | 1
-                      .m-answer.second
-                        | 2
-                      .m-answer.third
-                        | 3
-                      .m-answer.fourth
-                        | 4
-                      .m-answer.unanswered
-                        | 未
-                      .m-answer.first
-                        | 1
-                      .m-answer.second
-                        | 2
-                      .m-answer.third
-                        | 3
-                      .m-answer.fourth
-                        | 4
-                      .m-answer.unanswered
-                        | 未
+                      .repetition
+                        .icon.icon-repetition
+                        .num
+                          | 2回目
+              li.result-list.questionnaire-mode
+                a.result-link href="./staff-results-questionnaire-show.html"
+                  .details
+                    .details-right
+                      .date
+                        | 17.07.20 13:00
+                      .exam-title
+                        | 満足度アンケート
+                      .l-answer.flex.flex-wrap-wrap
+                        .m-answer.first
+                          | 1
+                        .m-answer.second
+                          | 2
+                        .m-answer.third
+                          | 3
+                        .m-answer.fourth
+                          | 4
+                        .m-answer.unanswered
+                          | 未
+                        .m-answer.first
+                          | 1
+                        .m-answer.second
+                          | 2
+                        .m-answer.third
+                          | 3
+                        .m-answer.fourth
+                          | 4
+                        .m-answer.unanswered
+                          | 未
+                      .repetition
+                        .icon.icon-repetition
+                        .num
+                          | 2回目
+javascript:
+  $('#correct-progress1').radialIndicator({
+    barColor: '#37CC82',
+    barWidth: 6,
+    initValue: 70,
+    roundCorner : true,
+    percentage: true,
+    fontSize: 24,
+    fontWeight: 400,
+  });
+  $('#correct-progress2').radialIndicator({
+    barColor: '#37CC82',
+    barWidth: 6,
+    initValue: 90,
+    roundCorner : true,
+    percentage: true,
+    fontSize: 24,
+    fontWeight: 400,
+  });
