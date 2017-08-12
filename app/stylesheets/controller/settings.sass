@@ -18,48 +18,113 @@
       &:last-child
         margin-bottom: 0
 
-    .edit-btn
-      font-size: 13px
+      .mobile-plan
+        padding: 0 20px
 
-    .pdf-btn
-      font-size: 13px
-
-      &:first-child
-        margin-right: 10px
-
-    .card-info
-      margin-left: 10px
-
-    .payment-box
-      width: 600px
-      padding: 25px 30px 25px 25px
-      border: 2px solid $color-base
-      border-radius: 5px
-      margin-bottom: 35px
-
-      .box-left
-        .title
+        .plan-name
           font-size: 18px
-          font-weight: 400
+          font-weight: 500
+          margin-bottom: 10px
 
-          .payment-month
-            font-weight: 600
-            margin-right: 10px
+          &.free
+            color: $color-gray
 
-        .payment-date
-          color: $color-dark-gray
+          &.start
+            color: $color-link
+
+          &.business
+            color: $color-base
+
+        .monthly-answers
+          margin-bottom: 2px
+
+        .use-span
+          margin-bottom: 2px
+
+        .next-time-withdrawal
+
+      .registration-card-table
+
+        .edit-btn
+          font-size: 13px
+
+        .card-info
+          margin-left: 10px
+
+      .mobile-registration-card-content
+        .registration-card
+          img
+          .card-info
+            margin-left: 10px
+            font-size: 16px
+            font-weight: 500
+
+        .nominee
           margin-top: 5px
 
-      .box-right
-        .payment-price
-          font-size: 26px
-          font-weight: 600
+        .expiration-date
+          color: $color-dark-gray
+          font-size: 13px
+          margin-top: 2px
 
-    .icon-check
-      color: $color-green
+        .edit
+          margin-top: 15px
 
-    .icon-incorrect
-      color: $color-red
+          .edit-btn
+            width: 100%
+
+      .payment-history-table
+        .pdf-btn
+          font-size: 13px
+
+          &:first-child
+            margin-right: 10px
+
+        .icon-check
+          color: $color-green
+
+        .icon-incorrect
+          color: $color-red
+
+      .mobile-payment-history-lists
+        border-top: 1px solid $color-light-gray
+
+        .payment-history-list
+          display: flex
+          align-items: center
+          padding: 20px 20px 20px 15px
+          border-bottom: 1px solid $color-light-gray
+
+          .status
+            .icon-check
+              color: $color-green
+
+            .icon-incorrect
+              color: $color-red
+
+          .details
+            flex: 1
+            display: flex
+            align-items: center
+            padding-left: 15px
+
+            .details-left
+              flex: 1
+
+              .date
+                font-size: 13px
+                color: $color-dark-gray
+                margin-bottom: 5px
+
+              .id
+                font-size: 16px
+                margin-bottom: 5px
+
+              .type
+            .details-right
+              .price
+                font-size: 16px
+                font-weight: 500
 
     .plan-choice
       display: flex
@@ -152,3 +217,34 @@
       .l-form-submit
         .m-btn
           width: 100%
+
+    &-payment
+      .l-middle-content
+        padding: 0
+
+      .l-head-setting
+        padding: 0 20px
+
+      .payment-content
+        .plan-table
+          display: none
+
+        .registration-card-table
+          display: none
+
+        .payment-history-table
+          display: none
+
+        .mobile-registration-card-content
+          padding: 0 20px
+
+      .plan-choice
+        display: block
+        padding: 0 20px
+
+        .plan
+          width: 100%
+          margin-bottom: 35px
+
+          &:last-child
+            margin-bottom: 0

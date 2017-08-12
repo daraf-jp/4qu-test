@@ -16,9 +16,10 @@ html
         .l-container
           .l-middle-content
             .payment-content
-              .m-head-setting
-                | ご利用プラン
-              .l-table
+              .l-head-setting
+                .m-head-setting
+                  | ご利用プラン
+              .l-table.plan-table
                 table.m-table
                   thead
                     tr
@@ -37,9 +38,18 @@ html
                       td.w25
                         | 300
                       td.w25
-                        | 17/06/04 - 17/07/03
+                        | 17.06.04 - 17.07.03
                       td.w25
-                        | 17/08/04
+                        | 17.08.04
+              .mobile-plan.mobile
+                .plan-name.start
+                  | スタートプラン
+                .monthly-answers
+                  | 月間解答数：300
+                .use-span
+                  | ご利用の期間：17.06.04 - 17.07.03
+                .next-time-withdrawal
+                  | 次回の引き落とし：17.08.04
               .plan-choice
                 .plan
                   .plan-box.free
@@ -87,9 +97,10 @@ html
                   a.m-btn.m-btn-base href=""
                     | ビジネスプランに変更
             .payment-content
-              .m-head-setting
-                | お支払い方法
-              .l-table
+              .l-head-setting
+                .m-head-setting
+                  | お支払い方法
+              .l-table.registration-card-table
                 table.m-table
                   thead
                     tr
@@ -115,10 +126,23 @@ html
                       td.w20
                         a.m-btn.m-btn-gray-transparent.edit-btn href=""
                           | 編集する
+              .mobile-registration-card-content.mobile
+                .registration-card.flex.align-items-center
+                  img src="./img/visa.png" width="40"
+                  .card-info
+                    | VISA 下4桁 5012
+                .nominee
+                  | HITOSHI SAIWAKI
+                .expiration-date
+                  | 有効期限：09/2020
+                .edit
+                  a.m-btn.m-btn-gray-transparent.edit-btn href=""
+                    | 編集する
             .payment-content
-              .m-head-setting
-                | 支払い履歴
-              .l-table
+              .l-head-setting
+                .m-head-setting
+                  | 支払い履歴
+              .l-table.payment-history-table
                 table.m-table
                   thead
                     tr
@@ -139,7 +163,7 @@ html
                       td.w6
                         .icon-check
                       td.w14
-                        | 17/06/04
+                        | 17.06.04
                       td.w15
                         | 219HE0123
                       td.w20
@@ -155,7 +179,7 @@ html
                       td.w6
                         .icon-incorrect
                       td.w14
-                        | 17/06/04
+                        | 17.06.04
                       td.w15
                         | 219HE0123
                       td.w20
@@ -171,7 +195,7 @@ html
                       td.w6
                         .icon-check
                       td.w14
-                        | 17/06/04
+                        | 17.06.04
                       td.w15
                         | 219HE0123
                       td.w20
@@ -187,7 +211,7 @@ html
                       td.w6
                         .icon-check
                       td.w14
-                        | 17/06/04
+                        | 17.06.04
                       td.w15
                         | 219HE0123
                       td.w20
@@ -199,3 +223,46 @@ html
                           | 請求書
                         a.m-btn.m-btn-gray-transparent.pdf-btn href=""
                           | 領収書
+              ul.mobile-payment-history-lists.mobile
+                li.payment-history-list
+                  .status
+                    .icon-check
+                  .details
+                    .details-left
+                      .date
+                        | 17.06.04
+                      .id
+                        | 219HE0123
+                      .type
+                        | 月額利用料
+                    .details-right
+                      .price
+                        | ¥1,500
+                li.payment-history-list
+                  .status
+                    .icon-incorrect
+                  .details
+                    .details-left
+                      .date
+                        | 17.06.04
+                      .id
+                        | 219HE0123
+                      .type
+                        | ストア購入
+                    .details-right
+                      .price
+                        | ¥400
+                li.payment-history-list
+                  .status
+                    .icon-check
+                  .details
+                    .details-left
+                      .date
+                        | 17.06.04
+                      .id
+                        | 219HE0123
+                      .type
+                        | ストア購入
+                    .details-right
+                      .price
+                        | ¥400

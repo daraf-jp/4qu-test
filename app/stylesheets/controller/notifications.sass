@@ -193,12 +193,17 @@
             font-size: 13px
             font-weight: 500
 
-        .reception-type
-          font-size: 13px
+        .reception
+          text-align: right
+          flex: 1
+          padding-left: 5px
 
-        .opened-time
-          font-size: 12px
-          color: $color-dark-gray
+          .reception-type
+            font-size: 13px
+
+          .opened-time
+            font-size: 12px
+            color: $color-dark-gray
 
   &-new
     .l-breadcrumb
@@ -263,6 +268,26 @@
           padding: 0 0 0 25px
           border: none
 
+    &-sender
+      .l-container
+        padding: 0 20px
+
+        .send-lists
+          padding-right: 25px
+          width: 55%
+
+          .l-search-head
+            .l-search
+              flex: 1
+              padding-right: 15px
+
+            .l-new-btn
+              .m-btn
+                width: auto
+
+        .send-content
+          width: 45%
+
 // モバイル用のスタイル
 @media only screen and (max-width: 768px)
   .notifications
@@ -289,4 +314,28 @@
               padding: 20px 20px 20px 10px
 
         .reception-content
+          display: none
+
+    &-sender
+      .l-container
+        padding: 0
+
+        .send-lists
+          width: 100%
+          padding-right: 0
+
+          .l-search-head
+            .l-search
+              padding: 0 20px
+
+          .send-list
+            margin-top: 0
+            border: none
+            border-top: 1px solid $color-light-gray
+
+            .send-link
+              border-bottom: 1px solid $color-light-gray
+              padding: 20px
+
+        .send-content
           display: none
