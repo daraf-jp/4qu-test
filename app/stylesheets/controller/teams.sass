@@ -4,24 +4,96 @@
       .l-breadcrumb
         margin-bottom: 60px
 
-      .icon
-        font-size: 25px
+      .teams-table
+        .icon
+          font-size: 25px
 
-        &-line
-          color: $color-line
+          &-line
+            color: $color-line
 
-        &-apple
-          color: $color-apple
+          &-apple
+            color: $color-apple
 
-        &-android
-          color: $color-android
+          &-android
+            color: $color-android
 
-      .avatar
-        width: 45px
-        height: 45px
-        display: block
-        margin: 0 auto
-        border-radius: 50%
+        .avatar
+          width: 45px
+          height: 45px
+          display: block
+          margin: 0 auto
+          border-radius: 50%
+
+      .mobile-teams-lists
+        border-top: 1px solid $color-light-gray
+
+        .temas-list
+          border-bottom: 1px solid $color-light-gray
+          padding: 20px
+          color: $color-text
+          display: block
+
+          .details
+            display: flex
+            align-items: center
+
+            .details-left
+              display: flex
+              flex: 1
+
+              .avatar-status
+                .avatar
+                  display: block
+                  width: 60px
+                  height: 60px
+                  border-radius: 50%
+
+                .status
+                  display: flex
+                  justify-content: center
+                  margin-top: 5px
+
+                  .icon
+                    font-size: 20px
+
+                    &:first-child
+                      margin-right: 5px
+
+                    &:only-child
+                      margin-right: 0
+
+                    &-line
+                      color: $color-line
+
+                    &-android
+                      color: $color-android
+
+              .info
+                padding-left: 15px
+                padding-right: 5px
+                flex: 1
+
+                .name
+                  font-size: 16px
+                  font-weight: 400
+                  margin-bottom: 5px
+
+                .affiliation
+                  font-size: 13px
+                  margin-bottom: 5px
+
+                .created-date
+                  font-size: 12px
+                  color: $color-dark-gray
+
+                .last-access
+                  font-size: 12px
+                  color: $color-dark-gray
+
+            .details-right
+              .other
+                a
+                  font-size: 25px
 
     &-show
       .user
@@ -63,6 +135,58 @@
 
                 strong
                   font-weight: 500
+
+      .tablet-head
+        font-size: 18px
+        margin-bottom: 15px
+
+      .mobile-insight-lists
+        border-top: 1px solid $color-light-gray
+
+        .insight-list
+          border-bottom: 1px solid $color-light-gray
+
+          .insight-link
+            display: block
+            padding: 20px
+            color: $color-text
+
+            .details
+              display: flex
+              align-items: center
+
+              .details-left
+                padding-right: 20px
+
+                .m-insight-correct
+                  padding: 0
+
+              .details-right
+                flex: 1
+
+                .date
+                  font-size: 13px
+                  color: $color-dark-gray
+                  margin-bottom: 5px
+                  text-align: right
+
+                .exam-title
+                  font-size: 18px
+                  font-weight: 400
+
+                .l-correction
+                  width: 100%
+                  margin: 10px 0 0 0
+
+                .repetition
+                  display: flex
+                  align-items: center
+                  justify-content: flex-end
+                  margin-top: 5px
+
+                  .icon
+                    margin-right: 4px
+                    font-size: 16px
 
     &-users
       &-new
@@ -160,3 +284,72 @@
 
             & + .m-btn
               margin-left: 10px
+
+// タブレット用のスタイル
+@media only screen and (max-width: 1100px)
+  .owner
+    &.teams
+      &-show
+        .user
+          padding: 30px 20px
+
+// モバイル用のスタイル
+@media only screen and (max-width: 768px)
+  .owner
+    &.teams
+      &-index
+        .l-search-head
+          margin-top: 45px
+          padding: 0 20px
+
+        .teams-table
+          display: none
+
+      &-show
+        .user
+          .l-container
+            .avatar
+              img
+                width: 60px
+                height: 60px
+
+            .info
+              flex: 1
+              padding-top: 0
+              padding-left: 15px
+
+              .info-content
+                display: block
+
+                &:first-child
+                  display: flex
+                  justify-content: space-between
+
+                .name
+                  font-size: 20px
+                  margin-right: 0
+                  margin-bottom: 10px
+
+                .edit-btn
+                  font-size: 12px
+                  width: auto
+                  margin-bottom: 10px
+
+                .text
+                  margin-right: 0
+                  margin-bottom: 2px
+
+                  strong
+                    font-weight: 300
+
+                  &.created-date
+                    font-size: 12px
+                    color: $color-dark-gray
+                    margin-top: 10px
+
+                  &.last-access
+                    font-size: 12px
+                    color: $color-dark-gray
+
+        .insight-table
+          display: none

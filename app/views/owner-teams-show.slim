@@ -27,18 +27,18 @@ html
                 a.m-btn.m-btn-gray-transparent.edit-btn href="./owner-teams-staffs-edit.html"
                   | 編集
               .info-content
-                .text
+                .text.tel
                   strong TEL：
                   | 09012345678
-                .text
+                .text.manager
                   strong マネージャー：
                   | JR飯田橋駅西口店
               .info-content
-                .text
+                .text.created-date
                   strong 作成日：
                   | 17.07.27 13:00
-                .text
-                  strong 最終アクセス
+                .text.last-access
+                  strong 最終アクセス：
                   | 18.02.27 13:00
         .l-container.flex.justify-content-space-between
           .l-side-content
@@ -64,7 +64,7 @@ html
                 a href=""
                   | 画像・動画
           .l-main-content
-            .l-table
+            .l-table.insight-table
               table.m-table
                 thead
                   tr
@@ -193,3 +193,76 @@ html
                         .m-correction.correct
                         .m-correction.correct
                         .m-correction.incorrect
+            ul.mobile-insight-lists.mobile
+              li.insight-list
+                a.insight-link href="./owner-libraries-exams-insights-show.html"
+                  .details
+                    .details-left
+                      .m-insight-correct
+                        #correct-progress1
+                    .details-right
+                      .date
+                        | 17.02.27 13:00
+                      .exam-title
+                        | 衛生テスト2017.2月
+                      .l-correction.flex.flex-wrap-wrap
+                        .m-correction.correct
+                        .m-correction.correct
+                        .m-correction.correct
+                        .m-correction.incorrect
+                        .m-correction.correct
+                        .m-correction.correct
+                        .m-correction.incorrect
+                        .m-correction.correct
+                        .m-correction.correct
+                        .m-correction.incorrect
+                      .repetition
+                        .icon.icon-repetition
+                        .num
+                          | 2回目
+              li.insight-list
+                a.insight-link href="./owner-libraries-exams-insights-show.html"
+                  .details
+                    .details-left
+                      .m-insight-correct
+                        #correct-progress2
+                    .details-right
+                      .date
+                        | 17.02.27 13:00
+                      .exam-title
+                        | 衛生テスト2017.2月
+                      .l-correction.flex.flex-wrap-wrap
+                        .m-correction.correct
+                        .m-correction.correct
+                        .m-correction.correct
+                        .m-correction.incorrect
+                        .m-correction.correct
+                        .m-correction.correct
+                        .m-correction.incorrect
+                        .m-correction.correct
+                        .m-correction.correct
+                        .m-correction.incorrect
+                      .repetition
+                        .icon.icon-repetition
+                        .num
+                          | 2回目
+
+javascript:
+  $('#correct-progress1').radialIndicator({
+    barColor: '#37CC82',
+    barWidth: 6,
+    initValue: 70,
+    roundCorner : true,
+    percentage: true,
+    fontSize: 24,
+    fontWeight: 400,
+  });
+  $('#correct-progress2').radialIndicator({
+    barColor: '#37CC82',
+    barWidth: 6,
+    initValue: 70,
+    roundCorner : true,
+    percentage: true,
+    fontSize: 24,
+    fontWeight: 400,
+  });

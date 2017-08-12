@@ -59,12 +59,13 @@ html
                   .m-form-group-label
                     | ロゴ
                 .l-form-group-right.flex.align-items-center
-                  .m-form-upload-image
-                    img src="./img/cocoichi.png" width="70" height="70"
                   .m-form-upload
-                    input type="file"
-                    a.m-form-upload-btn.m-btn.m-btn-gray-transparent href="/"
-                      | ファイルを選択
+                    .m-form-upload-image
+                      img src="./img/cocoichi.png" width="70" height="70"
+                    .m-form-upload-file
+                      input type="file"
+                      a.m-form-upload-btn.m-btn.m-btn-gray-transparent href="/"
+                        | ファイルを選択
               .l-form-group
                 .l-form-group-left
                   .m-form-group-label
