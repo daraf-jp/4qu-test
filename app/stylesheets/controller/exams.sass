@@ -5,11 +5,60 @@
         .m-form-control
           width: 210px
 
-// スマホ用のスタイル
-@media only screen and (max-width: 414px)
+      .pop
+        width: 800px
+        margin: 0 auto
+
+        img
+          width: 100%
+          display: block
+          margin-bottom: 45px
+          box-shadow: 2px 0 1px rgba($color-text, 0.2), -2px 0 1px rgba($color-text, 0.2), 0 2px 1px rgba($color-text, 0.2)
+
+// タブレット用のスタイル
+@media only screen and (max-width: 1100px)
   .staff
     &.exams
       &-media
         .l-search
+          width: 768px
+          margin: 0 auto 40px
+
           .m-form-control
+            width: 100%
             flex: 1
+
+        .pop
+          width: 748px
+
+        .l-main-content
+          float: none
+
+          .l-exams
+            margin-top: 0
+            padding: 0
+
+            .l-exam-embed
+              width: 364px
+              margin: 0 10px 45px
+
+// モバイル用のスタイル
+@media only screen and (max-width: 768px)
+  .staff
+    &.exams
+      &-media
+        .l-search
+          width: 100%
+          padding: 0 20px
+
+        .pop
+          width: 100%
+          padding: 0 20px
+
+        .l-main-content
+          padding-bottom: 80px
+
+          .l-exams
+            .l-exam-embed
+              width: 100%
+              margin: 0 20px 35px
