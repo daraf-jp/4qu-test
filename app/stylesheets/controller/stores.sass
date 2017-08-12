@@ -319,6 +319,60 @@
                 &.transfer-completed
                   color: $color-green
 
+    &-customers
+      .mobile-sales-customers-lists
+        border-top: 1px solid $color-light-gray
+
+        .sales-customers-list
+          border-bottom: 1px solid $color-light-gray
+          padding: 20px
+
+          .details
+            display: flex
+            align-items: center
+
+            .details-left
+              display: flex
+              flex: 1
+
+              .avatar
+                img
+                  display: block
+
+              .info
+                padding-left: 15px
+                padding-right: 5px
+                word-break: break-all
+
+                .company-name
+                  font-size: 18px
+                  font-weight: 400
+                  margin-bottom: 5px
+
+                .employees
+                  font-size: 13px
+
+                .tel
+                  font-size: 13px
+
+                .address
+                  font-size: 13px
+
+                .url
+                  font-size: 13px
+
+            .details-right
+              .purchase
+                text-align: center
+
+                .text
+                  font-size: 12px
+                  margin-bottom: 5px
+
+                .num
+                  font-size: 18px
+                  font-weight: 400
+
   &-follow
 
 // タブレット用のスタイル
@@ -382,6 +436,14 @@
 
         .l-store-purchase
           display: none
+
+        .l-table
+          table
+            th
+              border-color: $color-light-gray
+
+            td
+              border-color: $color-light-gray
 
     &-secret
       &-index
@@ -600,3 +662,6 @@
       &-customers
         .l-search-head
           padding: 0 20px
+
+        .sales-customers-table
+          display: none
