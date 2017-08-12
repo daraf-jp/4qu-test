@@ -260,10 +260,65 @@
         .approval-pending
           color: $color-red
 
-        .pending-transfer
-
         .transfer-completed
           color: $color-green
+
+      .mobile-application-history-lists
+        border-top: 1px solid $color-light-gray
+
+        .application-history-list
+          padding: 20px
+          border-bottom: 1px solid $color-light-gray
+
+          .details
+            display: flex
+            align-items: center
+
+            .details-left
+              flex: 1
+
+              .date
+                font-size: 13px
+                color: $color-dark-gray
+                margin-bottom: 5px
+
+              .id
+                font-size: 16px
+                margin-bottom: 10px
+
+              .money-transfer
+                display: flex
+                align-items: center
+
+                .text
+                  font-size: 12px
+
+                .num
+                  font-size: 16px
+                  font-weight: 500
+
+              .fee
+                display: flex
+                align-items: center
+
+                .text
+                  font-size: 12px
+
+                .num
+                  font-size: 14px
+                  font-weight: 400
+
+            .details-right
+              .status
+                text-align: center
+                width: 105px
+                font-size: 13px
+
+                &.approval-pending
+                  color: $color-red
+
+                &.transfer-completed
+                  color: $color-green
 
   &-follow
 
@@ -460,7 +515,7 @@
             margin-right: 15px
 
         .application-history
-          th
+          display: none
 
       &-exams
         .l-search-head
