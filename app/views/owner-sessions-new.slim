@@ -1,0 +1,43 @@
+doctype html
+html
+  include _head
+  body.owner.sessions.sessions-new
+    .l-wrapper
+      .l-main
+        header.l-header
+          .l-header-left
+            .m-btn-group
+              a.m-btn.m-btn-blue
+                | 法人
+                span.mobile-none
+                  | 利用
+              a.m-btn.m-btn-blue-transparent href="./staff-exams-media.html"
+                | 個人
+                span.mobile-none
+                  | 利用
+          .l-header-center
+            img.mobile-none src="./img/logo-color.png"
+            img.mobile src="./img/icon-color.png"
+          .l-header-right
+            ul.float-right
+              li
+                a href=""
+                  | お問い合わせ
+              li
+                a href="./owner-sessions-new.html"
+                  | ログイン
+            .clear
+        .l-container
+          .l-middle-content
+            .sessions-content
+              .title
+                | ログイン
+              form
+                .text
+                  | あなたのチームのサブドメイン名を入力してください
+                .subdomain.flex.align-items-flex-end
+                  input.m-form-control type="tel" placeholder="サブドメイン名"
+                  .text
+                    | .4quapp.com
+                a.m-btn.m-btn-blue.submit-btn href="./staff-staffs-passcode.html"
+                  | 送信

@@ -4,15 +4,18 @@ html
   body.staff.staffs.staffs-sms
     .l-wrapper
       include _staff_header
+      include _staff_exams_subheader
       .l-main
-        .sms-content
-          .title
-            | SMS認証
-          form
-            input.m-form-control type="tel" placeholder="電話番号を入力"
-            .text
-              | 上記の入力した番号にSMSで認証番号を送ります。
-            a.m-btn.m-btn-blue.submit-btn href="./staff-staffs-passcode.html"
-              | 送信
-            a.m-btn.m-btn-gray-transparent.cancel-btn href="./staff-profiles-index.html"
-              | キャンセル
+        .l-container
+          .l-middle-content
+            .sms-content
+              .title
+                | SMS認証
+              form
+                input.m-form-control type="tel" placeholder="電話番号を入力"
+                .text
+                  | 上記の入力した番号にSMSで認証番号を送ります。
+                a.m-btn.m-btn-blue.submit-btn href="./staff-staffs-passcode.html"
+                  | 送信
+                a.m-btn.m-btn-gray-transparent.cancel-btn href="./staff-profiles-index.html"
+                  | キャンセル

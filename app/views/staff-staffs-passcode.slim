@@ -4,13 +4,16 @@ html
   body.staff.staffs.staffs-passcode
     .l-wrapper
       include _staff_header
+      include _staff_exams_subheader
       .l-main
-        .sms-content
-          .title
-            | SMSパスコード
-          form
-            .text
-              | SMSにてパスコードを送信しました。受け取ったパスコードを入力してください。
-            input.m-form-control type="password" placeholder="パスコードを入力"
-            a.m-btn.m-btn-blue.submit-btn href="./staff-profiles-index.html"
-              | 認証
+        .l-container
+          .l-middle-content
+            .sms-content
+              .title
+                | SMSパスコード
+              form
+                .text
+                  | SMSにてパスコードを送信しました。受け取ったパスコードを入力してください。
+                input.m-form-control type="password" placeholder="パスコードを入力"
+                a.m-btn.m-btn-blue.submit-btn href="./staff-profiles-index.html"
+                  | 認証
