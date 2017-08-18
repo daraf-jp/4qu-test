@@ -29,7 +29,7 @@
   &-index
 
     .profile
-      padding: 40px 25px
+      padding: 40px 25px 28px 25px
       border-bottom: 1px solid $color-gray
 
       .image
@@ -47,13 +47,9 @@
         padding-right: 10px
 
         .info-content
-          display: flex
-          align-items: center
-
           .name
             font-size: 20px
             margin-bottom: 20px
-            margin-right: 30px
             font-weight: 500
 
           .cooperations
@@ -87,12 +83,12 @@
           .user-id
             margin-bottom: 12px
             margin-right: 20px
+            display: inline-block
 
           .tel
             margin-bottom: 12px
             margin-right: 20px
-
-            .num
+            display: inline-block
 
             .authenticated
               margin-left: 4px
@@ -100,11 +96,21 @@
 
           .mail
             margin-bottom: 12px
+            margin-right: 20px
+            display: inline-block
 
           .company
             margin-right: 20px
+            margin-bottom: 12px
+            display: inline-block
 
           .registration-date
+            margin-bottom: 12px
+            display: inline-block
+
+        .mobile-sms-authentication
+          .m-btn
+            width: 100%
 
     .point
       padding: 30px 20px
@@ -128,3 +134,56 @@
 
           &:first-child
             margin-right: 15px
+
+// モバイル用のスタイル
+@media only screen and (max-width: 768px)
+  .profiles
+    .l-wrapper
+      .l-main
+        height: auto
+        margin-top: -65px
+        padding-top: 65px
+        padding-bottom: 80px
+
+        .l-container
+          .l-middle-content
+            width: 100%
+            border-right: none
+            border-left: none
+
+    &-index
+      .profile
+        display: block
+        padding: 40px 20px
+
+        .image
+          margin: 0 auto 10px
+
+        .info
+          padding: 0
+
+          .info-content
+            .name
+              text-align: center
+
+            .cooperations
+              justify-content: center
+
+        .sms-authentication
+          display: none
+
+      .profile-list
+        .m-list-link
+          padding: 20px
+
+      .point
+        display: block
+
+        .point-content
+          .m-btn
+            width: 100%
+            margin-top: 15px
+
+            &:first-child
+              margin-right: 0
+              margin-top: 30px

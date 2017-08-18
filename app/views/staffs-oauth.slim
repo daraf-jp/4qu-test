@@ -9,10 +9,11 @@ html
         .l-container
           .l-middle-content
             .m-head
-              a.m-head-return href="./staff-profiles-index.html"
-                .m-head-icon.icon-return
-                .m-head-text
-                  | 一覧へ戻る
+              .m-head-return
+                a.m-head-return-link href="./staff-profiles-index.html"
+                  .m-head-return-icon.icon-return
+                  .m-head-return-text
+                    | 一覧へ戻る
               .m-head-title
                 | 外部連携
             .oauth-list
@@ -35,6 +36,9 @@ html
                         | 寺西 勁人
                       .email
                         | keito.teranishi@gmail.com
+                      .mobile-edit.mobile
+                        a.m-btn.m-btn-gray-transparent href=""
+                          | 解除
                     .edit
                       a.m-btn.m-btn-gray-transparent href=""
                         | 解除

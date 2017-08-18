@@ -47,9 +47,26 @@
             text-align: right
             color: $color-dark-gray
             font-size: 12px
+            margin-top: 5px
 
           .text
             strong
               font-weight: 600
               font-size: 16px
               margin-right: 2px
+
+// モバイル用のスタイル
+@media only screen and (max-width: 768px)
+  .wallets
+    .l-wrapper
+      .l-main
+        height: auto
+        margin-top: -65px
+        padding-top: 65px
+        padding-bottom: 80px
+
+        .l-container
+          .l-middle-content
+            width: 100%
+            border-right: none
+            border-left: none

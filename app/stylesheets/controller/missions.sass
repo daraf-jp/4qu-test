@@ -95,7 +95,7 @@
             border: 2px solid #e6c43e
 
 
-            .icon.icon-point
+            .icon
               font-size: 70px
               color: #e6c43e
 
@@ -124,3 +124,62 @@
             background-position: center
             background-repeat: no-repeat
             z-index: 2
+
+// モバイル用のスタイル
+@media only screen and (max-width: 768px)
+  .missions
+    .l-wrapper
+      .l-main
+        height: auto
+        margin-top: -65px
+        padding-top: 65px
+        padding-bottom: 80px
+
+        .l-container
+          .l-middle-content
+            width: 100%
+            border-right: none
+            border-left: none
+
+    &-index
+      .pickup-content-caroucel
+        section
+          .slick-list
+            min-width: auto
+            width: 100%
+
+          .slider-item
+            width: 335px
+
+      .mission-lists
+        .mission-list
+          .mission-link
+            padding-left: 25px
+
+            .image
+              display: none
+
+            .info
+              padding-left: 0
+              padding-right: 5px
+
+              .title
+                margin-top: 0
+
+              .duration
+                font-size: 12px
+                margin-top: 10px
+
+            .compensation
+              width: 80px
+              height: 80px
+
+              .icon
+                font-size: 60px
+
+              .point
+                font-size: 13px
+
+            .new
+              width: 45px
+              height: 45px

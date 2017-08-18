@@ -65,6 +65,13 @@
           font-size: 12px
           margin-top: 4px
 
+        .mobile-edit
+          margin-top: 10px
+          text-align: right
+
+          .m-btn
+            font-size: 12px
+
       .edit
         .m-btn
           font-size: 12px
@@ -213,3 +220,69 @@
           display: flex
           justify-content: center
           align-items: center
+
+// モバイル用のスタイル
+@media only screen and (max-width: 768px)
+  .staffs
+    .l-wrapper
+      .l-main
+        height: auto
+        margin-top: -65px
+        padding-top: 65px
+        padding-bottom: 80px
+
+        .l-container
+          .l-middle-content
+            width: 100%
+            border-right: none
+            border-left: none
+
+    &-edit
+      form
+        padding-bottom: 0
+
+      .l-form-group
+        .l-form-group-left
+          display: none
+
+      .l-form-submit
+        padding: 0 20px
+
+        .m-btn
+          width: 100%
+
+    &-oauth
+      .oauth-btn
+        width: 100%
+
+      .account
+        align-items: start
+
+        .info
+          padding-right: 0
+
+        .edit
+          display: none
+
+    &-setting
+      form
+        padding: 0
+
+        .l-form-group
+          .l-form-group-left
+            display: none
+
+        .l-form-submit
+          padding: 0 20px
+
+          .m-btn
+            width: 100%
+
+
+    &-notification-settings
+      .notification-form
+        padding-bottom: 0
+
+      .l-form-submit
+        .m-btn
+          width: 100%
