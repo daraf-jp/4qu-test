@@ -235,8 +235,120 @@
               color: $color-dark-gray
 
 // モバイル用のスタイル
+@media only screen and (max-width: 1100px)
+  .results
+    &-show
+      .l-container
+        padding: 0 20px
+
+// モバイル用のスタイル
 @media only screen and (max-width: 768px)
   .results
     &-index
       .result-table
+        display: none
+
+    &-show
+      .m-staff
+        display: block
+
+        &-avatar
+          display: flex
+          justify-content: space-between
+          align-items: center
+
+          img
+            width: 80px
+            height: 80px
+
+          .registration-btn
+            font-size: 12px
+            margin-right: 10px
+
+          .delete-btn
+            font-size: 12px
+
+        &-btn-group
+          display: none
+
+        &-info
+          padding-left: 0
+
+          &-content
+            display: block
+
+        &-text
+          margin-bottom: 5px
+
+          &:last-child
+            margin-bottom: 0
+
+        &-name
+          font-size: 18px
+          margin-bottom: 10px
+
+      .l-insight-date
+        display: none
+
+      .l-insight-correct
+        .m-insight-correct
+          padding: 0 20px 0 0
+
+      .l-insight-correction
+        .m-insight-correction
+          padding-left: 0
+
+      .l-check
+        width: 100%
+
+      .l-answer
+        width: 100%
+
+      .l-graph
+        padding: 60px 0 55px 0
+
+        &-content
+          padding: 8px 0
+
+          .m-graph-point
+            width: 50px
+            height: 50px
+            margin-left: -25px
+
+            &-icon
+              font-size: 50px
+
+        &-x
+          padding: 0
+
+        &-y
+          display: none
+
+        .m-graph-answer-num
+          right: 5px
+
+      .question-content
+        width: 100%
+        border-right: none
+
+        .m-quiz-question-text
+          padding-bottom: 0
+
+        .mobile-choice-content
+          margin-top: 15px
+
+        .mobile-answer-content
+          margin-top: 15px
+
+          .l-table
+            table
+              tr
+                &:last-child
+                  td
+                    border-bottom: none
+
+      .choice-content
+        display: none
+
+      .answer-content
         display: none

@@ -63,14 +63,94 @@ html
             .l-quizzes
               .l-quiz
                 .m-quiz.flex
-                  .m-quiz-content
+                  .m-quiz-content.question-content
                     .m-quiz-head.flex.align-items-center
                       .m-quiz-icon.icon-quiz
                       .m-quiz-title
                         | 1
                     .m-quiz-question-text
                       | チキンと夏野菜カレーは美味しかったですか？
-                  .m-quiz-content
+                    .mobile-content.mobile
+                      .mobile-choice-content
+                        .m-quiz-head.flex.align-items-center
+                          .m-quiz-icon.icon-choice
+                          .m-quiz-title
+                            | 選択肢
+                        ul.m-quiz-choices
+                          li.m-quiz-choice
+                            .m-quiz-choiced-label.icon-check
+                            .m-quiz-choice-content
+                              | 大変満足
+                          li.m-quiz-choice
+                            .m-quiz-choice-label
+                            .m-quiz-choice-content
+                              | 満足
+                          li.m-quiz-choice
+                            .m-quiz-choice-label
+                            .m-quiz-choice-content
+                              | 普通
+                          li.m-quiz-choice
+                            .m-quiz-choice-label
+                            .m-quiz-choice-content
+                              | 美味しくない
+                      .mobile-answer-content
+                        .m-quiz-head.flex.align-items-center
+                          .m-quiz-title
+                            | 回答履歴
+                        .l-table
+                          table.m-table
+                            tbody
+                              tr
+                                td.w80
+                                  .times-answer
+                                    .times
+                                      | 5回目
+                                    .m-answer.first
+                                      | 1
+                                td.w20
+                                  .date
+                                    | 17.07.27
+                              tr
+                                td.w80
+                                  .times-answer
+                                    .times
+                                      | 4回目
+                                    .m-answer.first
+                                      | 1
+                                td.w20
+                                  .date
+                                    | 17.07.26
+                              tr
+                                td.w80
+                                  .times-answer
+                                    .times
+                                      | 3回目
+                                    .m-answer.second
+                                      | 2
+                                td.w20
+                                  .date
+                                    | 17.07.25
+                              tr
+                                td.w80
+                                  .times-answer
+                                    .times
+                                      | 2回目
+                                    .m-answer.third
+                                      | 3
+                                td.w20
+                                  .date
+                                    | 17.07.24
+                              tr
+                                td.w80
+                                  .times-answer
+                                    .times
+                                      | 1回目
+                                    .m-answer.unanswered
+                                      | 未
+                                td.w20
+                                  .date
+                                    | 17.07.23
+                  .m-quiz-content.choice-content
                     .m-quiz-head.flex.align-items-center
                       .m-quiz-icon.icon-choice
                       .m-quiz-title
@@ -92,7 +172,7 @@ html
                         .m-quiz-choice-label
                         .m-quiz-choice-content
                           | 美味しくない
-                  .m-quiz-content
+                  .m-quiz-content.answer-content
                     .m-quiz-head.flex.align-items-center
                       .m-quiz-title
                         | 回答履歴
@@ -151,14 +231,94 @@ html
                                 | 17.07.23
               .l-quiz
                 .m-quiz.flex
-                  .m-quiz-content
+                  .m-quiz-content.question-content
                     .m-quiz-head.flex.align-items-center
                       .m-quiz-icon.icon-quiz
                       .m-quiz-title
                         | 2
                     .m-quiz-question-text
                       | チキンと夏野菜カレーは美味しかったですか？
-                  .m-quiz-content
+                    .mobile-content.mobile
+                      .mobile-choice-content
+                        .m-quiz-head.flex.align-items-center
+                          .m-quiz-icon.icon-choice
+                          .m-quiz-title
+                            | 選択肢
+                        ul.m-quiz-choices
+                          li.m-quiz-choice
+                            .m-quiz-choiced-label.icon-check
+                            .m-quiz-choice-content
+                              | 大変満足
+                          li.m-quiz-choice
+                            .m-quiz-choice-label
+                            .m-quiz-choice-content
+                              | 満足
+                          li.m-quiz-choice
+                            .m-quiz-choice-label
+                            .m-quiz-choice-content
+                              | 普通
+                          li.m-quiz-choice
+                            .m-quiz-choice-label
+                            .m-quiz-choice-content
+                              | 美味しくない
+                      .mobile-answer-content
+                        .m-quiz-head.flex.align-items-center
+                          .m-quiz-title
+                            | 回答履歴
+                        .l-table
+                          table.m-table
+                            tbody
+                              tr
+                                td.w80
+                                  .times-answer
+                                    .times
+                                      | 5回目
+                                    .m-answer.first
+                                      | 1
+                                td.w20
+                                  .date
+                                    | 17.07.27
+                              tr
+                                td.w80
+                                  .times-answer
+                                    .times
+                                      | 4回目
+                                    .m-answer.first
+                                      | 1
+                                td.w20
+                                  .date
+                                    | 17.07.26
+                              tr
+                                td.w80
+                                  .times-answer
+                                    .times
+                                      | 3回目
+                                    .m-answer.second
+                                      | 2
+                                td.w20
+                                  .date
+                                    | 17.07.25
+                              tr
+                                td.w80
+                                  .times-answer
+                                    .times
+                                      | 2回目
+                                    .m-answer.third
+                                      | 3
+                                td.w20
+                                  .date
+                                    | 17.07.24
+                              tr
+                                td.w80
+                                  .times-answer
+                                    .times
+                                      | 1回目
+                                    .m-answer.unanswered
+                                      | 未
+                                td.w20
+                                  .date
+                                    | 17.07.23
+                  .m-quiz-content.choice-content
                     .m-quiz-head.flex.align-items-center
                       .m-quiz-icon.icon-choice
                       .m-quiz-title
@@ -180,7 +340,7 @@ html
                         .m-quiz-choice-label
                         .m-quiz-choice-content
                           | 美味しくない
-                  .m-quiz-content
+                  .m-quiz-content.answer-content
                     .m-quiz-head.flex.align-items-center
                       .m-quiz-title
                         | 回答履歴
